@@ -6,6 +6,7 @@ import {
     ServicesWrapper,
     ServicesCard,
     ServicesIcon,
+    ServicesMission,
     ServicesH1,
     ServicesH2,
     ServicesP
@@ -14,6 +15,7 @@ import {
 const Services = () => {
     return (
         <ServicesContainer>
+            <ServicesMission>OUR MISSION</ServicesMission>
             <ServicesH1>Helping you to find out which room you are looking for</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>

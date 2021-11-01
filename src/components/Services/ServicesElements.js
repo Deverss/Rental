@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const ServicesContainer = styled.div`
     height: 800px;
+    margin-top: -70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,7 +23,7 @@ export const ServicesWrapper = styled.div`
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    align-items: left;
     grid-gap: 50px;
     padding: 0 50px;
 
@@ -65,6 +66,15 @@ export const ServicesIcon = styled.img`
 `
 
 // export const ServiceTitle = styled.div``
+export const ServicesMission = styled.p`
+    padding-right: 615px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #868686;
+    display: grid;
+`
+
 
 export const ServicesH1 = styled.h1`
     font-size: 48px;
