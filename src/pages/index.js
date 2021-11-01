@@ -9,7 +9,7 @@ import {
     // homeObjTwo,
     // homeObjThree,   
 } from '../components/InfoSection/Data';
-
+import CatalogSection from '../components/CatalogSection';
 const Home  = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -24,7 +24,7 @@ const Home  = () => {
          <Navbar toggle={toggle} />  
          <InfoSection {...homeObjOne} />
          <Services />
-         
+         <CatalogSection />
         </>
     );
 };
