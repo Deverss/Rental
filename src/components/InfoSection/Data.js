@@ -1,0 +1,48 @@
+export const homeObjOne = {
+    id: 'blog',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    headline: 'Rent your home at the best price',
+    description: 'More over +999 is waiting for you to find out',
+    buttonLabel: 'Get started',
+    imgStart: true,
+    img: require('../../images/Boy.png'),
+    alt: 'Boy',
+    dark: false,
+    primary: false,
+    darkText: true,
+};
+
+export const homeObjTwo = {
+    id: 'discover',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    headline: 'Login to your account at any time',
+    description: 'We have you covered no matter where you are located. All you need is an internet connection and a phone or a computer',
+    buttonLabel: 'Learn More',
+    imgStart: true,
+    img: require('../../images/png-2.png'),
+    alt: 'Piggy Bank',
+    dark: false,
+    primary: false,
+    darkText: true,
+};
+
+export const homeObjThree = {
+    id: 'signup',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Join Our Team',
+    headline: 'Creating an account is extremely easy',
+    description: "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
+    buttonLabel: 'Start Now',
+    imgStart: false,
+    img: require('../../images/png-3.png'),
+    alt: 'Paper',
+    dark: false,
+    primary: false,
+    darkText: true,
+};
