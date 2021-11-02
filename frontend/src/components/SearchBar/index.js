@@ -13,7 +13,7 @@ const customStyles = {
   option: (provided, state) => ({
     ...provided,
     borderBottom: '0px dotted pink',
-    color: state.isSelected ? 'black' : 'blue',
+    color: state.isSelected ? 'black' : 'black',
     
   }),
   control: (base, state) => ({
@@ -35,8 +35,13 @@ const options = [
   ]
 const district = [
     { value: 'Hai Chau', label: 'Hai Chau' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+    { value: 'Cam Le', label: 'Cam Le' },
+    { value: 'Thanh Khe', label: 'Thanh Khe' },
+    { value: 'Lien Chieu', label: 'Lien Chieu' },
+    { value: 'Ngu Hanh Son', label: 'Ngu Hanh Son' },
+    { value: 'Son Tra', label: 'Son Tra' },
+    { value: 'Hoa Vang', label: 'Hoa Vang' },
+    { value: 'Hoang Sa', label: 'Hoang Sa' }
 ]
 const SearchBar = () => {
     return (
