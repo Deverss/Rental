@@ -38,7 +38,6 @@ const CatalogSection = () => {
                         <CatalogDetail><HomeIcon /><Amount>3,213</Amount></CatalogDetail>
                     </CatalogCard>
 {/* Card catalog */}
-    
                 </CatalogWrapper>
         </CatalogContainer>
     )

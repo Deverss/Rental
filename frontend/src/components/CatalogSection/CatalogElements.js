@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import {BiHomeAlt} from 'react-icons/bi';
 
 export const CatalogContainer = styled.div`
@@ -47,6 +47,7 @@ export const CatalogCard = styled.div`
     max-height: 740px;
     max-width: bold;
     padding: 10px;
+    cursor: pointer;
 `
 
 
@@ -64,7 +65,6 @@ export const CatalogName = styled.h3`
 `
 
 export const HomeIcon = styled(BiHomeAlt)`
-    
     font-size: 20px;
     color: #868686;
 `

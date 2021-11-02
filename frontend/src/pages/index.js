@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-
 import InfoSection from '../components/InfoSection';
 import Services  from '../components/Services';
 import { 
@@ -10,6 +9,7 @@ import {
     // homeObjThree,   
 } from '../components/InfoSection/Data';
 import CatalogSection from '../components/CatalogSection';
+import FeaturesSection from '../components/FeaturesSection';
 const Home  = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -25,6 +25,7 @@ const Home  = () => {
          <InfoSection {...homeObjOne} />
          <Services />
          <CatalogSection />
+         <FeaturesSection />
         </>
     );
 };
