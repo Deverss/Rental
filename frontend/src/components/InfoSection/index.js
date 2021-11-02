@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button } from '../ButtonElements'
+// import { Button } from '../ButtonElements'
+import SearchBar from '../SearchBar';
 import Boy from '../../images/Boy.png'
 import {
     InfoContainer,
@@ -38,7 +39,7 @@ const InfoSection = ({
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
                                 <BtnWrap>
-                                    <Button to="home" 
+                                    {/* <Button to="home" 
                                     smooth={true}
                                     duration={500}
                                     spy={true}
@@ -47,9 +48,12 @@ const InfoSection = ({
                                     primary={primary ? 1 : 0}
                                     dark={dark ? 1 : 0}
                                     dark2={dark2 ? 1 : 0}
-                                    >{buttonLabel}</Button>
+                                    >{buttonLabel}</Button> */}
+                                    <SearchBar />
                                 </BtnWrap>
+                                
                             </TextWrapper>
+                            
                         </Column1>
                         <Column2>
                             <ImgWrap>

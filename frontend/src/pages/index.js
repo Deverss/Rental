@@ -10,6 +10,7 @@ import {
 } from '../components/InfoSection/Data';
 import CatalogSection from '../components/CatalogSection';
 import FeaturesSection from '../components/FeaturesSection';
+import Footer from '../components/Footer'
 const Home  = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -26,6 +27,7 @@ const Home  = () => {
          <Services />
          <CatalogSection />
          <FeaturesSection />
+         <Footer />
         </>
     );
 };

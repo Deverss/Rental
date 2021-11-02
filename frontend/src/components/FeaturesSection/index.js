@@ -11,7 +11,7 @@ import {
     FeaturesImage,
     FeaturesDetailCard,
     FeaturesDetail,
-    NameHome,
+    HomeName,
     AddressIcon,
     AddressName,
     AreaIcon,
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
                 <FeaturesImage src={Img0}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
-                        <NameHome>Nhà nguyên căn</NameHome>
+                        <HomeName>Nhà nguyên căn</HomeName>
                         <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
                         <AreaIcon /><Area>30m²</Area>
                         <BedroomIcon /><Amount>1</Amount>
@@ -46,7 +46,7 @@ const FeaturesSection = () => {
                 <FeaturesImage src={Img1}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
-                        <NameHome>Nhà nguyên căn</NameHome>
+                        <HomeName>Nhà nguyên căn</HomeName>
                         <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
                         <AreaIcon /><Area>30m²</Area>
                         <BedroomIcon /><Amount>1</Amount>
@@ -59,7 +59,7 @@ const FeaturesSection = () => {
                 <FeaturesImage src={Img2}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
-                        <NameHome>Nhà nguyên căn</NameHome>
+                        <HomeName>Nhà nguyên căn</HomeName>
                         <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
                         <AreaIcon /><Area>30m²</Area>
                         <BedroomIcon /><Amount>1</Amount>

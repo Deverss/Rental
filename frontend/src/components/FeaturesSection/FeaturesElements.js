@@ -42,61 +42,78 @@ export const FeaturesWrapper = styled.div`
 `
 
 export const FeaturesCard = styled.div`
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 50px;
+    padding: 0 50px;
 
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 0 20px;  
+}
 `
 
 export const FeaturesImage = styled.img`
     cursor: pointer;
     border-radius: 20px;
-    width: 350px;
-    height: 200px;
+    width: 287px;
+    height: 189px;
     left: 0px;
     
 `
 
 export const FeaturesDetailCard = styled.div`
-
+    color: #868686;
 `
 
 export const FeaturesDetail = styled.div`
 
 `
 
-export const NameHome = styled.h5`
-    text-align: center;
+export const HomeName = styled.h5`
+    text-align: left;
     font-size: 20px;
-    // line-height: 10px;
+    font-weight: bold;
     color: #000;
 `
 
 export const AddressIcon = styled(BiMap)`
-    color: #868686;
+ 
 `
 
 export const AddressName = styled.p`
-    color: #868686;
+
 `
 
 export const AreaIcon = styled(BiArea)`
-    color: #868686;
+
 `
 
 export const Area = styled.p`
-    color: #868686;
+
 `
 
 export const BedroomIcon = styled(MdOutlineBedroomParent)`
-    color: #868686;
+
 `
 
 export const Amount = styled.p`
-    color: #868686;
+
 `
 
 export const PriceP = styled.p`
-    color: #868686;
+
 `
 
 export const PriceRoom = styled.p`
-    color: #868686;
+    color: #0A944A;
+    font-size: 24px;
+    font-weight: bold;
 `
