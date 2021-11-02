@@ -23,12 +23,12 @@ export const FeaturesP = styled.p`
 `
 
 export const FeaturesWrapper = styled.div`
-    max-width: 1250px;
+    max-width: 1100px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: left;
-    grid-gap: 50px;
+    grid-gap: 40px;
 
 
     @media screen and (max-width: 768px) {
@@ -42,35 +42,41 @@ export const FeaturesWrapper = styled.div`
 `
 
 export const FeaturesCard = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 50px;
-    padding: 0 50px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    border-radius: 7px;
+    max-height: 740px;
+    max-width: bold;
+    padding: 10px;
+    cursor: pointer;
 
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        padding: 0 20px;  
+    
 }
 `
 
 export const FeaturesImage = styled.img`
     cursor: pointer;
-    border-radius: 20px;
-    width: 287px;
-    height: 189px;
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
     left: 0px;
     
 `
 
 export const FeaturesDetailCard = styled.div`
     color: #868686;
+    padding: 20px 25px;
+    margin-top: -40px;
+    margin-left: 15px;
+    margin-right: -15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 24px 1px rgba(0, 0, 0, 0.09);
+
+
 `
 
 export const FeaturesDetail = styled.div`
@@ -89,7 +95,7 @@ export const AddressIcon = styled(BiMap)`
 `
 
 export const AddressName = styled.p`
-
+    margin-left: 10px;
 `
 
 export const AreaIcon = styled(BiArea)`
@@ -97,15 +103,15 @@ export const AreaIcon = styled(BiArea)`
 `
 
 export const Area = styled.p`
-
+    margin-left: 10px;
 `
 
 export const BedroomIcon = styled(MdOutlineBedroomParent)`
-
+    
 `
 
 export const Amount = styled.p`
-
+    margin-left: 10px;
 `
 
 export const PriceP = styled.p`
@@ -116,4 +122,27 @@ export const PriceRoom = styled.p`
     color: #0A944A;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 30px;
+`
+
+export const Adress = styled.div`
+    margin-top:5px;
+    display: flex;
+    justify-content: left;
+`
+export const AreaDetail = styled.div`
+    margin-top:3px;
+    display: flex;
+    justify-content: left;
+`
+export const Bedroom = styled.div`
+    margin-top:3px;
+    display: flex;
+    justify-content: left;
+`
+
+export const Price = styled.div`
+    margin-top:5px;
+    display: flex;
+    justify-content: left;
 `

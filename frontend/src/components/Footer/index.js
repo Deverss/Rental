@@ -42,6 +42,7 @@ const Footer = () => {
                                 <FooterLink to="/signin"About>Support Center</FooterLink>
                                 <FooterLink to="/signin"About>Contact us</FooterLink>
                         </FooterLinkItems>
+                        
                         {/* End */}
                     </FooterLinksWrapper>
                     

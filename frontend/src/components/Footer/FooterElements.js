@@ -49,7 +49,7 @@ export const FooterLinkItems = styled.div`
     box-sizing: border-box;
     color: #fff;
 
-    @media screen and (max-width:420){
+    @media screen and (max-width:420) {
         margin: 0;
         padding: 10px;
         width: 100%;
@@ -65,10 +65,10 @@ export const FooterLink = styled(Link)`
     color: #000;
     text-decoration: none;
     margin-bottom: 0.5 rem;
-    font-size: 14px;
+    font-size: 18px;
 
     &:hover {
-        color: #01bf71;
+        color: #506FEA;
         transition: 0.3s ease-out
     }
 `
@@ -86,7 +86,7 @@ export const TermText = styled(Link)`
     font-weight: bold;
     margin-left: 145px;
     &:hover {
-        color: #01bf71;
+        color: #506FEA;
         transition: 0.3s ease-out
 
 }

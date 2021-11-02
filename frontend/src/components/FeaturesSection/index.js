@@ -2,6 +2,12 @@ import React from 'react';
 import Img0 from '../../images/Room-0.jpg';
 import Img1 from '../../images/Room-1.jpeg';
 import Img2 from '../../images/Room-2.jpg';
+import Img4 from '../../images/Room-4.jpg';
+import Img5 from '../../images/Room-5.jpg';
+import Img6 from '../../images/Room-6.jpg';
+// import Img7 from '../../images/Room-7.jpg';
+// import Img8 from '../../images/Room-8.jpg';
+// import Img0 from '../../images/Room-0.jpg';
 import { 
     FeaturesContainer, 
     FeaturesH2,
@@ -12,12 +18,16 @@ import {
     FeaturesDetailCard,
     FeaturesDetail,
     HomeName,
+    Adress,
     AddressIcon,
     AddressName,
+    AreaDetail,
+    Bedroom,
     AreaIcon,
     Area,
     BedroomIcon,
     Amount,
+    Price,
     PriceP,
     PriceRoom
 } from './FeaturesElements'
@@ -33,43 +43,197 @@ const FeaturesSection = () => {
                 <FeaturesImage src={Img0}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
-                        <HomeName>Nhà nguyên căn</HomeName>
-                        <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        <AreaIcon /><Area>30m²</Area>
-                        <BedroomIcon /><Amount>1</Amount>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
                         <PriceP>Price per month</PriceP>
                         <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
                     </FeaturesDetail>
                 </FeaturesDetailCard>
             </FeaturesCard>
+
             <FeaturesCard>
                 <FeaturesImage src={Img1}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Nhà nguyên căn</HomeName>
-                        <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        <AreaIcon /><Area>30m²</Area>
-                        <BedroomIcon /><Amount>1</Amount>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>30m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>1</Amount>
+                        </Bedroom>
+                        <Price>
                         <PriceP>Price per month</PriceP>
                         <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
                     </FeaturesDetail>
                 </FeaturesDetailCard>
             </FeaturesCard>
+
             <FeaturesCard>
                 <FeaturesImage src={Img2}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Nhà nguyên căn</HomeName>
-                        <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        <AreaIcon /><Area>30m²</Area>
-                        <BedroomIcon /><Amount>1</Amount>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>30m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>1</Amount>
+                        </Bedroom>
+                        <Price>
                         <PriceP>Price per month</PriceP>
                         <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
+                    </FeaturesDetail>
+                </FeaturesDetailCard>
+            </FeaturesCard>
+            
+            <FeaturesCard>
+                <FeaturesImage src={Img4}/>
+                <FeaturesDetailCard>
+                    <FeaturesDetail>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
+                        <PriceP>Price per month</PriceP>
+                        <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
+                    </FeaturesDetail>
+                </FeaturesDetailCard>
+            </FeaturesCard>
+            <FeaturesCard>
+                <FeaturesImage src={Img5}/>
+                <FeaturesDetailCard>
+                    <FeaturesDetail>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
+                        <PriceP>Price per month</PriceP>
+                        <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
+                    </FeaturesDetail>
+                </FeaturesDetailCard>
+            </FeaturesCard>
+            <FeaturesCard>
+                <FeaturesImage src={Img6}/>
+                <FeaturesDetailCard>
+                    <FeaturesDetail>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
+                        <PriceP>Price per month</PriceP>
+                        <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
+                    </FeaturesDetail>
+                </FeaturesDetailCard>
+            </FeaturesCard>
+            <FeaturesCard>
+                <FeaturesImage src={Img0}/>
+                <FeaturesDetailCard>
+                    <FeaturesDetail>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
+                        <PriceP>Price per month</PriceP>
+                        <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
+                    </FeaturesDetail>
+                </FeaturesDetailCard>
+            </FeaturesCard>
+            <FeaturesCard>
+                <FeaturesImage src={Img0}/>
+                <FeaturesDetailCard>
+                    <FeaturesDetail>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
+                        <PriceP>Price per month</PriceP>
+                        <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
+                    </FeaturesDetail>
+                </FeaturesDetailCard>
+            </FeaturesCard>
+            <FeaturesCard>
+                <FeaturesImage src={Img0}/>
+                <FeaturesDetailCard>
+                    <FeaturesDetail>
+                        <HomeName>Parasite's House</HomeName>
+                        <Adress>
+                            <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
+                        </Adress>
+                        <AreaDetail>
+                            <AreaIcon /><Area>130m²</Area>
+                        </AreaDetail>
+                        <Bedroom>
+                            <BedroomIcon /><Amount>4</Amount>
+                        </Bedroom>
+                        <Price>
+                        <PriceP>Price per month</PriceP>
+                        <PriceRoom>3,520,000</PriceRoom>
+                        </Price>
                     </FeaturesDetail>
                 </FeaturesDetailCard>
             </FeaturesCard>
 {/* Card features */} 
-            </FeaturesWrapper>  
+            </FeaturesWrapper>
+              
         </FeaturesContainer>            
     )
 }
