@@ -28,10 +28,11 @@ const customStyles = {
     ,
 })
 }
-const options = [
-    { value: 'chocolate', label: 'Chocolate' },
-    { value: 'strawberry', label: 'Strawberry' },
-    { value: 'vanilla', label: 'Vanilla' }
+const Type = [
+    { value: 'Studio apartment', label: 'Studio apartment' },
+    { value: 'Apartment', label: 'Apartments' },
+    { value: 'Residential house', label: 'Residential house' },
+    { value: 'Boarding house', label: 'Boarding house' }
   ]
 const district = [
     { value: 'Hai Chau', label: 'Hai Chau' },
@@ -51,7 +52,7 @@ const SearchBar = () => {
                 <InputField>
                     <Label>Type</Label>
                     <InputSelect>
-                    <Select styles={customStyles} options={options}/>
+                    <Select styles={customStyles} options={Type}/>
                     </InputSelect>
                 </InputField>
                  {/* Field import 2 */}
