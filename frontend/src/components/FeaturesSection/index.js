@@ -18,7 +18,7 @@ import {
     FeaturesDetailCard,
     FeaturesDetail,
     HomeName,
-    Adress,
+    Address,
     AddressIcon,
     AddressName,
     AreaDetail,
@@ -44,9 +44,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>
@@ -66,9 +66,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Nhà nguyên căn</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>30m²</Area>
                         </AreaDetail>
@@ -88,9 +88,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Nhà nguyên căn</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>30m²</Area>
                         </AreaDetail>
@@ -110,9 +110,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>
@@ -131,9 +131,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>
@@ -152,9 +152,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>
@@ -173,9 +173,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>
@@ -194,9 +194,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>
@@ -215,9 +215,9 @@ const FeaturesSection = () => {
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
-                        <Adress>
+                        <Address>
                             <AddressIcon /><AddressName>69 Bach Cong Tu, Vinh City</AddressName>
-                        </Adress>
+                        </Address>
                         <AreaDetail>
                             <AreaIcon /><Area>130m²</Area>
                         </AreaDetail>

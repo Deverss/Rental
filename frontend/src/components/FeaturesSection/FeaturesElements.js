@@ -125,7 +125,7 @@ export const PriceRoom = styled.p`
     margin-left: 30px;
 `
 
-export const Adress = styled.div`
+export const Address = styled.div`
     margin-top:5px;
     display: flex;
     justify-content: left;
