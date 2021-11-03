@@ -5,6 +5,8 @@ import Home from './pages'
 import SigninPage from './pages/signin'
 import Navbar from './components/Navbar'
 import HowItWorks from './pages/howitworks'
+import FeaturesPage from './pages/features'
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
         <Route path="/" component={Home} exact />
         <Route path="/signin" component={SigninPage} exact />
         <Route path="/howitworks" component={HowItWorks} exact />
+        <Route path="/features" coponents={FeaturesPage} exact />
       </Switch>
     </Router>
   );
