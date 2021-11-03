@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-import HowItWorks from '../components/HowItWorks';
-import Footer from '../components/Footer'
-const Works  = () => {
+import FeaturesPage from '../components/FeaturesPage';
+import Footer from '../components/Footer';
+
+const Features = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -15,10 +16,10 @@ const Works  = () => {
         <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle} />  
-        <HowItWorks />    
+        <FeaturesPage />    
         <Footer />
         </>
     )
 }
 
-export default Works;
+export default Features;
