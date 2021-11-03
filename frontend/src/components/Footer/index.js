@@ -31,7 +31,7 @@ const Footer = () => {
                         {/* 1 */}
                         <FooterLinkItems>
                             <FooterLinkTitle>Company</FooterLinkTitle>
-                                <FooterLink to="/signin"About>How we work?</FooterLink>
+                                <FooterLink to="/howitworks">How it work?</FooterLink>
                                 <FooterLink to="/signin"About>Security</FooterLink>
                                 
                         </FooterLinkItems>

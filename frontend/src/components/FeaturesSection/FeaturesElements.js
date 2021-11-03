@@ -52,8 +52,6 @@ export const FeaturesCard = styled.div`
     max-width: bold;
     padding: 10px;
     cursor: pointer;
-
-    
 }
 `
 
@@ -63,7 +61,6 @@ export const FeaturesImage = styled.img`
     width: 300px;
     height: 200px;
     left: 0px;
-    
 `
 
 export const FeaturesDetailCard = styled.div`
@@ -81,7 +78,7 @@ export const FeaturesDetailCard = styled.div`
 
 export const FeaturesDetail = styled.div`
 
-`
+`   
 
 export const HomeName = styled.h5`
     text-align: left;
@@ -130,6 +127,7 @@ export const Address = styled.div`
     display: flex;
     justify-content: left;
 `
+
 export const AreaDetail = styled.div`
     margin-top:3px;
     display: flex;
