@@ -5,9 +5,9 @@ import Img2 from '../../images/Room-2.jpg';
 import Img4 from '../../images/Room-4.jpg';
 import Img5 from '../../images/Room-5.jpg';
 import Img6 from '../../images/Room-6.jpg';
-// import Img7 from '../../images/Room-7.jpg';
-// import Img8 from '../../images/Room-8.jpg';
-// import Img0 from '../../images/Room-0.jpg';
+import Img7 from '../../images/Room-7.jpg';
+import Img8 from '../../images/Room-8.jpg';
+import Img9 from '../../images/Room-9.jpg';
 import { 
     FeaturesContainer, 
     FeaturesH2,
@@ -169,7 +169,7 @@ const FeaturesSection = () => {
                 </FeaturesDetailCard>
             </FeaturesCard>
             <FeaturesCard>
-                <FeaturesImage src={Img0}/>
+                <FeaturesImage src={Img7}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
@@ -190,7 +190,7 @@ const FeaturesSection = () => {
                 </FeaturesDetailCard>
             </FeaturesCard>
             <FeaturesCard>
-                <FeaturesImage src={Img0}/>
+                <FeaturesImage src={Img8}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
@@ -211,7 +211,7 @@ const FeaturesSection = () => {
                 </FeaturesDetailCard>
             </FeaturesCard>
             <FeaturesCard>
-                <FeaturesImage src={Img0}/>
+                <FeaturesImage src={Img9}/>
                 <FeaturesDetailCard>
                     <FeaturesDetail>
                         <HomeName>Parasite's House</HomeName>
