@@ -16,7 +16,7 @@ function App() {
         <Route path="/" component={Home} exact />
         <Route path="/signin" component={SigninPage} exact />
         <Route path="/howitworks" component={HowItWorks} exact />
-        <Route path="/features" coponents={FeaturesPage} exact />
+        <Route path="/features" components={FeaturesPage} exact />
       </Switch>
     </Router>
   );
