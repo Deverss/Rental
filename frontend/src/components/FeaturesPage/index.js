@@ -17,7 +17,9 @@ import {
     FeaturesImage1,
     FeaturesDetailH2,
     FeaturesDetailDesc,
-    FeaturesDetailText
+    FeaturesDetailText,
+    FeaturesBtn,
+    FeaturesBtnLink
 } from './FeaturesElements';
 import Img1 from '../../images/FeatureDetail1Image.png';
 import Img2 from '../../images/FeatureDetail2Image.png';
@@ -59,12 +61,18 @@ const FeaturesPage = () => {
             <FeaturesDetailText>
                 <FeaturesDetailH2>Flexible filter</FeaturesDetailH2>
                 <FeaturesDetailDesc>RetailH provider provides rent home with up-to-date information, tools, and home listing across Da Nang</FeaturesDetailDesc>
+                <FeaturesBtn>
+                    <FeaturesBtnLink to="/">Search home</FeaturesBtnLink>
+                </FeaturesBtn>
             </FeaturesDetailText>
         </FeaturesDetail1>
         <FeaturesDetail1>
             <FeaturesDetailText>
                 <FeaturesDetailH2>Virtual Reality 360 to preview</FeaturesDetailH2>
                 <FeaturesDetailDesc>RetailH provider provides rent home with up-to-date information, tools, and home listing across Da Nang</FeaturesDetailDesc>
+                <FeaturesBtn>
+                    <FeaturesBtnLink to="/">Search home</FeaturesBtnLink>
+                </FeaturesBtn>
             </FeaturesDetailText>
             <FeaturesImage1 src={Img2} />
         </FeaturesDetail1>
@@ -73,6 +81,9 @@ const FeaturesPage = () => {
             <FeaturesDetailText>
                 <FeaturesDetailH2>Easy booking and planing</FeaturesDetailH2>
                 <FeaturesDetailDesc>RetailH offer a clean interface consumers love, and home search tool that let home renter choose</FeaturesDetailDesc>
+                <FeaturesBtn>
+                    <FeaturesBtnLink to="/">Search home</FeaturesBtnLink>
+                </FeaturesBtn>
             </FeaturesDetailText>
         </FeaturesDetail1>
     </FeaturesSection>

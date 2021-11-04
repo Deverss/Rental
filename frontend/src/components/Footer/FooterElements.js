@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export const FooterContainer = styled.footer`
     background-color: #fff;
-    margin-top: 30px;
+    margin-top: 150px;
 `
 export const LineFooter = styled.hr`
     width:75%;

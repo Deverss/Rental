@@ -134,7 +134,7 @@ export const FeaturesImage1 = styled.img`
 export const FeaturesDetailText = styled.div`
     margin: 0 auto;
     position: relative;
-    top: 45%;
+    top: 30%;
     transform : translateY(-50);
 `
 export const FeaturesDetailH2 = styled.h2`
@@ -151,4 +151,32 @@ export const FeaturesDetailDesc = styled.p`
     line-height: 23px;
     margin-right: 80px;      
     color: #868686;
+    margin-bottom: 30px;
+`
+export const FeaturesBtn =styled.div`
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+     display: none;
+    }        
+`
+
+export const FeaturesBtnLink = styled.div`
+    border-radius: 8px;
+    background: black;
+    white-space: nowrap;
+    padding: 13px 36px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    &:hover {
+        background-color: #fff;  
+        color: #000;
+}
 `
