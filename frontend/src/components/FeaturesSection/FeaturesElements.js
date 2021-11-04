@@ -3,7 +3,8 @@ import {
     BiMap,
     BiArea, 
 } from 'react-icons/bi'; 
-import {MdOutlineBedroomParent} from 'react-icons/md'
+import {MdOutlineBedroomParent} from 'react-icons/md';
+
 
 export const FeaturesContainer = styled.div`
     margin-top: 82px;

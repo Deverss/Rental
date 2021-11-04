@@ -6,6 +6,7 @@ import SigninPage from './pages/signin'
 import Navbar from './components/Navbar'
 import HowItWorks from './pages/howitworks'
 import FeaturesPage from './pages/features'
+import Blog from './pages/blog'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/signin" component={SigninPage} exact />
         <Route path="/howitworks" component={HowItWorks} exact />
         <Route path="/features" component={FeaturesPage} exact />
+        <Route path="/blog" component={Blog} exact />
       </Switch>
     </Router>
   );
