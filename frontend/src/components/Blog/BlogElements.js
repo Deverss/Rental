@@ -6,10 +6,24 @@ export const BlogSection = styled.div`
 export const BlogText = styled.div`
 
 `
-export const BlogTitle = styled.div`
-
+export const BlogTitle = styled.h2`
+    align-items: center;
+    margin-top: 80px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
 `
-export const BlogDesc = styled.div`
+export const BlogDesc = styled.p`
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+    font-style: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    color: #868686;
 
 `
 export const FeaturePost = styled.div`
