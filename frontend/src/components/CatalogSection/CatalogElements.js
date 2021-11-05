@@ -52,7 +52,6 @@ export const CatalogCard = styled.div`
 
 
 export const CatalogImage = styled.img`
-    cursor: pointer;
     border-radius: 20px;
     width: 280px;
     height: 280px;

@@ -3,6 +3,7 @@ import Img1 from '../../images/BlognPost-1.jpg';
 import Img2 from '../../images/BlognPost-2.jpg';
 import Img3 from '../../images/BlognPost-3.jpg';
 import Img4 from '../../images/BlognPost-4.jpg';
+import Ava from '../../images/Ava.jpg';
 import {
     BlogSection,
     BlogText,
@@ -19,6 +20,7 @@ import {
     AuthorAva,
     AuthorName,
     TimeUpload,
+    AuthorText,
     //Posts
     PostCard,
     Post,
@@ -41,9 +43,11 @@ const BlogsAndPosts = () => {
                     <FeatureP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </FeatureP>
                     <Author>
-                        <AuthorAva />
-                        <AuthorName>Mike TyleXon</AuthorName>
-                        <TimeUpload>30 mins ago</TimeUpload>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
                     </Author>
                 </FeatureDesc>
             </FeaturePost>
@@ -54,9 +58,11 @@ const BlogsAndPosts = () => {
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
-                        <AuthorAva />
-                        <AuthorName>Mike TyleXon</AuthorName>
-                        <TimeUpload>30 mins ago</TimeUpload>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
                     </Author>
                 </Post>
             </PostCard>
@@ -67,9 +73,11 @@ const BlogsAndPosts = () => {
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
-                        <AuthorAva />
-                        <AuthorName>Mike TyleXon</AuthorName>
-                        <TimeUpload>30 mins ago</TimeUpload>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
                     </Author>
                 </Post>
             </PostCard>
@@ -80,9 +88,11 @@ const BlogsAndPosts = () => {
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
-                        <AuthorAva />
-                        <AuthorName>Mike TyleXon</AuthorName>
-                        <TimeUpload>30 mins ago</TimeUpload>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
                     </Author>
                 </Post>
             </PostCard>

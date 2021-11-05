@@ -82,15 +82,28 @@ export const FeatureP = styled.p`
     max-width: 100%;
 `
 export const Author = styled.div`
+    display: flex;
+    align-items: center;
+`
+export const AuthorAva = styled.img`
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 10px;
+    max-width: 100%;
 
 `
-export const AuthorAva = styled.div`
-
+export const AuthorText = styled.div`
+    display: flex;
+    flex-direction: column;
 `
-export const AuthorName = styled.div`
-    font-size: 13px;
+export const AuthorName = styled.h4`
+    font-size: 15px;
     font-weight: bold;
     line-height: 16px;
+}
 `
 export const TimeUpload = styled.p`
     font-size: 12px;
@@ -99,25 +112,55 @@ export const TimeUpload = styled.p`
     
 `
 export const PostCard = styled.div`
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-sizing: border-box;
+    grid-gap: 10px;
+    
 
+    @media screen and (max-width: 1000px) {
+         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+        padding: 0 20px;  
+    }
 `
 export const Post = styled.div`
-
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    max-height: 740px;
+    
+    
+}
 `
 export const PostImg = styled.img`
-    margin-top: 30px;
-    cursor: pointer;
-    border-radius: 10px;
-    width: 320px;
-    height: 280px;
-    margin-bottom: 20px;   
+    width: 100%;
+    max-height: 350px;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover; 
 `
 export const PostTitle = styled.div`
-    text-align: center;
-    font-size: 22px;
+    margin-top: 15px;    
+text-align: left;
+    font-size: 24px;
     font-weight: bold;
     color: #000;
 `
 export const PostDesc = styled.div`
-
+font-family: DM Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 23px;
+color: #868686;
+margin-bottom: 30px;
+margin-top:15px;
 `
