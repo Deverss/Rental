@@ -35,14 +35,14 @@ export const BlogDesc = styled.p`
 
 `
 export const FeaturePost = styled.div`
-display: grid;
-grid-auto-columns: minmax(auto, 1fr);
-align-items: center;
-grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: center;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
-@media screen and (max-width: 768px) {
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
-}
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
 `
 export const FeatureImg = styled.img`
     width: 558px;
@@ -50,8 +50,7 @@ export const FeatureImg = styled.img`
     padding-right: 0;
     border-radius: 15px;
     max-width: 600px;
-    height: 405px;
-    
+    height: 405px;   
 `
 export const FeatureDesc = styled.div`
 padding: 60px;
@@ -115,9 +114,10 @@ export const PostCard = styled.div`
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr;
     box-sizing: border-box;
     grid-gap: 10px;
+    margin-top: 90px;
     
 
     @media screen and (max-width: 1000px) {
@@ -134,6 +134,7 @@ export const Post = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    width: 300px;
     
     max-height: 740px;
     
@@ -155,12 +156,12 @@ text-align: left;
     color: #000;
 `
 export const PostDesc = styled.div`
-font-family: DM Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 23px;
-color: #868686;
-margin-bottom: 30px;
-margin-top:15px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #868686;
+    margin-bottom: 30px;
+    margin-top:15px;
 `

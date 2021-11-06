@@ -65,8 +65,8 @@ const BlogsAndPosts = () => {
                         </AuthorText>
                     </Author>
                 </Post>
-            </PostCard>
-            <PostCard>
+            {/* </PostCard>
+            <PostCard> */}
                 <Post>
                     <PostImg src={Img3}/>
                     <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
@@ -80,8 +80,8 @@ const BlogsAndPosts = () => {
                         </AuthorText>
                     </Author>
                 </Post>
-            </PostCard>
-            <PostCard>
+            {/* </PostCard>
+            <PostCard> */}
                 <Post>
                     <PostImg src={Img4}/>
                     <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
