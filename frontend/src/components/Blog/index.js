@@ -3,6 +3,15 @@ import Img1 from '../../images/BlognPost-1.jpg';
 import Img2 from '../../images/BlognPost-2.jpg';
 import Img3 from '../../images/BlognPost-3.jpg';
 import Img4 from '../../images/BlognPost-4.jpg';
+import Img5 from '../../images/BlognPost-5.jpg';
+import Img6 from '../../images/BlognPost-6.jpg';
+import Img7 from '../../images/BlognPost-7.jpg';
+import Img1news from '../../images/News-1.jpg';
+import Img2news from '../../images/News-2.jpg';
+import Img3news from '../../images/News-3.jpg';
+import Img4news from '../../images/News-4.jpg';
+import Img5news from '../../images/News-5.jpg';
+import Img6news from '../../images/News-6.jpg';
 import Ava from '../../images/Ava.jpg';
 import {
     BlogSection,
@@ -106,7 +115,7 @@ const BlogsAndPosts = () => {
                 </Post>
 
                 <Post>
-                    <PostImg src={Img2}/>
+                    <PostImg src={Img5}/>
                     <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
@@ -120,7 +129,7 @@ const BlogsAndPosts = () => {
                 </Post>
 
                 <Post>
-                    <PostImg src={Img2}/>
+                    <PostImg src={Img6}/>
                     <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
@@ -134,7 +143,7 @@ const BlogsAndPosts = () => {
                 </Post>
 
                 <Post>
-                    <PostImg src={Img2}/>
+                    <PostImg src={Img7}/>
                     <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
@@ -161,7 +170,7 @@ const BlogsAndPosts = () => {
                 <NewsNUpdatePost>
                     
                     <Post>
-                        <PostImg src={Img2}/>
+                        <PostImg src={Img1news}/>
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
@@ -175,7 +184,7 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img2}/>
+                        <PostImg src={Img2news}/>
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
@@ -189,7 +198,7 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img2}/>
+                        <PostImg src={Img3news}/>
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
@@ -203,7 +212,7 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img2}/>
+                        <PostImg src={Img4news}/>
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
@@ -217,7 +226,7 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img2}/>
+                        <PostImg src={Img5news}/>
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
@@ -231,7 +240,7 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img2}/>
+                        <PostImg src={Img6news}/>
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>

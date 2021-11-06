@@ -50,7 +50,8 @@ export const FeatureImg = styled.img`
     padding-right: 0;
     border-radius: 15px;
     max-width: 600px;
-    height: 405px;   
+    height: 405px;
+    cursor: pointer;
 `
 export const FeatureDesc = styled.div`
     padding: 60px;
@@ -93,6 +94,10 @@ export const AuthorAva = styled.img`
     margin-right: 10px;
     max-width: 100%;
 
+    &:hover {
+        cursor: pointer;
+        border: 1px solid #000000;
+    }
 `
 export const AuthorText = styled.div`
     display: flex;
@@ -102,6 +107,11 @@ export const AuthorName = styled.h4`
     font-size: 15px;
     font-weight: bold;
     line-height: 16px;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
 `
 export const TimeUpload = styled.p`
@@ -143,7 +153,8 @@ export const PostImg = styled.img`
     max-height: 350px;
     height: auto;
     border-radius: 15px;
-    object-fit: cover; 
+    object-fit: cover;
+    cursor: pointer;
 `
 export const PostTitle = styled.h4`
     margin-top: 15px;    
@@ -151,6 +162,12 @@ export const PostTitle = styled.h4`
     font-size: 20px;
     font-weight: bold;
     color: #000;
+
+    &:hover {
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        color: #506FEA;
+    }
 `
 export const PostDesc = styled.p`
     font-family: DM Sans;
@@ -195,10 +212,6 @@ export const NewsNUpdateBtn = styled.div`
         display: none;
         transition: all 0.2s ease-in-out;
     }
-    
-    &:hover {
-        color: #506FEA;
-    }
 `
 export const NewsNUpdateBtnLink = styled.div`
     display: absolute;
@@ -216,7 +229,8 @@ export const NewsNUpdateBtnLink = styled.div`
     border: 2px solid #000000;
     
     &:hover {
-        background-color: #fff;  
+        transition: all 0.2s ease-in-out;
+        background-color: #506FEA;  
         color: #000;
 `
 export const NewsNUpdatePost = styled.div`
