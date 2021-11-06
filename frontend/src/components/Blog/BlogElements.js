@@ -53,7 +53,7 @@ export const FeatureImg = styled.img`
     height: 405px;   
 `
 export const FeatureDesc = styled.div`
-padding: 60px;
+    padding: 60px;
 `
 export const FeatureH2 = styled.h2`
     font-family: DM Sans;
@@ -121,11 +121,11 @@ export const PostCard = styled.div`
     
 
     @media screen and (max-width: 1000px) {
-         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-columns: 2fr 2fr 2fr;
     }
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         padding: 0 20px;  
     }
 `
@@ -135,11 +135,8 @@ export const Post = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     width: 300px;
-    
+    margin-bottom: 20px;
     max-height: 740px;
-    
-    
-}
 `
 export const PostImg = styled.img`
     width: 100%;
@@ -148,20 +145,98 @@ export const PostImg = styled.img`
     border-radius: 15px;
     object-fit: cover; 
 `
-export const PostTitle = styled.div`
+export const PostTitle = styled.h4`
     margin-top: 15px;    
-text-align: left;
-    font-size: 24px;
+    text-align: left;
+    font-size: 20px;
     font-weight: bold;
     color: #000;
 `
-export const PostDesc = styled.div`
+export const PostDesc = styled.p`
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 23px;
     color: #868686;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     margin-top:15px;
 `
+
+export const NewsNUpdateSections = styled.div`
+    margin-top: 70px;
+`
+
+export const NewsNUpdate = styled.div`
+    display: flex;
+`
+
+export const NewsNUpdateText = styled.div`
+    
+`
+
+export const NewsTextH2 = styled.h2`
+    font-size: 48px;
+`
+
+export const NewsTextP = styled.p`
+    font-size: 18px;
+`
+
+export const NewsNUpdateBtn = styled.div`
+    display: flex;
+    align-items: center;
+    position: relative;
+    pointer: cursor;
+    transition: all 0.2s ease-in-out;
+    margin-left: auto; 
+    margin-right: 0;
+    @media screen and (max-width: 768px) {
+        display: none;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    &:hover {
+        color: #506FEA;
+    }
+`
+export const NewsNUpdateBtnLink = styled.div`
+    display: absolute;
+    border-radius: 30px;
+    background: white;
+    white-space: nowrap;
+    padding: 13px 36px;
+    color: #000;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    
+    &:hover {
+        background-color: #fff;  
+        color: #000;
+`
+export const NewsNUpdatePost = styled.div`
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr;
+    box-sizing: border-box;
+    grid-gap: 10px;
+    margin-top: 90px;
+
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 2fr;
+        padding: 0 20px;  
+    }
+`
+
+

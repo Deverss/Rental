@@ -27,6 +27,15 @@ import {
     PostImg,
     PostTitle,
     PostDesc,
+    // News update
+    NewsNUpdateSections,
+    NewsNUpdate,
+    NewsNUpdateText,
+    NewsTextH2,
+    NewsTextP,
+    NewsNUpdateBtn,
+    NewsNUpdatePost,
+    NewsNUpdateBtnLink,
 } from './BlogElements'
 
 const BlogsAndPosts = () => {
@@ -95,7 +104,150 @@ const BlogsAndPosts = () => {
                         </AuthorText>
                     </Author>
                 </Post>
+
+                <Post>
+                    <PostImg src={Img2}/>
+                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </PostDesc>
+                    <Author>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
+                    </Author>
+                </Post>
+
+                <Post>
+                    <PostImg src={Img2}/>
+                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </PostDesc>
+                    <Author>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
+                    </Author>
+                </Post>
+
+                <Post>
+                    <PostImg src={Img2}/>
+                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </PostDesc>
+                    <Author>
+                        <AuthorAva src={Ava} />
+                            <AuthorText>
+                            <AuthorName>Mike TyleXon</AuthorName>
+                            <TimeUpload>30 mins ago</TimeUpload>
+                        </AuthorText>
+                    </Author>
+                </Post>
             </PostCard>
+            {/* News and update */}
+            <NewsNUpdateSections>
+                <NewsNUpdate>
+                    <NewsNUpdateText>
+                        <NewsTextH2>News and update</NewsTextH2>
+                        <NewsTextP>Latest release, features, and news about Rental</NewsTextP>
+                    </NewsNUpdateText>
+                        <NewsNUpdateBtn>
+                            <NewsNUpdateBtnLink to="/">Browse all</NewsNUpdateBtnLink>
+                        </NewsNUpdateBtn>
+                </NewsNUpdate>
+                <NewsNUpdatePost>
+                    
+                    <Post>
+                        <PostImg src={Img2}/>
+                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </PostDesc>
+                        <Author>
+                            <AuthorAva src={Ava} />
+                                <AuthorText>
+                                <AuthorName>Mike TyleXon</AuthorName>
+                                <TimeUpload>30 mins ago</TimeUpload>
+                            </AuthorText>
+                        </Author>
+                    </Post>
+
+                    <Post>
+                        <PostImg src={Img2}/>
+                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </PostDesc>
+                        <Author>
+                            <AuthorAva src={Ava} />
+                                <AuthorText>
+                                <AuthorName>Mike TyleXon</AuthorName>
+                                <TimeUpload>30 mins ago</TimeUpload>
+                            </AuthorText>
+                        </Author>
+                    </Post>
+
+                    <Post>
+                        <PostImg src={Img2}/>
+                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </PostDesc>
+                        <Author>
+                            <AuthorAva src={Ava} />
+                                <AuthorText>
+                                <AuthorName>Mike TyleXon</AuthorName>
+                                <TimeUpload>30 mins ago</TimeUpload>
+                            </AuthorText>
+                        </Author>
+                    </Post>
+
+                    <Post>
+                        <PostImg src={Img2}/>
+                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </PostDesc>
+                        <Author>
+                            <AuthorAva src={Ava} />
+                                <AuthorText>
+                                <AuthorName>Mike TyleXon</AuthorName>
+                                <TimeUpload>30 mins ago</TimeUpload>
+                            </AuthorText>
+                        </Author>
+                    </Post>
+
+                    <Post>
+                        <PostImg src={Img2}/>
+                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </PostDesc>
+                        <Author>
+                            <AuthorAva src={Ava} />
+                                <AuthorText>
+                                <AuthorName>Mike TyleXon</AuthorName>
+                                <TimeUpload>30 mins ago</TimeUpload>
+                            </AuthorText>
+                        </Author>
+                    </Post>
+
+                    <Post>
+                        <PostImg src={Img2}/>
+                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        </PostDesc>
+                        <Author>
+                            <AuthorAva src={Ava} />
+                                <AuthorText>
+                                <AuthorName>Mike TyleXon</AuthorName>
+                                <TimeUpload>30 mins ago</TimeUpload>
+                            </AuthorText>
+                        </Author>
+                    </Post>
+
+                    
+
+                </NewsNUpdatePost>
+            </NewsNUpdateSections>
         </BlogSection>
     )
 }
