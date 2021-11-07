@@ -1,4 +1,5 @@
 import React from 'react';
+// import Logo from '../../images/logo.png';
 import {
     FooterContainer,
     LineFooter,
@@ -10,8 +11,13 @@ import {
     DivideFooter,
     FooterLink,
     Copyright,
-    TermText
+    TermText,
+    // FooterBio,
+    // FooterLogo,
+    // FooterLogoImage,
+    // FooterText,
 } from './FooterElements';
+
 
 const Footer = () => {
     return (
@@ -19,6 +25,13 @@ const Footer = () => {
             <LineFooter />
             <FooterWrap>
                 <FooterLinksContainer>
+                    {/* <FooterBio>
+                        <FooterLogo to="/"> <FooterLogoImage src={Logo}/>Rental</FooterLogo>
+                        <FooterText>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        </FooterText>
+                    </FooterBio> */}
+
                     <FooterLinksWrapper>
                         {/* 1 */}
                         <FooterLinkItems>

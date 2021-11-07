@@ -7,7 +7,7 @@ import Navbar from './components/Navbar'
 import HowItWorks from './pages/howitworks'
 import FeaturesPage from './pages/features'
 import Blog from './pages/blog'
-
+import BlogPost from './pages/blogpost'
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
         <Route path="/howitworks" component={HowItWorks} exact />
         <Route path="/features" component={FeaturesPage} exact />
         <Route path="/blog" component={Blog} exact />
+        <Route path="/blogpost" component={BlogPost} exact />
       </Switch>
     </Router>
   );
