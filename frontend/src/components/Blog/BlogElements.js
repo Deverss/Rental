@@ -223,16 +223,16 @@ export const NewsNUpdateBtnLink = styled.div`
     font-size: 16px;
     outline: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    // transition: all 0.2s ease-in-out;
     text-decoration: none;
     box-sizing: border-box;
     border: 2px solid #000000;
     
     &:hover {
-        transition: all 0.2s ease-in-out;
+        // transition: all 0.2s ease-in-out;
         background-color: #506FEA;  
-        color: #000;
-        font-weight: bold;
+        color: #fff;
+        border: none;
 `
 export const NewsNUpdatePost = styled.div`
     max-width: 1100px;

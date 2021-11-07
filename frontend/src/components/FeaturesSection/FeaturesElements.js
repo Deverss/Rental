@@ -86,6 +86,10 @@ export const HomeName = styled.h5`
     font-size: 20px;
     font-weight: bold;
     color: #000;
+
+    &:hover {
+        color: #506FEA;
+    }
 `
 
 export const AddressIcon = styled(BiMap)`

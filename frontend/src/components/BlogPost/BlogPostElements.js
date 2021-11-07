@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import {FiShare} from 'react-icons/fi';
-import {BsHeart} from 'react-icons/bs';
+// import {FiShare} from 'react-icons/fi';
+// import {BsHeart} from 'react-icons/bs';
 
 
     export const PostSection = styled.div`
