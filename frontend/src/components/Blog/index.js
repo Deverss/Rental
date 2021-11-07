@@ -49,7 +49,7 @@ import {
 
 const BlogsAndPosts = () => {
     return (
-        <BlogSection>
+        <BlogSection to="blog">
             <BlogText>
                 <BlogTitle>Blog and Posts</BlogTitle>
                 <BlogDesc>Let’s get some tip when join in our platform</BlogDesc>

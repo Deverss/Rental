@@ -232,6 +232,7 @@ export const NewsNUpdateBtnLink = styled.div`
         transition: all 0.2s ease-in-out;
         background-color: #506FEA;  
         color: #000;
+        font-weight: bold;
 `
 export const NewsNUpdatePost = styled.div`
     max-width: 1100px;
