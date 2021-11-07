@@ -98,3 +98,17 @@ export const Copyright = styled.h3`
     text-align: left;
     margin-left: 145px;
 `
+
+
+// export const FooterBio = styled.div`
+
+// `
+// export const FooterLogo = styled.img`
+
+// `
+// export const FooterLogoImage = styled.div`
+
+// `
+// export const FooterText = styled.div`
+
+// `

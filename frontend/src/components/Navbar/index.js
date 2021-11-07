@@ -28,10 +28,10 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="/">Home</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="blogs">Blogs</NavLinks>
+                            <NavLinks to="blog">Blogs</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover">Catalog</NavLinks>
+                            <NavLinks to="catalog">Catalog</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="/features">Features</NavLinks>
