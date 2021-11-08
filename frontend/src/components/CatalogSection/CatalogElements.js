@@ -61,6 +61,10 @@ export const CatalogName = styled.h3`
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 5px;
+
+    &:hover {
+        color: #506FEA;
+    }
 `
 
 export const HomeIcon = styled(BiHomeAlt)`

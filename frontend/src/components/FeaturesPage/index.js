@@ -27,8 +27,7 @@ import Img3 from '../../images/FeatureDetail3Image.png';
 const FeaturesPage = () => {
     return (
         
-    <FeaturesSection to="/features">
-        
+    <FeaturesSection to="/features">   
         <FeaturesText>
             <FeaturesTitle>FEATURES</FeaturesTitle>
             <FeaturesHeadline>What makes Rental different?</FeaturesHeadline>
