@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../images/logo.png';
+// import scroll from 'react-scroll'
 import {   
     Nav, 
     NavbarContainer, 
@@ -13,6 +14,10 @@ import {
     NavBtn,
     NavBtnLink
 } from './NavbarElements';
+
+// const toggleHome = () => {
+//     scroll.scrollToTop();
+// }
 
 const Navbar = ({ toggle }) => {
     return (
@@ -45,8 +50,8 @@ const Navbar = ({ toggle }) => {
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
-        </>
-    );
+        </>    
+   );
 };
 
 export default Navbar;
