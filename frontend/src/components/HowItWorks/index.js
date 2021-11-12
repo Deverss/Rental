@@ -4,7 +4,8 @@ import {
     HowItWorksH2,
     HowItWorksTitle,
     HowItWorksP,
-    ButtonHowItWorks,
+    HowItWorksBtn,
+    HowItWorksBtnLink
 } from './HowItWorksElements'
 
 const HowItWorks = () => {
@@ -12,7 +13,9 @@ const HowItWorks = () => {
         <HowItWorksContainer to="howitworks">
             <HowItWorksH2>How It Works?</HowItWorksH2>
             <HowItWorksTitle>Learn more about our software and how to use it in the best way possible.</HowItWorksTitle>
-            <ButtonHowItWorks>Check it out</ButtonHowItWorks>
+            <HowItWorksBtn>
+                <HowItWorksBtnLink to="/">Check it out </HowItWorksBtnLink>
+            </HowItWorksBtn>
             <HowItWorksP>1. Introduction</HowItWorksP>
             <HowItWorksP>
                 In order to start using our software, you would first have to create an account. 

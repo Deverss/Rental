@@ -73,12 +73,12 @@ export const FeaturesDetailCard = styled.div`
     background: #fff;
     border-radius: 8px;
     box-shadow: 0px 3px 24px 1px rgba(0, 0, 0, 0.09);
-
-
 `
 
 export const FeaturesDetail = styled.div`
-
+    &:hover {
+        cursor: auto;
+    }
 `   
 
 export const HomeName = styled.h5`
@@ -86,6 +86,7 @@ export const HomeName = styled.h5`
     font-size: 20px;
     font-weight: bold;
     color: #000;
+    cursor: pointer;
 
     &:hover {
         color: #506FEA;
