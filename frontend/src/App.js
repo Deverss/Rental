@@ -8,6 +8,7 @@ import HowItWorks from './pages/howitworks'
 import FeaturesPage from './pages/features'
 import Blog from './pages/blog'
 import BlogPost from './pages/blogpost'
+import PropertyDetail from './pages/propertydetail'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/features" component={FeaturesPage} exact />
         <Route path="/blog" component={Blog} exact />
         <Route path="/blogpost" component={BlogPost} exact />
+        <Route path="/propertydetail" component={PropertyDetail} exact />
       </Switch>
     </Router>
   );

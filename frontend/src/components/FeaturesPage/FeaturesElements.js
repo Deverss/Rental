@@ -75,16 +75,28 @@ export const FeaturesBox = styled.div`
 export const FeaturesIconContact = styled(FiPhoneCall)`
     font-size: 50px;
     color: #000;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesIconTool = styled(VscCircuitBoard)`
     font-size: 50px;
-    color: #000;       
+    color: #000;
+    
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesIconTime = styled(AiOutlineClockCircle)`
     font-size: 50px;
     color: #000;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesBoxTitle = styled.div`
@@ -93,6 +105,10 @@ export const FeaturesBoxTitle = styled.div`
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesBoxDesc = styled.div`
