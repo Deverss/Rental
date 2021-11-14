@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const HowItWorksContainer = styled.div`
-    margin-top: 150px;
+    margin-top: 130px;
 `
 
 export const HowItWorksH2 = styled.h2`
@@ -30,10 +30,10 @@ export const HowItWorksTitle = styled.p`
 `
 
 export const HowItWorksP = styled.p`
-    display:block;
-    align-items: center;
-    margin: 0 290px;
     padding-bottom: 3px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: left;
 `
 
 export const HowItWorksBtn = styled.div`
