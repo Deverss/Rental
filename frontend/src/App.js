@@ -9,6 +9,7 @@ import FeaturesPage from './pages/features'
 import Blog from './pages/blog'
 import BlogPost from './pages/blogpost'
 import PropertyDetail from './pages/propertydetail'
+import AdvancedSearch from './pages/advancedsearch'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/blog" component={Blog} exact />
         <Route path="/blogpost" component={BlogPost} exact />
         <Route path="/propertydetail" component={PropertyDetail} exact />
+        <Route path="/advancedsearch" component={AdvancedSearch} exact />
       </Switch>
     </Router>
   );

@@ -51,7 +51,6 @@ export const ServicesCard = styled.div`
     
     
     &:hover {
-        
         background: #EDEDED;
         transition: all 0.5s ease-in-out;
         cursor: pointer;
@@ -65,7 +64,6 @@ export const ServicesIcon = styled.img`
     color: #000;
 `
 
-// export const ServiceTitle = styled.div``
 export const ServicesMission = styled.p`
     padding-right: 615px;
     font-size: 16px;
@@ -82,6 +80,7 @@ export const ServicesH1 = styled.h1`
     margin-bottom: 64px;
     width: 723px;
     height: 124px;
+    
     @media screen and (max-width: 480px) {
         font-size: 36px;
     }

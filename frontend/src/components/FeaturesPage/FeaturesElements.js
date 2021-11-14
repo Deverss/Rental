@@ -5,7 +5,7 @@ import {VscCircuitBoard} from 'react-icons/vsc';
 
 
 export const FeaturesSection = styled.div`
-    margin-top: 150px;
+    margin-top: 140px;
 `
 
 export const FeaturesTitle = styled.div`
