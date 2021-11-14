@@ -30,7 +30,8 @@ import {
     DescriptionTextH4,
     DescriptionParameters,
     DescriptionParametersPart,
-    Icon,
+    Iconbed,
+    IconRoom,
     H5,
     GallerySmallLink,
     DescriptionContent,
@@ -41,7 +42,10 @@ import {
     IconModem,
     Receipt,
 } from './PropertyDetailElements'
-
+import Image1 from '../../images/PropertyImage1(1).jpg'
+import Image2 from '../../images/PropertyImage1(2).jpg'
+import Image3 from '../../images/PropertyImage1(3).jpg'
+import Image4 from '../../images/PropertyImage1(4).jpg'
 const PropertyDetail = () => {
     return (
         <PropertyOuter>
@@ -77,9 +81,7 @@ const PropertyDetail = () => {
                  {/* Image big Preview */}
                             <DetailGalleryMain>
                                 <GalleryMainPreviewImg>
-                                    <GalleryMainImg>
-                                        
-                                    </GalleryMainImg>
+                                    <GalleryMainImg src={Image1} />
                                 </GalleryMainPreviewImg>
                                 <GalleryMainPreviewButton>
                                     <ButtonLink>
@@ -89,27 +91,27 @@ const PropertyDetail = () => {
                             </DetailGalleryMain>
                 {/* Image small Preview */}
                             <DetailGallerySmall>
-                                <GallerySmallImg>
+                                <GallerySmallImg src={Image2} />
                                     <GallerySmallLink>
                                         
                                     </GallerySmallLink>
-                                </GallerySmallImg>
+                                
                             </DetailGallerySmall>
 
                             <DetailGallerySmall>
-                                <GallerySmallImg>
+                                <GallerySmallImg src={Image3} />
                                     <GallerySmallLink>
                                         
                                     </GallerySmallLink>
-                                </GallerySmallImg>
+                                
                             </DetailGallerySmall>
 
                             <DetailGallerySmall>
-                                <GallerySmallImg>
+                                <GallerySmallImg src={Image4} />
                                     <GallerySmallLink>
                                         
                                     </GallerySmallLink>
-                                </GallerySmallImg>
+                                
                             </DetailGallerySmall>
 
                         </DetailGalleryList>
@@ -127,21 +129,14 @@ const PropertyDetail = () => {
                         </DescriptionTextH4>
                         <DescriptionParameters> 
                             <DescriptionParametersPart>
-                                <Icon />
-                                <H5>1 room</H5>
+                                <IconRoom />
+                                <H5>3 rooms</H5>
                             </DescriptionParametersPart>
-                        </DescriptionParameters>
-                        <DescriptionParameters> 
                             <DescriptionParametersPart>
-                                <Icon />
-                                <H5>1 room</H5>
+                                <Iconbed />
+                                <H5>1 bed</H5>
                             </DescriptionParametersPart>
-                        </DescriptionParameters>
-                        <DescriptionParameters> 
-                            <DescriptionParametersPart>
-                                <Icon />
-                                <H5>1 room</H5>
-                            </DescriptionParametersPart>
+                            
                         </DescriptionParameters>
 
                         <DescriptionContent>
