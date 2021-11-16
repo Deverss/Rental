@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Blog extends Model
 {
-    protected $fillable=[
-        'name','email','password','image','zalo','phone','facebook',
-    ];
     use HasFactory;
+    protected $fillable=[
+        'userID','title','description','content','Image','views',
+    ];
 }

@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Post;
+use App\Models\Blog;
 use Exception;
 use Storage;
-class PostApiController extends Controller
+
+class BlogApiController extends Controller
 {
+
     public function getImageUrl($file){
         try{
             $path = "";
@@ -33,58 +35,52 @@ class PostApiController extends Controller
         }
     }
 
-    public function getPost(){
-        return Post::all();
+
+    public function getBlog(){
+        return Blog::all();
     }
 
     public function store(){
+
         request() -> validate([
+            'userID' => 'required',
             'title' => 'required',
+            'description' => 'required',
             'content' => 'required',
+            'Image' => 'required',
         ]);
-        return Post::create([
-            'uid' => request('uid'),
-            'type' => request('type'),
+        
+        error_log($this->getImageUrl(request('Image')));
+        return Blog::create([
+            'userID' => request('userID'),
             'title' => request('title'),
             'description' => request('description'),
-            'people' => request('people'),
-            'area' => request('area'),
+            'content' => request('content'),
+            'Image' => $this->getImageUrl(request('Image')),
             'views' => request('views'),
-            'remain' => request('remain'),
-            'imageAddress' => $this->getImageUrl(request('Image')),
-            'bed' => request('bed'),
-            'airC' => request('airC'),
-            'tv' => request('tv'),
-            'fridg' => request('fridg'),
-            'vr' => request('vr'),
         ]);
     }
 
-    public function update(Post $post){
+    public function update(Blog $blog){
         request() -> validate([
+            'userID' => 'required',
             'title' => 'required',
+            'description' => 'required',
             'content' => 'required',
+            'Image' => 'required',
         ]);
     
-        $post->update([
-            'uid' => request('uid'),
-            'type' => request('type'),
+        $blog->update([
+            'userID' => request('userID'),
             'title' => request('title'),
             'description' => request('description'),
-            'people' => request('people'),
-            'area' => request('area'),
+            'content' => request('content'),
+            'Image' => $this->getImageUrl(request('Image')),
             'views' => request('views'),
-            'remain' => request('remain'),
-            'imageAddress' => $this->getImageUrl(request('Image')),
-            'bed' => request('bed'),
-            'airC' => request('airC'),
-            'tv' => request('tv'),
-            'fridg' => request('fridg'),
-            'vr' => request('vr'),
         ]);
     }
 
-    public function delete(Post $post){
+    public function delete(Blog $post){
         $success = $post->delete();
     
         return ['success' => $success];

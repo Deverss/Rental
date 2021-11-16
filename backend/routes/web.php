@@ -1,5 +1,6 @@
 <?php
 
+// use Google\Service\Storage;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('test', function() {
+    Storage::disk('google')->put('test.txt', 'Hello World');
+});
+
+
+
+Route::get('list', function() {
+    $dir = '/';
+    $recursive = false; // Có lấy file trong các thư mục con không?
+    $contents = collect(Storage::cloud()->listContents($dir, $recursive));
+    return $contents['path'];
+});
+
 
 Auth::routes();
 
