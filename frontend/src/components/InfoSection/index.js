@@ -25,9 +25,9 @@ const InfoSection = ({
     darkText, 
     description, 
     buttonLabel, 
-    primary,
-    dark,
-    dark2
+    // primary,
+    // dark,
+    // dark2
 }) => { 
     return (
         <> 

@@ -49,10 +49,10 @@ import {
 
 const BlogsAndPosts = () => {
     return (
-        <BlogSection>
+        <BlogSection to="blog">
             <BlogText>
-                <BlogTitle>Blog and Posts</BlogTitle>
-                <BlogDesc>Let’s get some tip when join in our platform</BlogDesc>
+                <BlogTitle>Blogs and Posts</BlogTitle>
+                <BlogDesc>Let’s get some tips when join in our platform</BlogDesc>
             </BlogText>
             <FeaturePost>
                 <FeatureImg src={Img1}/>
@@ -163,9 +163,9 @@ const BlogsAndPosts = () => {
                         <NewsTextH2>News and update</NewsTextH2>
                         <NewsTextP>Latest release, features, and news about Rental</NewsTextP>
                     </NewsNUpdateText>
-                        <NewsNUpdateBtn>
-                            <NewsNUpdateBtnLink to="/">Browse all</NewsNUpdateBtnLink>
-                        </NewsNUpdateBtn>
+                    <NewsNUpdateBtn>
+                        <NewsNUpdateBtnLink to="/">Browse all</NewsNUpdateBtnLink>
+                    </NewsNUpdateBtn>
                 </NewsNUpdate>
                 <NewsNUpdatePost>
                     

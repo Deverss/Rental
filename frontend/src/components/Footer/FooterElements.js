@@ -67,9 +67,12 @@ export const FooterLink = styled(Link)`
     margin-bottom: 0.5 rem;
     font-size: 15px;
     font-weight: normal;
+    
     &:hover {
-        color: #506FEA;
-        transition: 0.3s ease-out
+        text-decoration: underline;
+        transition: 0.3s ease-out;
+        color: #000;
+        font-weight: bold;
     }
 `
 export const DivideFooter = styled.div`
@@ -98,3 +101,17 @@ export const Copyright = styled.h3`
     text-align: left;
     margin-left: 145px;
 `
+
+
+// export const FooterBio = styled.div`
+
+// `
+// export const FooterLogo = styled.img`
+
+// `
+// export const FooterLogoImage = styled.div`
+
+// `
+// export const FooterText = styled.div`
+
+// `

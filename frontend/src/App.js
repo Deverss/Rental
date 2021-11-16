@@ -7,6 +7,9 @@ import Navbar from './components/Navbar'
 import HowItWorks from './pages/howitworks'
 import FeaturesPage from './pages/features'
 import Blog from './pages/blog'
+import BlogPost from './pages/blogpost'
+import PropertyDetail from './pages/propertydetail'
+import AdvancedSearch from './pages/advancedsearch'
 import Test from './Test';
 
 function App() {
@@ -19,6 +22,9 @@ function App() {
         <Route path="/howitworks" component={HowItWorks} exact />
         <Route path="/features" component={FeaturesPage} exact />
         <Route path="/blog" component={Blog} exact />
+        <Route path="/blogpost" component={BlogPost} exact />
+        <Route path="/propertydetail" component={PropertyDetail} exact />
+        <Route path="/advancedsearch" component={AdvancedSearch} exact />
         <Route path="/test" component={Test}/>
       </Switch>
     </Router>

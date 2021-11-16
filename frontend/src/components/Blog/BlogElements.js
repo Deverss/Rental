@@ -6,6 +6,7 @@ export const BlogSection = styled.div`
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+    
     @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
@@ -204,10 +205,11 @@ export const NewsNUpdateBtn = styled.div`
     display: flex;
     align-items: center;
     position: relative;
-    pointer: cursor;
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-left: auto; 
     margin-right: 0;
+    
     @media screen and (max-width: 768px) {
         display: none;
         transition: all 0.2s ease-in-out;
@@ -223,15 +225,16 @@ export const NewsNUpdateBtnLink = styled.div`
     font-size: 16px;
     outline: none;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    // transition: all 0.2s ease-in-out;
     text-decoration: none;
     box-sizing: border-box;
     border: 2px solid #000000;
     
     &:hover {
-        transition: all 0.2s ease-in-out;
+        // transition: all 0.2s ease-in-out;
         background-color: #506FEA;  
-        color: #000;
+        color: #fff;
+        border: none;
 `
 export const NewsNUpdatePost = styled.div`
     max-width: 1100px;

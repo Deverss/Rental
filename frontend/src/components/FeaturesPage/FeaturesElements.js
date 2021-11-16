@@ -5,8 +5,7 @@ import {VscCircuitBoard} from 'react-icons/vsc';
 
 
 export const FeaturesSection = styled.div`
-    margin-top: 150px;
-
+    margin-top: 140px;
 `
 
 export const FeaturesTitle = styled.div`
@@ -26,7 +25,7 @@ export const FeaturesText = styled.div`
 export const FeaturesHeadline = styled.div`
     text-align: center;
     width: 370px;
-    height: 124px;
+    height: 110px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
@@ -76,16 +75,28 @@ export const FeaturesBox = styled.div`
 export const FeaturesIconContact = styled(FiPhoneCall)`
     font-size: 50px;
     color: #000;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesIconTool = styled(VscCircuitBoard)`
     font-size: 50px;
-    color: #000;       
+    color: #000;
+    
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesIconTime = styled(AiOutlineClockCircle)`
     font-size: 50px;
     color: #000;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesBoxTitle = styled.div`
@@ -94,6 +105,10 @@ export const FeaturesBoxTitle = styled.div`
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const FeaturesBoxDesc = styled.div`

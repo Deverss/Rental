@@ -34,12 +34,12 @@ export const InputSelect = styled.div`
 `
 export const SearchButton = styled.div`
     background: #000;
-    border-radius: 7px;
+    border-radius: 10px;
     padding : 8px 8px 0; 
     position: relative;
 `
-export const SearchIcon = styled(BsSearch)`
-    
+export const SearchIcon = styled(BsSearch)` 
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
 `
