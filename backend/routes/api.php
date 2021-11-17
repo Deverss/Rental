@@ -25,6 +25,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // post api
 Route::get('/posts',[PostApiController::class,'getPost']);
 
+Route::get('/posts/{post}',[PostApiController::class,'getPostById']);
+
 Route::post('/posts',[PostApiController::class,'store']);
 
 Route::put('/posts/{post}',[PostApiController::class,'update']);
@@ -34,6 +36,8 @@ Route::delete('/posts/{post}',[PostApiController::class,'delete']);
 // blog api 
 Route::get('/blogs',[BlogApiController::class,'getBlog']);
 
+Route::get('/blogs/{blog}',[BlogApiController::class,'getBlogById']);
+
 Route::post('/blogs',[BlogApiController::class,'store']);
 
 Route::put('/blogs/{blog}',[BlogApiController::class,'update']);
@@ -42,6 +46,8 @@ Route::delete('/blogs/{blog}',[BlogApiController::class,'delete']);
 
 // user api
 Route::get('/users',[UserApiController::class,'getUser']);
+
+Route::get('/users/{user}',[UserApiController::class,'getUserById']);
 
 Route::post('/users',[UserApiController::class,'store']);
 

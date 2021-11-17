@@ -40,6 +40,10 @@ class BlogApiController extends Controller
         return Blog::all();
     }
 
+    public function getBlogById(Blog $blog){
+        return Blog::find($blog);
+    }
+
     public function store(){
 
         request() -> validate([

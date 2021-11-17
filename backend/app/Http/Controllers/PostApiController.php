@@ -37,6 +37,10 @@ class PostApiController extends Controller
         return Post::all();
     }
 
+    public function getPostById(Post $post){
+        return Post::find($post);
+    }
+
     public function store(){
         request() -> validate([
             'title' => 'required',

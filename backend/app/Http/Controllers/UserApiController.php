@@ -40,6 +40,10 @@ class UserApiController extends Controller
         return User::all();
     }
 
+    public function getUserById(User $user){
+        return User::find($user);
+    }
+
     public function store(){
 
         request() -> validate([
