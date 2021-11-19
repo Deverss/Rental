@@ -56,7 +56,7 @@ import {BsHeart} from 'react-icons/bs';
     `
 
 
-    export const PostImage = styled.div`
+    export const PostImage = styled.img`
 
     `
 
