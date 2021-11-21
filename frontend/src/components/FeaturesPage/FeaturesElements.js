@@ -148,7 +148,6 @@ export const FeaturesImage1 = styled.img`
 `
 export const FeaturesDetailText = styled.div`
     margin: 0 auto;
-    
     top: 30%;
     transform : translateY(-50);
 `

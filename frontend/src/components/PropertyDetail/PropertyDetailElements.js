@@ -321,9 +321,51 @@ export const ReceiptCellRight = styled.div`
     color: #777E90;
     
 `
-export const ReceiptBtn = styled.div``
-export const BtnStroke = styled.div``
+export const ReceiptBtn = styled.div`
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+`
+export const BtnStroke = styled.div`
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    padding: 0 24px;
+    background: #3B71FE;
+    border-radius: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #FCFCFD;
+    transition: all .2s;
+    flex-shrink: 0;
+    margin-right: 8px;
+    background: none;
+    box-shadow: 0 0 0 2px #e6e8ec inset;
+    color: #23262F;
+`
 export const BtnStrokeP = styled.p``
-export const BtnPayment = styled.div``
+export const BtnPayment = styled.div`
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    padding: 0 24px;
+    background: #3B71FE;
+    border-radius: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #FCFCFD;
+    transition: all .2s;
+`
 export const BtnPaymentP = styled.p``
 
