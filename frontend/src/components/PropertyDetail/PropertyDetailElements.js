@@ -127,15 +127,15 @@ export const DetailGallerySmall = styled.div`
 `
 
 export const GallerySmallImg = styled.img`
-max-width: 100%;
-max-height: 100%;
-border-radius: 16px;
-object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
 
 `
 
 export const DescriptionSection = styled.div`
-@media only screen and (max-width: 1179px){
+    @media only screen and (max-width: 1179px) {
     margin-bottom: 80px;
     padding-bottom: 80px;
 }
@@ -347,9 +347,15 @@ export const BtnStroke = styled.div`
     margin-right: 8px;
     background: none;
     box-shadow: 0 0 0 2px #e6e8ec inset;
-    color: #23262F;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+        background: #e5e5e5;
+    }
 `
 export const BtnStrokeP = styled.p``
+
 export const BtnPayment = styled.div`
     flex-grow: 1;
     display: inline-flex;
@@ -366,6 +372,11 @@ export const BtnPayment = styled.div`
     text-align: center;
     color: #FCFCFD;
     transition: all .2s;
+
+    &:hover{
+        background: #0444ec; 
+        cursor: pointer;
+     }
 `
 export const BtnPaymentP = styled.p``
 

@@ -1,13 +1,12 @@
-import React from 'react'
-import Footer from '../components/Footer'
+import React from 'react';
+import SignIn from '../components/SignIn';
 
-const SigninPage = () => {
-    return (
-        <div>
-            <h1>Sign in page</h1>
-            <Footer />
-        </div>
-    )
+const SignInPageSection = () => {
+    return(
+        <>
+        <SignIn />
+        </>
+    );
 }
 
-export default SigninPage
+export default SignInPageSection;
