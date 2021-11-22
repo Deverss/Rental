@@ -352,7 +352,12 @@ export const BtnStroke = styled.div`
     margin-right: 8px;
     background: none;
     box-shadow: 0 0 0 2px #e6e8ec inset;
-    color: #23262F;
+    color: #000;
+    cursor: pointer;
+
+    &:hover {
+        background: #e5e5e5;
+    }
 `
 export const BtnStrokeP = styled.p``
 export const BtnPayment = styled.div`
@@ -371,6 +376,11 @@ export const BtnPayment = styled.div`
     text-align: center;
     color: #FCFCFD;
     transition: all .2s;
+
+    &:hover{
+       background: #0444ec; 
+       cursor: pointer;
+    }
 `
 export const BtnPaymentP = styled.p``
 
