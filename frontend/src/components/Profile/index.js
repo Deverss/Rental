@@ -1,26 +1,71 @@
-import React from 'react'
+import React from 'react';
+import Bgr1 from '../../images/Background-1.jpg';
+import AvaPrf from '../../images/ProfileAva.jpg';
+import {
+    OuterInner,
+    User,
+    Background,
+    BackgroundCenter,
+    BackgroundHead,
+    BackgroundImg,
+    BackgroundBtn,
+    
+    UserBody,
+    UserCenter,
+    Profile,
+    ProfileMain,
+    ProfileAvatar,
+    AvatarImg,
+    ProfileName,
+    ProfileBody,
+    ProfileParameters,
+    ProfileParameter,
+    IconTick,
+    IconP,
+    IconStar,
+    ProfileControl,
+    ButtonControl,
+    ButtonShare,
+    ShareIcon,
+    ProfileSocial,
+    TwitterIcon,
+    FacebookIcon,
+    InstagramIcon,
+    ProfileNote,
 
-const Profile = () => {
+    UserWrapper,
+    UserDetail,
+    UserHead,
+    UserTitle,
+    UserContent,
+    UserOptions,
+    UserOption,
+    UserCategory,
+    IconHome,
+    UserText,
+} from './ProfileElements'
+
+const ProfileInfo = () => {
     return (
-        <OuterInner>
+        <OuterInner to="profile">
             <User>
                 <Background>
                     <BackgroundCenter>
                         <BackgroundHead>
-                            <BackgroundBtn>Edit cover</BackgroundBtn>
-                            
+                            <BackgroundImg src={Bgr1} />
+                            <BackgroundBtn>Edit cover</BackgroundBtn>                
                         </BackgroundHead>
                     </BackgroundCenter>
                 </Background>
+
                 <UserBody>
                     <UserCenter>
                         <Profile>
                             <ProfileMain>
                                 <ProfileAvatar>
-                                    <AvatarImg/>
+                                    <AvatarImg src={AvaPrf}/>
                                 </ProfileAvatar>
-                                <ProfileName>Nguyen Lee Twan Eng</ProfileName>
-
+                                <ProfileName>Tom</ProfileName>
                             </ProfileMain>
                             <ProfileBody>
                                 <ProfileParameters>
@@ -37,7 +82,6 @@ const Profile = () => {
                                     <ButtonControl>Contract</ButtonControl>
                                     <ButtonShare>
                                         <ShareIcon/>
-
                                     </ButtonShare>
                                 </ProfileControl>
                                 <ProfileSocial>
@@ -55,7 +99,7 @@ const Profile = () => {
                         <UserWrapper>
                             <UserDetail>
                                 <UserHead>
-                                    <UserTitle>Hi, I'm Nguyen Lee Twan Eng</UserTitle>
+                                    <UserTitle>Hi, I'm Tom</UserTitle>
                                 </UserHead>
                                 <UserContent>Described by Queenstown House & Garden magazine as having 'one of the best views we've ever seen' you will love relaxing in this newly built</UserContent>
                                 <UserOptions>
@@ -90,4 +134,4 @@ const Profile = () => {
     )
 }
 
-export default Profile
+export default ProfileInfo

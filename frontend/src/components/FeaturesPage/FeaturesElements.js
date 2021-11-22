@@ -130,6 +130,7 @@ export const FeaturesDetail1 = styled.div`
     grid-template-columns: 1fr 1fr;
     align-items: left;
     grid-gap: 40px;
+    
 
 
         @media screen and (max-width: 900px) {
@@ -150,6 +151,8 @@ export const FeaturesDetailText = styled.div`
     margin: 0 auto;
     top: 30%;
     transform : translateY(-50);
+    position: relative;
+
 `
 export const FeaturesDetailH2 = styled.h2`
     font-style: normal;

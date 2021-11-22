@@ -1,4 +1,5 @@
 import React from 'react';
+import LoginImage from '../../images/LoginCoverImage.jpg'
 import {Outer,
     OuterInner, 
     Login, 
@@ -28,7 +29,7 @@ import {Outer,
     FieldInputPassword,
     EntryWrap
 } from './SignInElements'
-import LoginImage from '../../images/LoginCoverImage.jpg'
+
 const SignIn = () => 
     (<>
     <Outer>
