@@ -56,13 +56,13 @@ const SignIn = () =>
                                     <EntryContainer>
                                         <EntryItem>
                                             <Field action="#">
-                                                <FieldLabel type='email' required>Email</FieldLabel>
+                                                <FieldLabel htmlFor='for'>Email</FieldLabel>
                                                 <FieldWrap>
-                                                    <FieldInputEmail />
+                                                    <FieldInputEmail type='email' required />
                                                 </FieldWrap>
-                                                <FieldLabel type='password' required>Password</FieldLabel>
+                                                    <FieldLabel htmlFor='for'>Password</FieldLabel>
                                                 <FieldWrap>
-                                                    <FieldInputPassword />
+                                                    <FieldInputPassword type='password' required />
                                                         
                                                    
                                                 </FieldWrap>

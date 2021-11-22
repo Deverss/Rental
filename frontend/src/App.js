@@ -26,7 +26,6 @@ function App() {
         <Route path="/blogpost" component={BlogPost} exact />
         <Route path="/propertydetail" component={PropertyDetail} exact />
         <Route path="/advancedsearch" component={AdvancedSearch} exact />
-        
         <Route path="/test" component={Test}/>
         
       </Switch>

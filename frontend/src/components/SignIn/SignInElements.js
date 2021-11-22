@@ -3,10 +3,10 @@ import {BsFillLockFill} from 'react-icons/bs';
 import {Link} from 'react-router-dom';
 
 export const Outer = styled.div`
-display: flex;
-flex-direction: column;
-min-height: 100vh;
-overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
 `
 
 export const OuterInner = styled.div`
@@ -53,8 +53,8 @@ export const LoginImg = styled.img`
         width: 420px;
     }`
 export const LoginCol2 = styled.div`
-position: relative;
-position: relative;
+    position: relative;
+    position: relative;
     display: flex;
     flex-grow: 1;
     padding: 148px 64px 132px;
@@ -65,20 +65,21 @@ position: relative;
 
 
 export const LoginHead = styled.div`
-position: absolute;
-top: 80px;
-right: 80px;
-left: 80px;
-text-align: right;
-font-family: 'DM Sans', sans-serif;
-font-size: 14px;
-line-height: 1.14286;
-font-weight: 700;
-@media only screen and (max-width: 1419px){
-    top: 56px;
-    right: 64px;
-    left: 64px;
-}
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    left: 80px;
+    text-align: right;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.14286;
+    font-weight: 700;
+     
+    @media only screen and (max-width: 1419px) {
+        top: 56px;
+        right: 64px;
+        left: 64px;
+    }
 `
 
 export const LoginWrap = styled.div`
@@ -90,13 +91,13 @@ export const Entry = styled.div`
 `
 
 export const EntryTop = styled.div`
-margin-bottom: 32px;
-padding-bottom: 32px;
-border-bottom: 1px solid #E6E8EC;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E6E8EC;
 `
 
 export const EntryTitleH3 = styled.h3`
-margin-bottom: 32px;
+    margin-bottom: 32px;
     text-align: center;
     font-size: 40px;
     line-height: 1.2;
@@ -104,7 +105,7 @@ margin-bottom: 32px;
 `
 
 export const EntryInfoP = styled.p`
-margin-bottom: 12px;
+    margin-bottom: 12px;
     text-align: center;
     font-size: 12px;
     line-height: 1.66667;
@@ -112,19 +113,19 @@ margin-bottom: 12px;
 `
 
 export const EntryCorrect = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
-height: 40px;
-padding: 0 24px;
-background: #F4F5F6;
-border-radius: 20px;
-font-weight: 500;
-color: #58BD7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 0 24px;
+    background: #F4F5F6;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #58BD7D;
 `
 
 export const IconLock = styled(BsFillLockFill)`
-margin-right: 10px;
+    margin-right: 10px;
 `
 
 export const EntryUrl = styled.div`
@@ -137,7 +138,7 @@ export const EntryTab = styled.div`
 `
 
 export const EntryContainer = styled.div`
-margin-bottom: 32px;
+    margin-bottom: 32px;
 `
 
 export const EntryItem = styled.div`
@@ -160,12 +161,12 @@ export const FieldWrap = styled.div`
 `
 
 export const EntryFoot = styled.div`
-display: flex;
-justify-content: space-between;
-margin-top: 16px;
-font-size: 12px;
-line-height: 1.66667;
-font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 600;
 
 `
 
@@ -174,18 +175,21 @@ export const EntryLink = styled(Link)`
     transition: color .2s;
     text-decoration: none;
     font-size: 14px;
+
+    &:hover {
+        color: #0444ec; 
+    }
 `
 
 export const EntryButton = styled(Link)`
-width: 100%;
-margin-top: 32px;
-background: #0045ea;
-display: inline-flex;
+    width: 100%;
+    margin-top: 32px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     height: 48px;
     padding: 0 24px;
-    background: #3772FF;
+    background: #3B71FE;
     border-radius: 24px;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
@@ -195,6 +199,10 @@ display: inline-flex;
     color: #FCFCFD;
     transition: all .2s;
     text-decoration: none;
+
+    &:hover {
+        background: #0444ec;
+    }
 `
 
 export const FieldInputEmail = styled.input`
@@ -215,19 +223,19 @@ export const FieldInputEmail = styled.input`
 
 export const FieldInputPassword = styled.input`
 
-height: 48px;
-padding: 0 14px;
-width: 100%;
-border-radius: 12px;
-border: 2px solid #E6E8EC;
-box-shadow: none;
-background: none;
+    height: 48px;
+    padding: 0 14px;
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #E6E8EC;
+    box-shadow: none;
+    background: none;
 
-font-size: 14px;
-line-height: 1.71429;
-font-weight: 500;
-color: #23262F;
-transition: border-color .2s;
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 500;
+    color: #23262F;
+    transition: border-color .2s;
 `
 
 export const EntryWrap = styled.div`
