@@ -6,7 +6,7 @@ export const AdvancedSearchContainer = styled.div`
     margin: 100px auto 0;
     max-width: 1050px;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 2fr 1fr ;
     align-items: left;
     justify-content: center;
 `
@@ -19,24 +19,19 @@ export const AdvancedSearchH1 = styled.h1`
 
 export const AdvancedSearchBox = styled.div`
     justify-content: center;
-`
-
-export const SearchType = styled.div`
-
+    dispLay: inline;
 `
 
 export const AdvancedSearchBtn = styled.div`
-
+    padding-left: 0px;
 `
 
 export const AdvancedSearchIcon = styled(BsSearch)`
-    // font-size: 20px;
-    // color: #000;
-    cursor: pointer;
-    display: inline;
+    // display: inline;
     justify-content: center;
     align-items: center;
     position: relative;
     cursor: pointer;
+    margin-left: 0px;
 `
 

@@ -108,10 +108,13 @@ export const GalleryMainPreviewImg = styled.div`
 `
 
 export const GalleryMainImg = styled.img`
-max-width: 100%;
-max-height: 100%;
-border-radius: 16px;
-object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    
+
+   
 `
 
 export const GalleryMainPreviewButton = styled.div`
@@ -123,7 +126,9 @@ export const ButtonLink = styled.div`
 `
 
 export const DetailGallerySmall = styled.div`
-
+    &:hover {
+        cursor: pointer; 
+    }
 `
 
 export const GallerySmallImg = styled.img`
