@@ -112,6 +112,8 @@ max-width: 100%;
 max-height: 100%;
 border-radius: 16px;
 object-fit: cover;
+width: 100%;
+height: 100%;
 `
 
 export const GalleryMainPreviewButton = styled.div`
@@ -131,7 +133,8 @@ export const GallerySmallImg = styled.img`
     max-height: 100%;
     border-radius: 16px;
     object-fit: cover;
-
+    width: 100%;
+    height: 100%;
 `
 
 export const DescriptionSection = styled.div`
