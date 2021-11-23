@@ -26,16 +26,21 @@ import {
     ProfileParameter,
     IconTick,
     IconP,
-    IconStar,
     ProfileControl,
     ButtonControl,
     ButtonShare,
     ShareIcon,
     ProfileSocial,
+    TwitterLink,
     TwitterIcon,
+    FacebookLink,
     FacebookIcon,
+    InstagramLink,
     InstagramIcon,
+    DivideLine,
     ProfileNote,
+    Report,
+    FlagIcon,
 
     UserWrapper,
     UserDetail,
@@ -46,6 +51,11 @@ import {
     UserOption,
     UserCategory,
     IconHome,
+    IconToolbox,
+    IconSchool,
+    IconRelationship,
+    IconFollowers,
+    IconPhone,
     UserText,
 } from './ProfileElements'
 
@@ -86,26 +96,31 @@ const ProfileInfo = () => {
                                         <IconTick/>
                                         <IconP>Identity verified</IconP>
                                     </ProfileParameter>
-                                    <ProfileParameter>
-                                        <IconStar/>
-                                        <IconP>256 reviews</IconP>
-                                    </ProfileParameter>
                                 </ProfileParameters>
                                 <ProfileControl>
-                                    <ButtonControl>Contract</ButtonControl>
+                                    <ButtonControl>Contact</ButtonControl>
                                     <ButtonShare>
                                         <ShareIcon/>
                                     </ButtonShare>
                                 </ProfileControl>
                                 <ProfileSocial>
-                                    <TwitterIcon/>
-                                    <FacebookIcon/>
-                                    <InstagramIcon/>
+                                    <TwitterLink>
+                                        <TwitterIcon />
+                                    </TwitterLink>
+                                    <FacebookLink>
+                                        <FacebookIcon to=""/>   
+                                    </FacebookLink>
+                                    <InstagramLink>     
+                                        <InstagramIcon />
+                                    </InstagramLink>      
                                 </ProfileSocial>
+                                <DivideLine />
                                 <ProfileNote>
                                     Member since Mar 15, 2021
                                 </ProfileNote>
-
+                                <Report>
+                                    <FlagIcon /> Report this property
+                                </Report>
                             </ProfileBody>
                         </Profile>
 
@@ -114,28 +129,49 @@ const ProfileInfo = () => {
                                 <UserHead>
                                     <UserTitle>Hi, I'm Tom</UserTitle>
                                 </UserHead>
-                                <UserContent>Described by Queenstown House & Garden magazine as having 'one of the best views we've ever seen' you will love relaxing in this newly built</UserContent>
+                                <UserContent>House for rent with beautiful furniture, fully equipped facilities, reasonable prices</UserContent>
                                 <UserOptions>
                                     <UserOption>
                                         <UserCategory>
                                             <IconHome />
                                             Live in
                                         </UserCategory>
-                                        <UserText>Auckland, New Zealand</UserText>
+                                        <UserText>Da Nang, Viet Nam</UserText>
                                     </UserOption>
                                     <UserOption>
                                         <UserCategory>
-                                            <IconHome />
-                                            Live in
+                                            <IconToolbox />
+                                            Job
                                         </UserCategory>
-                                        <UserText>Auckland, New Zealand</UserText>
+                                        <UserText>Program Developer</UserText>
                                     </UserOption>
                                     <UserOption>
                                         <UserCategory>
-                                            <IconHome />
-                                            Live in
+                                            <IconSchool />
+                                            Education
                                         </UserCategory>
-                                        <UserText>Auckland, New Zealand</UserText>
+                                        <UserText>VKU - Vietnam Korea University</UserText>
+                                    </UserOption>
+                                    <UserOption>
+                                        <UserCategory>
+                                            <IconRelationship />
+                                            Relationship
+                                        </UserCategory>
+                                        <UserText>Single</UserText>
+                                    </UserOption>
+                                    <UserOption>
+                                        <UserCategory>
+                                            <IconFollowers />
+                                            Followers
+                                        </UserCategory>
+                                        <UserText>888</UserText>
+                                    </UserOption>
+                                    <UserOption>
+                                        <UserCategory>
+                                            <IconPhone />
+                                            Phone
+                                        </UserCategory>
+                                        <UserText>0912.788.xxx</UserText>
                                     </UserOption>
                                 </UserOptions>
                             </UserDetail>

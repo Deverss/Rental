@@ -2,12 +2,23 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import {BiEdit} from 'react-icons/bi';
 import {BsPencilFill} from 'react-icons/bs';
-// import {TiTick} from 'react-icons/ti';
-// import {AiOutlineStar} from 'react-icons/ai';
-// import {TiSocialFacebook} from 'react-icons/ti-social-facebook';
-// import {TiSocialTwitter} from 'react-icons/ti';
-// import {IoLogoInstagram} from 'react-icons/io-logo-instagram';
-// import {RiFlag2Line} from 'react-icons/ri';
+import {
+    MdIosShare, 
+    MdHome, 
+    MdSchool,
+    MdPeopleAlt
+} from 'react-icons/md';
+import {
+    GoVerified, 
+    GoDeviceMobile
+} from 'react-icons/go';
+import {
+    TiSocialFacebookCircular, 
+    TiSocialTwitter
+} from 'react-icons/ti';
+import {IoLogoInstagram} from 'react-icons/io';
+import {RiFlag2Line, RiHeart2Fill} from 'react-icons/ri';
+import {CgToolbox} from 'react-icons/cg';
 
 
 export const OuterInner = styled.div`
@@ -171,7 +182,7 @@ export const ProfileUpdate = styled(Link)`
     align-items: center;
     text-align: center;
     margin-bottom: 24px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.66667;
     font-weight: 600;
     color: #777E90;
@@ -180,13 +191,13 @@ export const ProfileUpdate = styled(Link)`
 
     
     &:hover {
-        color: #0444ec;
+        color: #1e4bff;
     }
 `
 
 export const ProfileUpdateIcon = styled(BsPencilFill)`
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-right: 8px;
     transition: fill .2s;
     overflow: hidden;
@@ -212,71 +223,188 @@ export const ProfileParameters = styled.div`
     margin-bottom: 32px;
     padding: 8px 16px;
     border-radius: 20px;
-    background: #F4F5F6;    
+    background: #F4F5F6; 
+    color: #777E90;   
 `
 
 export const ProfileParameter = styled.div`
-
+    // margin-right: 12px;
+    align-items: center;
 `
 
-export const IconTick = styled.div`
-
+export const IconTick = styled(GoVerified)`
+    color: #1e4bff;
 `
 
 export const IconP = styled.div`
 
 `
 
-export const IconStar = styled.div`
-
-`
-
 export const ProfileControl = styled.div`
-
+    display: inline-flex;
+    margin-bottom: 32px;
 `
 
 export const ButtonControl = styled.div`
+    margin-right: 15px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 16px;
+    font-size: 14px;
+    background: none;
+    box-shadow: 0 0 0 2px #e6e8ec inset;
+    color: #23262F;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 
+    &:hover {
+        background: #000000;
+        color: #e6e8ec;
+        box-shadow: none;
+        transition: all .2s ease-in-out;
+    }
 `
 
 export const ButtonShare = styled.div`
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #e6e8ec inset;
+    color: #777e90;
+    background: transparent;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
 
+    &:hover {
+        background: #000000;
+        color: #e6e8ec;
+        box-shadow: none;
+        transition: all .2s ease-in-out;
+    }
 `
 
-export const ShareIcon = styled.div`
+export const ShareIcon = styled(MdIosShare)`
 
 `
 
 export const ProfileSocial = styled.div`
-
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 `
 
-export const TwitterIcon = styled.div`
+export const TwitterLink = styled(Link)`
+    margin-right: 24px;
+    width: 25px;
+    height: 25px;
+    color: #777E90;
+    transition: fill .2s;
+    list-styled: none;
 
+    &:hover{
+        color: #1da1f2;
+    }
 `
 
-export const FacebookIcon = styled.div`
-
+export const TwitterIcon = styled(TiSocialTwitter)`
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
 `
 
-export const InstagramIcon = styled.div`
+export const FacebookLink = styled(Link)`
+    margin-right: 24px;
+    color: #777E90;
+    transition: fill .2s;
+    list-styled: none;
 
+    &:hover{
+        color: #4267b2;
+    }
+`
+
+export const FacebookIcon = styled(TiSocialFacebookCircular)`
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+`
+
+export const InstagramLink = styled(Link)`
+    color: #777E90;
+    transition: fill .2s;  
+    list-styled: none;
+
+    &:hover{
+        color: #C13584;
+    }
+`
+
+export const InstagramIcon = styled(IoLogoInstagram)`
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+`
+
+export const DivideLine = styled.div`
+    border: 1px solid #e6e8ec;
+    width: 200px;
+    margin-top: 30px;
 `
 
 export const ProfileNote = styled.div`
+    position: relative;
+    padding-top: 32px;
+    font-size: 13px;
+    line-height: 1.66667;
+    color: #777E90;
+`
 
+export const Report = styled.div`
+    font-size: 13px;
+    line-height: 1.66667;
+    color: #777E90;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+
+    &:hover {
+        color: #1e4bff;
+    }
+`
+
+export const FlagIcon = styled(RiFlag2Line)`
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+    transition: fill .2s;
+    vertical-align: middle;
 `
 
 export const UserWrapper = styled.div`
-flex-grow: 1;
-padding-left: 80px;
-@media only screen and (max-width: 1179px){
-    padding-left: 48px;
-}
+    flex-grow: 1;
+    padding-left: 80px;
+    @media only screen and (max-width: 1179px){
+        padding-left: 48px;
+    }
 `
 
 export const UserDetail = styled.div`
-margin-bottom: 64px;
+    margin-bottom: 64px;
 `
 
 export const UserHead = styled.div`
@@ -286,16 +414,16 @@ export const UserHead = styled.div`
 `
 
 export const UserTitle = styled.h2`
-margin-right: auto;
-font-size: 24px;
-line-height: 1.33333;
-font-weight: 600;
-letter-spacing: -.01em;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 1.33333;
+    font-weight: 700;
+    letter-spacing: -.01em;
 `
 
-export const UserContent = styled.span`
-margin-bottom: 32px;
-color: #000;
+export const UserContent = styled.div`
+    margin-bottom: 32px;
+     color: #777E90;;
 `
 
 export const UserOptions = styled.div`
@@ -303,15 +431,60 @@ export const UserOptions = styled.div`
 `
 
 export const UserOption = styled.div`
-
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
 `
 
 export const UserCategory = styled.div`
-
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    width: 152px;
+    padding-right: 24px;
+    color: #777E90;
 `
 
-export const IconHome = styled.div`
+export const IconHome = styled(MdHome)`
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    color: #777E90;
+`
 
+export const IconToolbox = styled(CgToolbox)`
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    color: #777E90;
+`
+
+export const IconSchool = styled(MdSchool)`
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    color: #777E90;
+`
+
+export const IconRelationship = styled(RiHeart2Fill)`
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    color: #777E90;
+`
+
+export const IconFollowers = styled(MdPeopleAlt)`
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    color: #777E90;    
+`
+
+export const IconPhone = styled(GoDeviceMobile)`
+    width: 25px;
+    height: 25px;
+    margin-right: 12px;
+    color: #777E90;
 `
 
 export const UserText = styled.div`
