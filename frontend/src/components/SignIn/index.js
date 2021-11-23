@@ -39,7 +39,7 @@ const SignIn = () =>
                     <LoginImg src={LoginImage} />
                 </LoginCol1>
                 <LoginCol2>
-                    <LoginHead>
+                    <LoginHead to="/signup">
                         Sign up for free
                     </LoginHead>
                     <LoginWrap>

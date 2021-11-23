@@ -41,7 +41,7 @@ export const LoginImg = styled.img`
     flex-shrink: 0;
     width: 512px;
     min-height: 120vh;
-    
+    object-fit: fill;
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: cover;
@@ -64,7 +64,7 @@ export const LoginCol2 = styled.div`
 `
 
 
-export const LoginHead = styled.div`
+export const LoginHead = styled(Link)`
     position: absolute;
     top: 80px;
     right: 80px;
@@ -74,6 +74,12 @@ export const LoginHead = styled.div`
     font-size: 14px;
     line-height: 1.14286;
     font-weight: 700;
+    text-decoration: none;
+    color: #3772FF;
+
+    &:hover {
+        color: #0444ec;
+    }
      
     @media only screen and (max-width: 1419px) {
         top: 56px;
@@ -88,6 +94,7 @@ export const LoginWrap = styled.div`
 `
 
 export const Entry = styled.div`
+
 `
 
 export const EntryTop = styled.div`

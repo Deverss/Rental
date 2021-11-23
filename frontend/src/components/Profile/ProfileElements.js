@@ -1,4 +1,14 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import {BiEdit} from 'react-icons/bi';
+import {BsPencilFill} from 'react-icons/bs';
+// import {TiTick} from 'react-icons/ti';
+// import {AiOutlineStar} from 'react-icons/ai';
+// import {TiSocialFacebook} from 'react-icons/ti-social-facebook';
+// import {TiSocialTwitter} from 'react-icons/ti';
+// import {IoLogoInstagram} from 'react-icons/io-logo-instagram';
+// import {RiFlag2Line} from 'react-icons/ri';
+
 
 export const OuterInner = styled.div`
     overflow: hidden;
@@ -60,13 +70,48 @@ export const BackgroundImg = styled.img`
     overflow: hidden;
 `
 
-export const BackgroundBtn = styled.div`
+export const BackgroundBtn = styled(Link)`
     position: absolute;
     right: 16px;
     bottom: 16px;
     transition: opacity .2s;
-    border-radius: 10px;
-    background: #fff;
+    cursor: pointer;
+    text-decoration: none;
+`
+
+export const ButtonStroke = styled.div`
+    background: #fcfcfd;
+    color: #000;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 16px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1;
+    transition: all .2s;
+    align-items: center;
+    border: 0px;
+    justify-content: center;
+    display: inline-flex;
+
+    &:hover {
+        color: #fff;
+        background: #506fea;
+    }
+`
+
+export const EditIcon = styled(BiEdit)`
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+    font-weight: 700;
+    line-height: 1;
+    align-items: center;
+    box-sizing: inherit;
+    overflow: hidden;
+    vertical-align: middle;
+
 `
 
 export const UserBody = styled.div`
@@ -119,6 +164,33 @@ export const AvatarImg = styled.img`
     object-fit: cover;
     height: 160px;
     width: 160px;
+`
+
+export const ProfileUpdate = styled(Link)`
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.66667;
+    font-weight: 600;
+    color: #777E90;
+    transition: color .2s;
+    text-decoration: none;
+
+    
+    &:hover {
+        color: #0444ec;
+    }
+`
+
+export const ProfileUpdateIcon = styled(BsPencilFill)`
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    transition: fill .2s;
+    overflow: hidden;
+    cursor: pointer;
 `
 
 export const ProfileName = styled.div`

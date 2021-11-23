@@ -9,6 +9,8 @@ import {
     BackgroundHead,
     BackgroundImg,
     BackgroundBtn,
+    ButtonStroke,
+    EditIcon,
     
     UserBody,
     UserCenter,
@@ -16,6 +18,8 @@ import {
     ProfileMain,
     ProfileAvatar,
     AvatarImg,
+    ProfileUpdate,
+    ProfileUpdateIcon,
     ProfileName,
     ProfileBody,
     ProfileParameters,
@@ -53,7 +57,12 @@ const ProfileInfo = () => {
                     <BackgroundCenter>
                         <BackgroundHead>
                             <BackgroundImg src={Bgr1} />
-                            <BackgroundBtn>Edit cover</BackgroundBtn>                
+                            <BackgroundBtn>
+                                <ButtonStroke>
+                                <EditIcon />
+                                    Edit cover
+                                </ButtonStroke>
+                            </BackgroundBtn>                
                         </BackgroundHead>
                     </BackgroundCenter>
                 </Background>
@@ -65,13 +74,17 @@ const ProfileInfo = () => {
                                 <ProfileAvatar>
                                     <AvatarImg src={AvaPrf}/>
                                 </ProfileAvatar>
+                                <ProfileUpdate>
+                                    <ProfileUpdateIcon />
+                                    Update avatar
+                                </ProfileUpdate>
                                 <ProfileName>Tom</ProfileName>
                             </ProfileMain>
                             <ProfileBody>
                                 <ProfileParameters>
                                     <ProfileParameter>
                                         <IconTick/>
-                                        <IconP>Indentity verified</IconP>
+                                        <IconP>Identity verified</IconP>
                                     </ProfileParameter>
                                     <ProfileParameter>
                                         <IconStar/>
