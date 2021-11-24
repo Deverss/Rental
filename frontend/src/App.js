@@ -3,6 +3,7 @@ import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import Home from './pages'
 import SignIn from './pages/signin'
+import SignUp from './pages/signup'
 // import Navbar from './components/Navbar'
 import HowItWorks from './pages/howitworks'
 import FeaturesPage from './pages/features'
@@ -21,6 +22,7 @@ function App() {
       <Switch>
         <Route path="/" component={Home} exact />
         <Route path="/signin" component={SignIn} exact />
+        <Route path="/signup" component={SignUp} exact />
         <Route path="/howitworks" component={HowItWorks} exact />
         <Route path="/features" component={FeaturesPage} exact />
         <Route path="/blog" component={Blog} exact />

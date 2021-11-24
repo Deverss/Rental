@@ -23,7 +23,10 @@ export const LoginCol1 = styled.div`
     flex-shrink: 0;
     width: 512px;
     min-height: 100vh;
-  
+    
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: cover;
     
     @media only screen and (max-width: 1179px){
         width: 350px;
@@ -38,7 +41,6 @@ export const LoginImg = styled.img`
     flex-shrink: 0;
     width: 512px;
     min-height: 120vh;
-    
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: cover;
