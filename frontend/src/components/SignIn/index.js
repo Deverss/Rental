@@ -72,7 +72,7 @@ const SignIn = () =>
                                     </EntryContainer>
                                 </EntryTab>
                                 <EntryFoot>
-                                    <EntryLink>Forgot password</EntryLink>
+                                    <EntryLink>Forgot password?</EntryLink>
                                 </EntryFoot>
                                 <EntryButton type='submit' to="/">Login</EntryButton>
                             </EntryForm>

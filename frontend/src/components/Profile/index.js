@@ -1,6 +1,8 @@
 import React from 'react';
 import Bgr1 from '../../images/Background-1.jpg';
 import AvaPrf from '../../images/ProfileAva.jpg';
+import ReviewAva1 from '../../images/ReviewAva_1.jpg'
+import ReviewAva2 from '../../images/ReviewAva_2.jpg';
 import {
     OuterInner,
     User,
@@ -57,6 +59,20 @@ import {
     IconFollowers,
     IconPhone,
     UserText,
+
+    ReviewHead,
+    ReviewTitle,
+    ReviewGroup,
+    ReviewItem,
+    ReviewAvatar,
+    ReviewAvatarImg,
+    ReviewDetail,
+    ReviewAuthor,
+    ReviewContent,
+    ReviewFoot,
+    ReviewTime,
+    ReviewActions,
+    ReviewActionsBtn,
 } from './ProfileElements'
 
 const ProfileInfo = () => {
@@ -175,6 +191,45 @@ const ProfileInfo = () => {
                                     </UserOption>
                                 </UserOptions>
                             </UserDetail>
+                            {/* Review Section */}
+                            <ReviewHead>
+                                <ReviewTitle>2 reviews</ReviewTitle> 
+                            </ReviewHead>
+
+                            <ReviewGroup>
+                                <ReviewItem>
+                                    <ReviewAvatar>
+                                        <ReviewAvatarImg src={ReviewAva1}/>
+                                    </ReviewAvatar>
+                                    <ReviewDetail>
+                                        <ReviewAuthor>Tobey Maguire</ReviewAuthor>
+                                        <ReviewContent>I enjoyed my communication with them and wish them only the best!</ReviewContent>
+                                        <ReviewFoot>
+                                            <ReviewTime>3 hours ago</ReviewTime>
+                                            <ReviewActions>
+                                                <ReviewActionsBtn>Like</ReviewActionsBtn>
+                                                <ReviewActionsBtn>Reply</ReviewActionsBtn>
+                                            </ReviewActions>
+                                        </ReviewFoot>
+                                    </ReviewDetail>
+                                </ReviewItem>
+                                <ReviewItem>
+                                    <ReviewAvatar>
+                                        <ReviewAvatarImg src={ReviewAva2}/>
+                                    </ReviewAvatar>
+                                    <ReviewDetail>
+                                        <ReviewAuthor>Andrew Garfield</ReviewAuthor>
+                                        <ReviewContent>Tom was great guest. I enjoyed my communication with him and wish him only the best!</ReviewContent>
+                                        <ReviewFoot>
+                                            <ReviewTime>5 hours ago</ReviewTime>
+                                            <ReviewActions>
+                                                <ReviewActionsBtn>Like</ReviewActionsBtn>
+                                                <ReviewActionsBtn>Reply</ReviewActionsBtn>
+                                            </ReviewActions>
+                                        </ReviewFoot>
+                                    </ReviewDetail>
+                                </ReviewItem>
+                            </ReviewGroup>
                         </UserWrapper>
                     </UserCenter>
                 </UserBody>

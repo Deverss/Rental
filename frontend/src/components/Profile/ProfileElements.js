@@ -491,6 +491,93 @@ export const UserText = styled.div`
 
 `
 
+export const ReviewHead = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+`
+
+export const ReviewTitle = styled.div`
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 1.33333;
+    font-weight: 600;
+    letter-spacing: -.01em;
+`
+
+export const ReviewGroup = styled.div`
+
+`
+
+export const ReviewItem = styled.div`
+    display: flex;
+    padding-top: 32px;
+    border-top: 1px solid #E6E8EC;
+    margin-top: 32px;
+`
+
+export const ReviewAvatar = styled.div`
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+`
+
+export const ReviewAvatarImg = styled.img`
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+`
+
+export const ReviewDetail = styled.div`
+
+`
+
+export const ReviewAuthor = styled.div`
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #141416;
+`
+
+export const ReviewContent = styled.div`
+    margin-bottom: 8px;
+    color: #353945;
+`
+
+export const ReviewFoot = styled.div`
+    display: flex;
+    align-items: center;
+`
+
+export const ReviewTime = styled.div`
+    font-size: 12px;
+    line-height: 1.66667;
+    color: #777E90;
+`
+
+export const ReviewActions = styled.div`
+    display: flex;
+`
+
+export const ReviewActionsBtn = styled.button`
+    margin-left: 16px;
+    font-size: 12px;
+    line-height: 1.66667;
+    font-weight: 600;
+    transition: color .1s;
+    border: none;
+    cursor: pointer;
+    box-sizing: inherit;
+    background-color: none;
+    outline: none;
+
+    &:hover {
+        color: #0444ec;
+    }
+`
+
 
 
 

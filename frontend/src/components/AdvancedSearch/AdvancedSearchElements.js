@@ -1,37 +1,94 @@
-import styled from 'styled-components'
-import {BsSearch} from 'react-icons/bs';
+import styled from 'styled-components';
+import {GoSearch} from 'react-icons/go';
 
-export const AdvancedSearchContainer = styled.div`
-    // align-items: left;
-    margin: 100px auto 0;
-    max-width: 1050px;
-    display: grid;
-    grid-template-columns: 2fr 1fr ;
-    align-items: left;
-    justify-content: center;
+
+export const OuterInner = styled.div`
+    display: block;
 `
 
-export const AdvancedSearchH1 = styled.h1`
-    // max-width: 1000px;
-    // align-items: center;
+export const CatalogSection = styled.div`
+    padding: 128px 0;
+    padding-top: 120px;
+    display: block;
+`
+
+export const CatalogCenter = styled.div`
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+    display: block;
+`
+
+export const CatalogTop = styled.div`
+    display: flex;
+    align-items: center;
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E6E8EC;
+`
+
+export const CatalogTitle = styled.div`
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 1.33333;
+    letter-spacing: -.01em;
+    font-weight: 700;
+    display: block;
+`
+
+export const CatalogSearch = styled.div`
+    position: relative;
+    flex-shrink: 0;
+    width: 320px;
+    margin-left: 30px;
+    display: block;
+`
+
+export const CatalogInput = styled.input`
+    width: 100%;
+    height: 48px;
+    padding: 0 48px 0 14px;
+    border-radius: 12px;
+    background: none;
+    border: 2px solid #E6E8EC;
+    font-size: 14px;
+    line-height: 1.71429;
+    color: #23262F;
+    letter-spacing: normal;
     display: inline-block;
 `
 
-export const AdvancedSearchBox = styled.div`
-    justify-content: center;
-    dispLay: inline;
+export const CatalogResult = styled.div`
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #141416;
+    outline: none;
 `
 
-export const AdvancedSearchBtn = styled.div`
-    padding-left: 0px;
-`
-
-export const AdvancedSearchIcon = styled(BsSearch)`
-    // display: inline;
-    justify-content: center;
-    align-items: center;
+export const SearchIcon = styled(GoSearch)`
     position: relative;
+    box-sizing: inherit;
+    color: #FCFCFD;
+    vertical-align: middle;
+    padding: 2px;
     cursor: pointer;
-    margin-left: 0px;
+
+
 `
+
+export const CatalogSorting = styled.div`
+
+`
+
+export const CatalogRow = styled.div`
+
+`
+
+
 
