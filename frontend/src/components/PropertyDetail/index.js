@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import {
     PropertyOuter,
     DetailSection,
@@ -154,12 +154,13 @@ const PropertyDetail = () => {
                         </DescriptionParameters>
 
                         <DescriptionContent>
-                            <DescriptionContentP>
+                            {/* <DescriptionContentP>
                             Designed over 20 to 25 square meters, the intimate room consist of single room featuring a queen-size bed an ensuite bathroom. The spaces are fitted with working stations. Designed with intention in communion with the vibrant neighbourhood, the rooms accomodate up two people 
                             </DescriptionContentP>
                             <DescriptionContentP>
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                            </DescriptionContentP>
+                            </DescriptionContentP> */}
+                           
                         </DescriptionContent>
 
                         <DescriptionInfo>Amenities</DescriptionInfo>
