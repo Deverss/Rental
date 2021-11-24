@@ -1,22 +1,37 @@
 import React from 'react';
 import {
-    AdvancedSearchContainer,
-    AdvancedSearchH1,
-    AdvancedSearchBox,
-    AdvancedSearchBtn,
-    AdvancedSearchIcon,
+    OuterInner,
+    CatalogSection,
+    CatalogCenter,
+    CatalogTop,
+    CatalogTitle,
+    CatalogSearch,
+    CatalogInput,
+    CatalogResult,
+    SearchIcon,
+    CatalogSorting,
+    CatalogRow,
 } from './AdvancedSearchElements'
 
 const AdvancedSearch = () => {
     return (
-        <AdvancedSearchContainer to="/advancedsearch">
-                <AdvancedSearchH1>Advanced Search</AdvancedSearchH1>
-                <AdvancedSearchBox>
-                    <AdvancedSearchBtn>     
-                        <AdvancedSearchIcon />   
-                    </AdvancedSearchBtn>     
-                </AdvancedSearchBox>
-        </AdvancedSearchContainer>
+        <OuterInner>
+            <CatalogSection>
+                <CatalogCenter>
+                    <CatalogTop>
+                        <CatalogTitle>Advanced Search</CatalogTitle>
+                        <CatalogSearch>
+                            <CatalogInput type='text' placeholder='Type something...' />
+                            <CatalogResult>
+                                <SearchIcon />
+                            </CatalogResult>
+                        </CatalogSearch>
+                    </CatalogTop>
+                    <CatalogSorting></CatalogSorting>
+                    <CatalogRow></CatalogRow>
+                </CatalogCenter>
+            </CatalogSection>
+        </OuterInner>
     )
 }
 
