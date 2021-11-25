@@ -1,52 +1,64 @@
 import React from 'react'
 import {
-    PostSection,
-    PostHeader,
-    PostTitle,
-    AuthorSection,
-    Author,
-    AuthorAva,
-    AuthorText,
-    AuthorName,
-    TimeUpload,
-    PostIcon,
-    SharePost,
-    LovePost,
-    PostBody,
-    PostImage,
-    PostContent
-}
-    from './BlogPostElements'
-    import Ava from '../../images/Ava.jpg';
+    Outer,OuterInner,SectionArticle, SectionArticleBody, ArticleCenter, ArticleHead,
+    ArticleTitleH1, Image, ImagePost, ArticleWrap, Content, ContentTitleH3,
+    ContentP, Action, ActionList, ActionItem, IconShare, IconLove, TitleLine
+} from './BlogPostElements.js'
+    // import Ava from '../../images/Ava.jpg';
     import Image2 from '../../images/BlognPost-1.jpg';
 const BlogPost = () => {
     return (
-        <PostSection>
-            <PostHeader>
-                <PostTitle>
-                    10 reason that you should join in our platform in 2021
-                </PostTitle>
-                <AuthorSection>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                        <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                    <PostIcon>
-                        <SharePost />
-                        <LovePost />
-                    </PostIcon>
-                </AuthorSection>
-            </PostHeader>
-            <PostBody>
-                <PostImage src={Image2}/>
-                <PostContent>
-                    Almost twenty months after it was leaked by Ming-Chi Kuo, Apple finally launched the 14-inch MacBook Pro last week, along with its larger sibling the 16-inch MacBook Pro. I had planned to upgrade my 2016 13-inch MacBook Pro to what I thought would be a new standard for portable software development, but what we got was something altogether different, a pair of killer video-editing laptops. If you haven’t read AnandTech’s deep dive on the new MacBook Pros, here’s the most pertinent insight:
-                </PostContent>
-            </PostBody>
-        </PostSection>
+        <Outer>
+            <OuterInner>
+                <SectionArticle>
+                    <SectionArticleBody>
+                        <ArticleCenter>
+                            <ArticleHead>
+                                <ArticleTitleH1>
+                                A beginner’s guide to using this platform
+                                </ArticleTitleH1>
+                            </ArticleHead>
+                            <Image>
+                                <ImagePost src={Image2} />
+                            </Image>
+                        </ArticleCenter>
+                    </SectionArticleBody>
+
+                    <ArticleWrap>
+                        <ArticleCenter>
+                            <Content>
+                                <ContentTitleH3>Introduction</ContentTitleH3>
+                                <TitleLine/>
+                                <ContentP>For traders who love technical analysis, robust charting tools are essential. TradingView is one option for both amateur and experienced traders. It offers numerous trading and charting tools and also a free membership option. Let’s face it... not everyone has the money or need for a Bloomberg terminal subscription.    
+                                </ContentP>
+                                <ContentP>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
+                                </ContentP>
+                                <ContentTitleH3>What does Rental do?</ContentTitleH3>
+                                <TitleLine/>
+                                <ContentP>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
+                                </ContentP>
+                                <ContentTitleH3>Introduction</ContentTitleH3>
+                                <TitleLine/>
+                                <ContentP>For traders who love technical analysis, robust charting tools are essential. TradingView is one option for both amateur and experienced traders. It offers numerous trading and charting tools and also a free membership option. Let’s face it... not everyone has the money or need for a Bloomberg terminal subscription.    
+                                </ContentP>
+                                <ContentP>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
+                                </ContentP>
+                            </Content>
+                            <Action>
+                                <ActionList>
+                                    <ActionItem>
+                                        <IconShare />
+                                    </ActionItem>
+                                    <ActionItem>
+                                        <IconLove />
+                                    </ActionItem>
+                                </ActionList>
+                            </Action>
+                        </ArticleCenter>
+                    </ArticleWrap>
+                </SectionArticle>
+            </OuterInner>
+        </Outer>
     )
 }
 
