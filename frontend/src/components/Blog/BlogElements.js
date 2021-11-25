@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
   
 export const BlogSection = styled.div`
     margin-top: 150px;
@@ -54,16 +55,25 @@ export const FeatureImg = styled.img`
     height: 405px;
     cursor: pointer;
 `
-export const FeatureDesc = styled.div`
-    padding: 60px;
+
+export const FeatureImgLink = styled(Link)`
+
 `
-export const FeatureH2 = styled.h2`
+
+export const FeatureDesc = styled.div`
+    padding: 40px;
+`
+export const FeatureH2 = styled(Link)`
+    width: 403px;
+    height: 80px;
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    line-height: 47px;
+    line-height: 40px;
     width: 403px;
+    text-decoration: none;
+    color: #141416;
         
     &:hover {
         cursor: pointer;
@@ -149,6 +159,11 @@ export const Post = styled.div`
     margin-bottom: 20px;
     max-height: 740px;
 `
+
+export const PostImgLink = styled(Link)`
+
+` 
+
 export const PostImg = styled.img`
     width: 100%;
     max-height: 350px;
@@ -157,12 +172,13 @@ export const PostImg = styled.img`
     object-fit: cover;
     cursor: pointer;
 `
-export const PostTitle = styled.h4`
+export const PostTitle = styled(Link)`
     margin-top: 15px;    
     text-align: left;
     font-size: 20px;
     font-weight: bold;
     color: #000;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;

@@ -24,6 +24,7 @@ import {
     BlogDesc,
     // Feature Post
     FeaturePost,
+    FeatureImgLink,
     FeatureImg,
     FeatureDesc,
     FeatureH2,
@@ -37,6 +38,7 @@ import {
     //Posts
     PostCard,
     Post,
+    PostImgLink,
     PostImg,
     PostTitle,
     PostDesc,
@@ -59,8 +61,11 @@ const BlogsAndPosts = () => {
                 <BlogDesc>Let’s get some tips when join in our platform</BlogDesc>
             </BlogText>
             <FeaturePost>
-                <FeatureImg src={Img1}/>
+                <FeatureImgLink to="/propertydetail">
+                    <FeatureImg src={Img1} />
+                </FeatureImgLink>    
                 <FeatureDesc>
+
                     <FeatureH2 to="/blogpost">Houses with unique and luxurious architecture</FeatureH2>
                     <FeatureP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </FeatureP>
@@ -75,8 +80,10 @@ const BlogsAndPosts = () => {
             </FeaturePost>
             <PostCard>
                 <Post>
-                    <PostImg src={Img2}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostImgLink to="propertydetail">
+                        <PostImg src={Img2}/>
+                    </PostImgLink>    
+                    <PostTitle to="/propertydetail">The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
@@ -90,8 +97,10 @@ const BlogsAndPosts = () => {
             {/* </PostCard>
             <PostCard> */}
                 <Post>
-                    <PostImg src={Img3}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostImgLink to="propertydetail">
+                        <PostImg src={Img3}/>
+                    </PostImgLink>    
+                    <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
@@ -105,8 +114,10 @@ const BlogsAndPosts = () => {
             {/* </PostCard>
             <PostCard> */}
                 <Post>
-                    <PostImg src={Img4}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostImgLink to="propertydetail">
+                        <PostImg src={Img4}/>
+                    </PostImgLink>     
+                    <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
@@ -119,8 +130,10 @@ const BlogsAndPosts = () => {
                 </Post>
 
                 <Post>
-                    <PostImg src={Img5}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostImgLink to="propertydetail">
+                        <PostImg src={Img5}/>
+                    </PostImgLink>    
+                    <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
@@ -133,8 +146,10 @@ const BlogsAndPosts = () => {
                 </Post>
 
                 <Post>
-                    <PostImg src={Img6}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostImgLink to="propertydetail">
+                        <PostImg src={Img6}/>
+                    </PostImgLink>    
+                    <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
@@ -147,8 +162,10 @@ const BlogsAndPosts = () => {
                 </Post>
 
                 <Post>
-                    <PostImg src={Img7}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                    <PostImgLink to="propertydetail">
+                        <PostImg src={Img7}/>
+                    </PostImgLink>    
+                    <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
@@ -175,7 +192,7 @@ const BlogsAndPosts = () => {
                     
                     <Post>
                         <PostImg src={Img1news}/>
-                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
@@ -189,7 +206,7 @@ const BlogsAndPosts = () => {
 
                     <Post>
                         <PostImg src={Img2news}/>
-                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
@@ -203,7 +220,7 @@ const BlogsAndPosts = () => {
 
                     <Post>
                         <PostImg src={Img3news}/>
-                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
@@ -217,7 +234,7 @@ const BlogsAndPosts = () => {
 
                     <Post>
                         <PostImg src={Img4news}/>
-                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
@@ -231,7 +248,7 @@ const BlogsAndPosts = () => {
 
                     <Post>
                         <PostImg src={Img5news}/>
-                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
@@ -245,7 +262,7 @@ const BlogsAndPosts = () => {
 
                     <Post>
                         <PostImg src={Img6news}/>
-                        <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
+                        <PostTitle to="/propertydetail" >The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>

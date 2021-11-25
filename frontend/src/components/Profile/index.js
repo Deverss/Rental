@@ -124,7 +124,7 @@ const ProfileInfo = () => {
                                         <TwitterIcon />
                                     </TwitterLink>
                                     <FacebookLink>
-                                        <FacebookIcon to=""/>   
+                                        <FacebookIcon />   
                                     </FacebookLink>
                                     <InstagramLink>     
                                         <InstagramIcon />
