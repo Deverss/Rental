@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {
     PropertyOuter,
     DetailSection,
@@ -35,7 +35,7 @@ import {
     H5,
     GallerySmallLink,
     DescriptionContent,
-    DescriptionContentP,
+    // DescriptionContentP,
     DescriptionInfo,
     DescriptionOptions,
     DescriptionOptionPart,
