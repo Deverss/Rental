@@ -12,6 +12,7 @@ import BlogPost from './pages/blogpost'
 import PropertyDetail from './pages/propertydetail'
 import AdvancedSearch from './pages/advancedsearch'
 import Profile from './pages/profile'
+import NewPost from './pages/newpost'
 
 import Test from './Test';
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/propertydetail" component={PropertyDetail} exact />
         <Route path="/advancedsearch" component={AdvancedSearch} exact />
         <Route path="/profile" component={Profile} exact />
+        <Route path="/newpost" component={NewPost} exact />
         <Route path="/test" component={Test}/>
         
       </Switch>

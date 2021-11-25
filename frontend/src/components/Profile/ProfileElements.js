@@ -24,6 +24,7 @@ import {CgToolbox} from 'react-icons/cg';
 export const OuterInner = styled.div`
     overflow: hidden;
     min-height: 100vh;
+    margin-top: 100px;
 `
 
 export const User = styled.div`
@@ -127,7 +128,7 @@ export const EditIcon = styled(BiEdit)`
 
 export const UserBody = styled.div`
     position: relative;
-    z-index: 3;
+    z-index: 2;
     padding: 80px 0 136px;
     @media only screen and (max-width: 1179px){
         padding-bottom: 112px;

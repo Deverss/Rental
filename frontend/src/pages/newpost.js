@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Profile from '../components/Profile'
+import NewPost from '../components/NewPost'
 const ProfileInfo  = () => {
     const [isOpen, setIsOpen] = useState(false)
 
@@ -14,7 +14,7 @@ const ProfileInfo  = () => {
         <>
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle} /> 
-        <Profile />
+        <NewPost />
         <Footer />   
         </>
     )
