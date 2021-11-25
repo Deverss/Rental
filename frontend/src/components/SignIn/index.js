@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginImage from '../../images/LoginCoverImage.jpg'
+import SigninImage from '../../images/SigninImage.jpg'
 import {Outer,
     OuterInner, 
     Login, 
@@ -36,7 +36,7 @@ const SignIn = () =>
         <OuterInner>
             <Login>
                 <LoginCol1>
-                    <LoginImg src={LoginImage} />
+                    <LoginImg src={SigninImage} />
                 </LoginCol1>
                 <LoginCol2>
                     <LoginHead to="/signup">

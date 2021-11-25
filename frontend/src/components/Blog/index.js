@@ -12,7 +12,11 @@ import Img3news from '../../images/News-3.jpg';
 import Img4news from '../../images/News-4.jpg';
 import Img5news from '../../images/News-5.jpg';
 import Img6news from '../../images/News-6.jpg';
-import Ava from '../../images/Ava.jpg';
+import Ava1 from '../../images/Ava.jpg';
+import Ava2 from '../../images/Ava2.jpg';
+import Ava3 from '../../images/Ava3.jpg';
+import Ava4 from '../../images/Ava4.jpg';
+import Ava from'../../images/Ava.jpg';
 import {
     BlogSection,
     BlogText,
@@ -57,13 +61,13 @@ const BlogsAndPosts = () => {
             <FeaturePost>
                 <FeatureImg src={Img1}/>
                 <FeatureDesc>
-                    <FeatureH2>The standard Lorem Ipsum passage</FeatureH2>
+                    <FeatureH2>Houses with unique and luxurious architecture</FeatureH2>
                     <FeatureP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </FeatureP>
                     <Author>
-                        <AuthorAva src={Ava} />
+                        <AuthorAva src={Ava1} />
                             <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
+                            <AuthorName>Stitch</AuthorName>
                             <TimeUpload>30 mins ago</TimeUpload>
                         </AuthorText>
                     </Author>
@@ -76,9 +80,9 @@ const BlogsAndPosts = () => {
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
-                        <AuthorAva src={Ava} />
+                        <AuthorAva src={Ava2} />
                             <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
+                            <AuthorName>Baymax</AuthorName>
                             <TimeUpload>30 mins ago</TimeUpload>
                         </AuthorText>
                     </Author>
@@ -91,9 +95,9 @@ const BlogsAndPosts = () => {
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
-                        <AuthorAva src={Ava} />
+                        <AuthorAva src={Ava3} />
                             <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
+                            <AuthorName>Buzz Lightyear</AuthorName>
                             <TimeUpload>30 mins ago</TimeUpload>
                         </AuthorText>
                     </Author>
@@ -106,9 +110,9 @@ const BlogsAndPosts = () => {
                     <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </PostDesc>
                     <Author>
-                        <AuthorAva src={Ava} />
+                        <AuthorAva src={Ava4} />
                             <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
+                            <AuthorName>Groot</AuthorName>
                             <TimeUpload>30 mins ago</TimeUpload>
                         </AuthorText>
                     </Author>

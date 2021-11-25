@@ -37,7 +37,7 @@ export const LoginCol1 = styled.div`
 `
 export const LoginImg = styled.img`
     background-position: center;
-    object-fit: cover;
+    object-fit: fill;
     flex-shrink: 0;
     width: 512px;
     min-height: 120vh;

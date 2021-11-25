@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {GoSearch} from 'react-icons/go';
+import {BsSearch} from 'react-icons/bs';
 
 
 export const OuterInner = styled.div`
@@ -57,30 +57,39 @@ export const CatalogInput = styled.input`
     color: #23262F;
     letter-spacing: normal;
     display: inline-block;
+    
 `
 
 export const CatalogResult = styled.div`
-    position: absolute;
+position: absolute;
     top: 8px;
     right: 8px;
-    bottom: 8px;
-    width: 32px;
-    height: 32px;
+    /* bottom: 8px; */
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background: #141416;
-    outline: none;
-`
-
-export const SearchIcon = styled(GoSearch)`
-    position: relative;
-    box-sizing: inherit;
-    color: #FCFCFD;
+    background: #3772FF;
+    transition: background .2s;
+    margin: 0;
+    padding: 0;
+    border: 0;
     vertical-align: middle;
-    padding: 2px;
-    cursor: pointer;
-
-
 `
+
+export const SearchIcon = styled(BsSearch)`
+    width: 16px;
+    height: 16px;
+    color: #FCFCFD;
+    vertical-align: text-bottom;
+    box-sizing: inherit;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: middle;
+`
+
 
 export const CatalogSorting = styled.div`
 
