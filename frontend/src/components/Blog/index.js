@@ -65,7 +65,8 @@ const BlogsAndPosts = () => {
                     <FeatureImg src={Img1} />
                 </FeatureImgLink>    
                 <FeatureDesc>
-                    <FeatureH2 to="/propertydetail" >Houses with unique and luxurious architecture</FeatureH2>
+
+                    <FeatureH2 to="/blogpost">Houses with unique and luxurious architecture</FeatureH2>
                     <FeatureP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                     </FeatureP>
                     <Author>
