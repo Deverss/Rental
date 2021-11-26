@@ -61,7 +61,7 @@ export const CatalogInput = styled.input`
 `
 
 export const CatalogResult = styled.div`
-position: absolute;
+    position: absolute;
     top: 8px;
     right: 8px;
     /* bottom: 8px; */
