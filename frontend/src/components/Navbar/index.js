@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="/blog">Blogs</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover">Catalog</NavLinks>
+                            <NavLinks to="advancedsearch">Catalog</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="/features">Features</NavLinks>

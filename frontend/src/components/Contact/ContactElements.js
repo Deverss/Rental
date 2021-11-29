@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import {IoMailOpenOutline} from 'react-icons/io5';
-import {BsPinMap} from 'react-icons/bs';
+import {BsPinMap, BsChatLeftText} from 'react-icons/bs';
 import {ImPhoneHangUp} from 'react-icons/im';
 import {VscAccount} from 'react-icons/vsc';
 import {RiSendPlaneFill} from 'react-icons/ri';
 import {GoDeviceMobile} from 'react-icons/go';
-import {BsChatLeftText} from 'react-icons/bs';
+
 
 export const ContactContainer = styled.div`
     position: relative;
@@ -73,9 +73,17 @@ export const ContactImage = styled.img`
     margin: 0 0 0 auto;
 `
 
+export const ContactRow = styled.div`
+    position: relative;
+    z-index: 3;
+    display: flex;
+    margin-bottom: 93px;
+`
+
 export const ContactDetail = styled.div`
     flex-shrink: 0;
-    width: 340px;
+    
+    width: 600px;
     margin-right: auto;
     display: inline-block;
     font-size: 18px;
@@ -86,6 +94,7 @@ export const ContactDetail = styled.div`
 export const ContactLine = styled.div`
     display: flex;
     margin-bottom: 40px;
+    width: 340px;
 `
 
 export const MailIcon = styled(IoMailOpenOutline)`
@@ -130,6 +139,8 @@ export const ContactForm = styled.div`
 
 export const ContactField = styled.div`
     margin-bottom: 24px;
+    flex-shrink: 0;
+    display: block;
 `
 
 export const FieldWrap = styled.div`
@@ -137,7 +148,7 @@ export const FieldWrap = styled.div`
 
 `
 
-export const FieldInput = styled.div`
+export const FieldInput = styled.input`
     height: 72px;
     padding: 0 72px 0 24px;
     width: 100%;
@@ -148,19 +159,33 @@ export const FieldInput = styled.div`
     color: #141416;
 `
 
-export const NameIcon = styled(VscAccount)`
+export const Icon = styled.div`
     position: absolute;
     display: flex;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+`
+
+export const NameIcon = styled(VscAccount)`
+    width: 17;
+    height: 18;  
 `
 
 export const SendIcon = styled(RiSendPlaneFill)`
-    position: absolute;
+    width: 17;
+    height: 18;
 `
 
 export const MobileIcon = styled(GoDeviceMobile)`
-    position: absolute;
+    width: 17;
+    height: 18;
 `
 
 export const TextIcon = styled(BsChatLeftText)`
-    position: absolute;
+    width: 17;
+    height: 18;
 `
