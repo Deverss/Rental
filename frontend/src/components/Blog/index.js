@@ -13,7 +13,11 @@ import Img3news from '../../images/News-3.jpg';
 import Img4news from '../../images/News-4.jpg';
 import Img5news from '../../images/News-5.jpg';
 import Img6news from '../../images/News-6.jpg';
-import Ava from '../../images/Ava.jpg';
+import Ava1 from '../../images/Ava.jpg';
+import Ava2 from '../../images/Ava2.jpg';
+import Ava3 from '../../images/Ava3.jpg';
+import Ava4 from '../../images/Ava4.jpg';
+import Ava from'../../images/Ava.jpg';
 import {
     BlogSection,
     BlogText,
@@ -21,6 +25,7 @@ import {
     BlogDesc,
     // Feature Post
     FeaturePost,
+    FeatureImgLink,
     FeatureImg,
     FeatureDesc,
     FeatureH2,
@@ -34,6 +39,7 @@ import {
     //Posts
     PostCard,
     Post,
+    PostImgLink,
     PostImg,
     PostTitle,
     PostDesc,

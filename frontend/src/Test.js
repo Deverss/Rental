@@ -12,7 +12,7 @@ const Test = () => {
             password : password,
         }
         const response = await doUserLogin(postData)
-        console.log(response.token);
+        console.log(response);
     }
     
     return (

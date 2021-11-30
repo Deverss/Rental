@@ -37,7 +37,7 @@ import {
     H5,
     GallerySmallLink,
     DescriptionContent,
-    DescriptionContentP,
+    // DescriptionContentP,
     DescriptionInfo,
     DescriptionOptions,
     DescriptionOptionPart,
