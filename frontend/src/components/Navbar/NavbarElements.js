@@ -127,5 +127,12 @@ export const NavBtnLink = styled(Link)`
         color: #000;
     }
 `;
+export const AvaProfile = styled.img`
+    width: 50px;
+    height: 50px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+`
 
 
