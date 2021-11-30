@@ -1,6 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../images/logo.png';
+import Ava1 from '../../images/Ava.jpg'
 // import scroll from 'react-scroll'
 import {   
     Nav, 
@@ -12,14 +13,62 @@ import {
     NavItem, 
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,AvaProfile
+    
 } from './NavbarElements';
-
+import {
+    DropdownSection,
+    Wrapperul,
+    UserMenuUser,
+    UserMenuAvatar,
+    UserMenuInfo,
+    UserMenuName,
+    UserMenuUserName,
+    UserMenuList,
+    UserMenuli,
+} from './DropdownElements';
 // const toggleHome = () => {
 //     scroll.scrollToTop();
 // }
-
+const Dropdown = () =>{
+    return (
+        <>
+           <DropdownSection>
+                <Wrapperul>
+                    <UserMenuUser>
+                        <UserMenuAvatar src={Ava1} />
+                        <UserMenuInfo>
+                            <UserMenuName>Mai The Son</UserMenuName>
+                            <UserMenuUserName>@TesMai</UserMenuUserName>
+                        </UserMenuInfo>
+                    </UserMenuUser>
+                    <UserMenuList>
+                        <UserMenuli>
+                        Message
+                        </UserMenuli>
+                        <UserMenuli>
+                        Deposite
+                        </UserMenuli>
+                        <UserMenuli>
+                        Wishlist
+                        </UserMenuli>
+                        <UserMenuli>
+                        Your property
+                        </UserMenuli>
+                    </UserMenuList>
+                    <UserMenuList>
+                        <UserMenuli>
+                        Log out
+                        </UserMenuli>
+                    </UserMenuList>
+                </Wrapperul>
+           </DropdownSection>
+        </>
+    );
+}
 const Navbar = ({ toggle }) => {
+    const [menu,setMenu] = useState(false);
+    console.log(menu);
     return (
         <>
             <Nav>
@@ -46,7 +95,8 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
+                        {(false)?<NavBtnLink to="/signin">Sign In</NavBtnLink>:<AvaProfile src={Ava1} onClick={() => setMenu(!menu)} />}
+                        {(menu)?<Dropdown/>:<></>}
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
