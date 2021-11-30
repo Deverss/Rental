@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use Exception;
 use Storage;
+use Illuminate\Support\Facades\DB;
 class PostApiController extends Controller
 {
     public function getImageUrl($file){
@@ -38,7 +39,13 @@ class PostApiController extends Controller
     }
 
     public function getPostById(Post $post){
-        return Post::find($post);
+        $info = DB::table('posts')
+                ->join('users','users.id','=','posts.uid')
+                ->select('posts.*', 'users.name')
+                ->where('posts.id','=',$post->id)
+                ->get();
+        
+        return $info;
     }
 
     public function store(){

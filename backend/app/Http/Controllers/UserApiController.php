@@ -52,7 +52,6 @@ class UserApiController extends Controller
             'password' => 'required',
         ]);
         
-        error_log($this->getImageUrl(request('Image')));
         return User::create([
             'name' => request('name'),
             'email' => request('email'),

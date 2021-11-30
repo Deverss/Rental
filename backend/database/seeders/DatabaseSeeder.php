@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
+use Faker\Factory;
 use Illuminate\Database\Seeder;
-
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,6 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        User::create([
+           'name' => 'tuananh',
+           'email' => 'tuananh@email.com',
+           'password' => bcrypt('password'), 
+        ]);
+
     }
 }

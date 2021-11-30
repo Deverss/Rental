@@ -23,9 +23,10 @@ function App() {
         <Route path="/features" component={FeaturesPage} exact />
         <Route path="/blog" component={Blog} exact />
         <Route path="/blogpost" component={BlogPost} exact />
-        <Route path="/propertydetail" component={PropertyDetail} exact />
+        <Route path="/propertydetail" component={PropertyDetail} exact />  
         <Route path="/advancedsearch" component={AdvancedSearch} exact />
         <Route path="/test" component={Test}/>
+        <Route path="/property/:id" component={PropertyDetail} exact /> {/* test api */}
       </Switch>
     </Router>
   );

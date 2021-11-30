@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { getBlogs } from '../../Api/Blog';
 import Img1 from '../../images/BlognPost-1.jpg';
 import Img2 from '../../images/BlognPost-2.jpg';
 import Img3 from '../../images/BlognPost-3.jpg';
@@ -47,114 +48,54 @@ import {
     NewsNUpdateBtnLink,
 } from './BlogElements'
 
+const HighlightBlog = (item) => (
+    <FeaturePost>
+        <FeatureImg src={item.Image} />
+        <FeatureDesc>
+            <FeatureH2>{item.title}</FeatureH2>
+            <FeatureP>{item.description}
+            </FeatureP>
+            <Author>
+                <AuthorAva src={item.image} />
+                <AuthorText>
+                    <AuthorName>{item.name}</AuthorName>
+                    <TimeUpload>30 mins ago</TimeUpload>
+                </AuthorText>
+            </Author>
+        </FeatureDesc>
+    </FeaturePost>
+);
+const BlogCard = (item) => (
+    <Post>
+        <PostImg src={item.Image} />
+        <PostTitle>{item.title}</PostTitle>
+        <PostDesc>{item.description}
+        </PostDesc>
+        <Author>
+            <AuthorAva src={item.image} />
+            <AuthorText>
+                <AuthorName>{item.name}</AuthorName>
+                <TimeUpload>30 mins ago</TimeUpload>
+            </AuthorText>
+        </Author>
+    </Post>
+);
 const BlogsAndPosts = () => {
+    const [blogs, setBlogs] = useState(null);
+    useEffect(() => {
+        getBlogs(setBlogs)
+    }, [])
     return (
         <BlogSection to="blog">
             <BlogText>
                 <BlogTitle>Blogs and Posts</BlogTitle>
                 <BlogDesc>Let’s get some tips when join in our platform</BlogDesc>
             </BlogText>
-            <FeaturePost>
-                <FeatureImg src={Img1}/>
-                <FeatureDesc>
-                    <FeatureH2>The standard Lorem Ipsum passage</FeatureH2>
-                    <FeatureP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </FeatureP>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </FeatureDesc>
-            </FeaturePost>
+            
+            {blogs && HighlightBlog(blogs[0])}
+
             <PostCard>
-                <Post>
-                    <PostImg src={Img2}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
-                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </PostDesc>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </Post>
-            {/* </PostCard>
-            <PostCard> */}
-                <Post>
-                    <PostImg src={Img3}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
-                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </PostDesc>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </Post>
-            {/* </PostCard>
-            <PostCard> */}
-                <Post>
-                    <PostImg src={Img4}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
-                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </PostDesc>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </Post>
-
-                <Post>
-                    <PostImg src={Img5}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
-                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </PostDesc>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </Post>
-
-                <Post>
-                    <PostImg src={Img6}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
-                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </PostDesc>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </Post>
-
-                <Post>
-                    <PostImg src={Img7}/>
-                    <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
-                    <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </PostDesc>
-                    <Author>
-                        <AuthorAva src={Ava} />
-                            <AuthorText>
-                            <AuthorName>Mike TyleXon</AuthorName>
-                            <TimeUpload>30 mins ago</TimeUpload>
-                        </AuthorText>
-                    </Author>
-                </Post>
+                {blogs && blogs.map(item => BlogCard(item))}
             </PostCard>
             {/* News and update */}
             <NewsNUpdateSections>
@@ -168,15 +109,15 @@ const BlogsAndPosts = () => {
                     </NewsNUpdateBtn>
                 </NewsNUpdate>
                 <NewsNUpdatePost>
-                    
+
                     <Post>
-                        <PostImg src={Img1news}/>
+                        <PostImg src={Img1news} />
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
                             <AuthorAva src={Ava} />
-                                <AuthorText>
+                            <AuthorText>
                                 <AuthorName>Mike TyleXon</AuthorName>
                                 <TimeUpload>30 mins ago</TimeUpload>
                             </AuthorText>
@@ -184,13 +125,13 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img2news}/>
+                        <PostImg src={Img2news} />
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
                             <AuthorAva src={Ava} />
-                                <AuthorText>
+                            <AuthorText>
                                 <AuthorName>Mike TyleXon</AuthorName>
                                 <TimeUpload>30 mins ago</TimeUpload>
                             </AuthorText>
@@ -198,13 +139,13 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img3news}/>
+                        <PostImg src={Img3news} />
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
                             <AuthorAva src={Ava} />
-                                <AuthorText>
+                            <AuthorText>
                                 <AuthorName>Mike TyleXon</AuthorName>
                                 <TimeUpload>30 mins ago</TimeUpload>
                             </AuthorText>
@@ -212,13 +153,13 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img4news}/>
+                        <PostImg src={Img4news} />
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
                             <AuthorAva src={Ava} />
-                                <AuthorText>
+                            <AuthorText>
                                 <AuthorName>Mike TyleXon</AuthorName>
                                 <TimeUpload>30 mins ago</TimeUpload>
                             </AuthorText>
@@ -226,13 +167,13 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img5news}/>
+                        <PostImg src={Img5news} />
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
                             <AuthorAva src={Ava} />
-                                <AuthorText>
+                            <AuthorText>
                                 <AuthorName>Mike TyleXon</AuthorName>
                                 <TimeUpload>30 mins ago</TimeUpload>
                             </AuthorText>
@@ -240,20 +181,20 @@ const BlogsAndPosts = () => {
                     </Post>
 
                     <Post>
-                        <PostImg src={Img6news}/>
+                        <PostImg src={Img6news} />
                         <PostTitle>The standard Lorem Ipsum passage dolor sit anet ?</PostTitle>
                         <PostDesc>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
                         </PostDesc>
                         <Author>
                             <AuthorAva src={Ava} />
-                                <AuthorText>
+                            <AuthorText>
                                 <AuthorName>Mike TyleXon</AuthorName>
                                 <TimeUpload>30 mins ago</TimeUpload>
                             </AuthorText>
                         </Author>
                     </Post>
 
-                    
+
 
                 </NewsNUpdatePost>
             </NewsNUpdateSections>

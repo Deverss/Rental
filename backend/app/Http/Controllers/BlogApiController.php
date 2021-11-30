@@ -6,54 +6,70 @@ use Illuminate\Http\Request;
 use App\Models\Blog;
 use Exception;
 use Storage;
+use Illuminate\Support\Facades\DB;
 
 class BlogApiController extends Controller
 {
 
-    public function getImageUrl($file){
-        try{
+    public function getImageUrl($file)
+    {
+        try {
             $path = "";
             // if($request->hasFile('img')){
-                // $file = $request->file('img');
-                $filename = $file->getClientOriginalName();
-                $finalName = date('His').$filename;
-                error_log($filename);
-                $googleDriveStorage = Storage::disk('google');
-                
-                $googleDriveStorage->put($finalName,file_get_contents($file->getRealPath()));
-                $fileInfo = collect($googleDriveStorage->listContents('/',false))
-                ->where('type','file')
-                ->where('name',$finalName)
+            // $file = $request->file('img');
+            $filename = $file->getClientOriginalName();
+            $finalName = date('His') . $filename;
+            error_log($filename);
+            $googleDriveStorage = Storage::disk('google');
+
+            $googleDriveStorage->put($finalName, file_get_contents($file->getRealPath()));
+            $fileInfo = collect($googleDriveStorage->listContents('/', false))
+                ->where('type', 'file')
+                ->where('name', $finalName)
                 ->first();
-                $contents = $fileInfo['path'];
-                error_log($contents);
-                $path = "https://drive.google.com/uc?export=view&id=".$contents;
-                
-                return $path;
-        } catch(Exception $e){
+            $contents = $fileInfo['path'];
+            error_log($contents);
+            $path = "https://drive.google.com/uc?export=view&id=" . $contents;
+
+            return $path;
+        } catch (Exception $e) {
             error_log($e->getMessage());
         }
     }
 
 
-    public function getBlog(){
-        return Blog::all();
+    public function getBlog()
+    {
+        $info = DB::table('blogs')
+            ->join('users', 'users.id', '=', 'blogs.userID')
+            ->select('blogs.*', 'users.name', 'users.image')
+            ->get();
+
+        return $info;
     }
 
-    public function getBlogById(Blog $blog){
-        return Blog::find($blog);
+    public function getBlogById(Blog $blog)
+    {
+        $info = DB::table('blogs')
+            ->join('users', 'users.id', '=', 'blogs.userID')
+            ->select('blogs.*', 'users.name', 'users.image')
+            ->where('blogs.id', '=', $blog->id)
+            ->get();
+
+        return $info;
     }
 
-    public function store(){
+    public function store()
+    {
 
-        request() -> validate([
+        request()->validate([
             'userID' => 'required',
             'title' => 'required',
             'description' => 'required',
             'content' => 'required',
             'Image' => 'required',
         ]);
-        
+
         error_log($this->getImageUrl(request('Image')));
         return Blog::create([
             'userID' => request('userID'),
@@ -65,15 +81,16 @@ class BlogApiController extends Controller
         ]);
     }
 
-    public function update(Blog $blog){
-        request() -> validate([
+    public function update(Blog $blog)
+    {
+        request()->validate([
             'userID' => 'required',
             'title' => 'required',
             'description' => 'required',
             'content' => 'required',
             'Image' => 'required',
         ]);
-    
+
         $blog->update([
             'userID' => request('userID'),
             'title' => request('title'),
@@ -84,9 +101,10 @@ class BlogApiController extends Controller
         ]);
     }
 
-    public function delete(Blog $post){
+    public function delete(Blog $post)
+    {
         $success = $post->delete();
-    
+
         return ['success' => $success];
     }
 }

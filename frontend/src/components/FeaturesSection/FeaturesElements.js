@@ -87,7 +87,11 @@ export const HomeName = styled.h5`
     font-weight: bold;
     color: #000;
     cursor: pointer;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     &:hover {
         color: #506FEA;
     }
@@ -98,6 +102,11 @@ export const AddressIcon = styled(BiMap)`
 `
 
 export const AddressName = styled.p`
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     margin-left: 10px;
 `
 
