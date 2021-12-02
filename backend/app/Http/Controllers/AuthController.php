@@ -18,13 +18,11 @@ class AuthController extends Controller
             'email' => $request->input('email'),
             'password' => Hash::make($request->input('password')),
         ]);
-        //non =))
+
     }
     public function login(Request $request)
     {
         if(!Auth::attempt($request->only('email','password'))){
-            error_log(Request('email'));
-            error_log(Request('password'));
             return response([
                 'message' => 'invalid credentials'
             ],Response::HTTP_UNAUTHORIZED);

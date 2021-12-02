@@ -244,3 +244,8 @@ export const FieldInputPassword = styled.input`
 
 export const EntryWrap = styled.div`
 `
+
+export const ErrorMessage = styled.p`
+    margin-top : 20px;
+    color : #a52020;
+`

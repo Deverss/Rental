@@ -14,9 +14,9 @@ const BlogPost = () => {
                     <SectionArticleBody>
                         <ArticleCenter>
                             <ArticleHead>
-                                <ArticleTitleH1>
+                                <h1>
                                 A beginner’s guide to using this platform
-                                </ArticleTitleH1>
+                                </h1>
                             </ArticleHead>
                             <Image>
                                 <ImagePost src={Image2} />
@@ -27,22 +27,19 @@ const BlogPost = () => {
                     <ArticleWrap>
                         <ArticleCenter>
                             <Content>
-                                <ContentTitleH3>Introduction</ContentTitleH3>
-                                <TitleLine/>
-                                <ContentP>For traders who love technical analysis, robust charting tools are essential. TradingView is one option for both amateur and experienced traders. It offers numerous trading and charting tools and also a free membership option. Let’s face it... not everyone has the money or need for a Bloomberg terminal subscription.    
-                                </ContentP>
-                                <ContentP>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
-                                </ContentP>
-                                <ContentTitleH3>What does Rental do?</ContentTitleH3>
-                                <TitleLine/>
-                                <ContentP>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
-                                </ContentP>
-                                <ContentTitleH3>Introduction</ContentTitleH3>
-                                <TitleLine/>
-                                <ContentP>For traders who love technical analysis, robust charting tools are essential. TradingView is one option for both amateur and experienced traders. It offers numerous trading and charting tools and also a free membership option. Let’s face it... not everyone has the money or need for a Bloomberg terminal subscription.    
-                                </ContentP>
-                                <ContentP>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
-                                </ContentP>
+                                <h3>Introduction</h3>
+                                <p>For traders who love technical analysis, robust charting tools are essential. TradingView is one option for both amateur and experienced traders. It offers numerous trading and charting tools and also a free membership option. Let’s face it... not everyone has the money or need for a Bloomberg terminal subscription.    
+                                </p>
+                                <p>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
+                                </p>
+                                <h3>What does Rental do?</h3>
+                                <p>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
+                                </p>
+                                <h3>Introduction</h3>
+                                <p>For traders who love technical analysis, robust charting tools are essential. TradingView is one option for both amateur and experienced traders. It offers numerous trading and charting tools and also a free membership option. Let’s face it... not everyone has the money or need for a Bloomberg terminal subscription.    
+                                </p>
+                                <p>The Stacks series of products: Stacks: Landing Page Kit, Stacks: Portfolio Kit, Stacks: eCommerce Kit. "Stacks is a production-ready library of stackable content blocks built in React Native.    
+                                </p>
                             </Content>
                             <Action>
                                 <ActionList>

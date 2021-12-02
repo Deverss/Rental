@@ -5,8 +5,10 @@ import styled from 'styled-components';
     position: absolute;
     inset: 0px 0px auto auto;
     margin: 0px;
-    transform: translate(-28px, 55px);
+    transform: translate(-230px, 70px);
     max-width: calc(100vw - 10px);
+    background : white;
+    border-radius : 10px;
     
     `
     export const Wrapperul = styled.ul`
@@ -60,4 +62,11 @@ import styled from 'styled-components';
     text-align: -webkit-match-parent;
     padding: 10px 0;
     list-style:none;
+    border-radius : 10px;
+    padding : 10px;
+    margin : 5px 0;
+    &:hover {
+        background : #dedede;
+        cursor : pointer;
+    }
     `

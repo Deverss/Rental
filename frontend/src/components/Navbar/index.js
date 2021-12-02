@@ -1,7 +1,9 @@
 import React,{useState} from 'react';
+import { Link,useHistory} from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../images/logo.png';
-import Ava1 from '../../images/Ava.jpg'
+import Ava1 from '../../images/Ava.jpg';
+import { getUser,removeUser,removeToken } from '../../Api/Common';
 // import scroll from 'react-scroll'
 import {   
     Nav, 
@@ -30,7 +32,15 @@ import {
 // const toggleHome = () => {
 //     scroll.scrollToTop();
 // }
-const Dropdown = () =>{
+
+const Dropdown = ({user}) =>{
+    const history = useHistory();
+    const logOut = () =>{
+        removeToken();
+        removeUser();
+        history.push('/');
+        window.location.reload();
+    }
     return (
         <>
            <DropdownSection>
@@ -38,27 +48,27 @@ const Dropdown = () =>{
                     <UserMenuUser>
                         <UserMenuAvatar src={Ava1} />
                         <UserMenuInfo>
-                            <UserMenuName>Mai The Son</UserMenuName>
-                            <UserMenuUserName>@TesMai</UserMenuUserName>
+                            <UserMenuName>{user.name}</UserMenuName>
+                            <UserMenuUserName>{user.email}</UserMenuUserName>
                         </UserMenuInfo>
                     </UserMenuUser>
                     <UserMenuList>
                         <UserMenuli>
-                        Message
+                        <Link to='/'>Message</Link>
                         </UserMenuli>
                         <UserMenuli>
-                        Deposite
+                        <Link to='/'>Deposite</Link>
                         </UserMenuli>
                         <UserMenuli>
-                        Wishlist
+                        <Link to='/'>Wishlist</Link>
                         </UserMenuli>
                         <UserMenuli>
-                        Your property
+                        <Link to='/'>Your property</Link>
                         </UserMenuli>
                     </UserMenuList>
                     <UserMenuList>
                         <UserMenuli>
-                        Log out
+                        <div  onClick={()=>logOut()}>Log out</div>
                         </UserMenuli>
                     </UserMenuList>
                 </Wrapperul>
@@ -68,7 +78,6 @@ const Dropdown = () =>{
 }
 const Navbar = ({ toggle }) => {
     const [menu,setMenu] = useState(false);
-    console.log(menu);
     return (
         <>
             <Nav>
@@ -95,8 +104,8 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        {(false)?<NavBtnLink to="/signin">Sign In</NavBtnLink>:<AvaProfile src={Ava1} onClick={() => setMenu(!menu)} />}
-                        {(menu)?<Dropdown/>:<></>}
+                        {(!getUser())?<NavBtnLink to="/signin">Sign In</NavBtnLink>:<AvaProfile  src={Ava1} onClick={() => setMenu(!menu)} />}
+                        {(menu)?<Dropdown user={getUser()}/>:<></>}
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

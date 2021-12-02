@@ -1,18 +1,20 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router';
 import { doUserLogin } from '../../Service/AuthService';
-import { setToken,setUser,getUser } from '../../Api/Common';
+import { setToken, setUser, getUser } from '../../Api/Common';
 import SigninImage from '../../images/SigninImage.jpg'
-import {Outer,
-    OuterInner, 
-    Login, 
+import {
+    Outer,
+    OuterInner,
+    Login,
     LoginImg,
-    LoginCol1, 
-    LoginCol2, 
-    LoginHead, 
-    LoginWrap, 
-    Entry, 
-    EntryTop, 
-    EntryTitleH3, 
+    LoginCol1,
+    LoginCol2,
+    LoginHead,
+    LoginWrap,
+    Entry,
+    EntryTop,
+    EntryTitleH3,
     EntryInfoP,
     EntryCorrect,
     IconLock,
@@ -29,22 +31,30 @@ import {Outer,
     EntryButton,
     FieldInputEmail,
     FieldInputPassword,
-    EntryWrap
+    EntryWrap,
+    ErrorMessage
 } from './SignInElements'
 
 const SignIn = () => {
-    const [username,setUsername] = useState(null);
-    const [password,setPassword] = useState(null);
-    async function handleFormSubmit(event){
+    const [username, setUsername] = useState(null);
+    const [password, setPassword] = useState(null);
+    const [message,setMessage] = useState(null);
+    const history = useHistory();
+    async function handleFormSubmit(event) {
         event.preventDefault();
         const postData = {
-            email : username,
-            password : password,
+            email: username,
+            password: password,
         }
         const response = await doUserLogin(postData);
-        setToken(response.token);
-        setUser(response.user);
-        
+        if (response.status == 200 ) {
+            setToken(response.token);
+            setUser(response.user);
+            // history.push('/');
+        }
+        if(response.status == 401){
+            setMessage('Wrong username or password!');
+        }
     }
     return (<>
         <Outer>
@@ -71,15 +81,16 @@ const SignIn = () => {
                                     <EntryTab>
                                         <EntryContainer>
                                             <EntryItem>
-                                                <Field  onSubmit={handleFormSubmit}>
+                                                <Field onSubmit={handleFormSubmit}>
                                                     <FieldLabel htmlFor='for'>Email</FieldLabel>
                                                     <FieldWrap>
-                                                        <FieldInputEmail type='email' onChange={(event)=>{setUsername(event.target.value)}} required />
+                                                        <FieldInputEmail type='email' onChange={(event) => { setUsername(event.target.value) }} required />
                                                     </FieldWrap>
-                                                        <FieldLabel htmlFor='for'>Password</FieldLabel>
+                                                    <FieldLabel htmlFor='for'>Password</FieldLabel>
                                                     <FieldWrap>
-                                                        <FieldInputPassword type='password' onChange={(event)=>{setPassword(event.target.value)}} required />
+                                                        <FieldInputPassword type='password' onChange={(event) => { setPassword(event.target.value) }} required />
                                                     </FieldWrap>
+                                                    <ErrorMessage>{(message)?(message):''}</ErrorMessage>
                                                     <EntryButton type='submit' value='Login' />
                                                 </Field>
                                             </EntryItem>
@@ -88,10 +99,10 @@ const SignIn = () => {
                                     <EntryFoot>
                                         <EntryLink>Forgot password?</EntryLink>
                                     </EntryFoot>
-                                    
+
                                 </EntryForm>
                                 <EntryWrap>
-    
+
                                 </EntryWrap>
                             </Entry>
                         </LoginWrap>
@@ -99,9 +110,9 @@ const SignIn = () => {
                 </Login>
             </OuterInner>
         </Outer>
-        </>)
+    </>)
 }
-    
+
 
 
 export default SignIn

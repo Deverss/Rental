@@ -82,7 +82,6 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 100%;
-    
     &:hover {
         transition: all 0.5 ease-in-out;
         border-bottom: 5px solid #506FEA;

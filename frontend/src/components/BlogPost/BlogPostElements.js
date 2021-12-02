@@ -27,13 +27,13 @@ import {BsHeart} from 'react-icons/bs';
     max-width: 730px;
     margin: 80px auto 80px;
     text-align: center;
-    `
-    export const ArticleTitleH1 = styled.h1`
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1;
-    letter-spacing: -.02em;
+    &>h1{
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1;
+        letter-spacing: -.02em;
+    }
     `
     export const Image = styled.div`
     `
@@ -58,21 +58,22 @@ import {BsHeart} from 'react-icons/bs';
     padding: 0 80px;
     `
     export const Content = styled.div`
-    `
-    export const ContentTitleH3 = styled.h3`
-    font-size: 40px;
-    line-height: 1.2;
-    letter-spacing: -.01em;
-    position: relative;
-    margin-bottom: 32px;
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    `
-    export const ContentP = styled.div`
-    font-size: 16px;
-    line-height: 1.5;
-    color: #777E90;
-    margin-bottom: 32px;
+    & h1,& h2,& h3{
+        font-size: 40px;
+        line-height: 1.2;
+        letter-spacing: -.01em;
+        position: relative;
+        margin-bottom: 32px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        border-bottom : 2px solid #E6E8EC;
+    }
+    & p{
+        font-size: 16px;
+        line-height: 1.5;
+        color: #777E90;
+        margin-bottom: 32px;
+    }
     `
     export const Action = styled.div`
     position: relative;
