@@ -249,3 +249,19 @@ export const ErrorMessage = styled.p`
     margin-top : 20px;
     color : #a52020;
 `
+export const LoginLogo =styled.img`
+vertical-align: middle;
+position: absolute;
+top: 64px;
+left: 80px;
+width: 150px;
+background-color: #fff;
+padding: 5px 10px;
+border-radius: 10px;
+@media only screen and (max-width: 1419px){
+    top: 48px;
+    left: 64px;
+}
+`
+export const LoginBack = styled(Link)`
+`

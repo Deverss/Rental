@@ -59,25 +59,22 @@ class BlogApiController extends Controller
         return $info;
     }
 
-    public function store()
+    public function store(Request $request)
     {
-
-        request()->validate([
+        $valid = $request->validate([
             'userID' => 'required',
             'title' => 'required',
             'description' => 'required',
             'content' => 'required',
-            'Image' => 'required',
+            // 'Image' => 'required',
         ]);
-
-        error_log($this->getImageUrl(request('Image')));
         return Blog::create([
-            'userID' => request('userID'),
-            'title' => request('title'),
-            'description' => request('description'),
-            'content' => request('content'),
-            'Image' => $this->getImageUrl(request('Image')),
-            'views' => request('views'),
+            'userID' => $request->input('userID'),
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+            'content' => $request->input('content'),
+            'Image' => $this->getImageUrl($request->Image),
+            'views' => $request->input('views'),
         ]);
     }
 

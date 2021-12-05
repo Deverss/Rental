@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginImage from '../../images/LoginCoverImage.jpg'
+import logo from '../../images/LogoText.png'
 import {Outer,
     OuterInner, 
     Login, 
@@ -26,7 +27,8 @@ import {Outer,
     EntryButton,
     FieldInputEmail,
     FieldInputPassword,
-    EntryWrap
+    EntryWrap,
+    LoginLogo
 } from './SignUpElements'
 
 const SignIn = () => 
@@ -36,6 +38,7 @@ const SignIn = () =>
             <Login>
                 <LoginCol1>
                     <LoginImg src={LoginImage} />
+                    <LoginLogo src={logo} to="/"/>
                 </LoginCol1>
                 <LoginCol2>
                     <LoginHead to="/signin">

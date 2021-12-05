@@ -58,7 +58,7 @@ const HighlightBlog = (item) => (
     <FeaturePost>
         <FeatureImg src={item.Image} />
         <FeatureDesc>
-            <FeatureH2>{item.title}</FeatureH2>
+            <FeatureH2 to={`blog/${item.id}`}>{item.title}</FeatureH2>
             <FeatureP>{item.description}
             </FeatureP>
             <Author>
@@ -72,20 +72,21 @@ const HighlightBlog = (item) => (
     </FeaturePost>
 );
 const BlogCard = (item) => (
-    <Post>
-        <PostImg src={item.Image} />
-        <PostTitle>{item.title}</PostTitle>
+    <Post to={`blog/${item.id}`}>
+        <PostImg ><img src={item.Image} alt="" /> </PostImg>
+        <PostTitle to={`blog/${item.id}`}>{item.title}</PostTitle>
         <PostDesc>{item.description}
         </PostDesc>
         <Author>
             <AuthorAva src={item.image} />
             <AuthorText>
                 <AuthorName>{item.name}</AuthorName>
-                <TimeUpload>30 mins ago</TimeUpload>
+                <TimeUpload>{new Date().getDate() - new Date(item.created_at).getDate()} day ago</TimeUpload>
             </AuthorText>
         </Author>
     </Post>
 );
+
 const BlogsAndPosts = () => {
     const [blogs, setBlogs] = useState(null);
     useEffect(() => {

@@ -150,7 +150,7 @@ export const PostCard = styled.div`
         padding: 0 20px;  
     }
 `
-export const Post = styled.div`
+export const Post = styled(Link)`
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -164,13 +164,17 @@ export const PostImgLink = styled(Link)`
 
 ` 
 
-export const PostImg = styled.img`
+export const PostImg = styled.div`
     width: 100%;
-    max-height: 350px;
-    height: auto;
+    height : 300px;
     border-radius: 15px;
-    object-fit: cover;
+    overflow : hidden;
     cursor: pointer;
+    &>img{
+        width : 100%;
+        height : 100%;
+        object-fit : cover;
+    }
 `
 export const PostTitle = styled(Link)`
     margin-top: 15px;    
@@ -195,6 +199,11 @@ export const PostDesc = styled.p`
     color: #868686;
     margin-bottom: 10px;
     margin-top:15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
 `
 
 export const NewsNUpdateSections = styled.div`

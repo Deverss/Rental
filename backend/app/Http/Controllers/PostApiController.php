@@ -51,7 +51,7 @@ class PostApiController extends Controller
     public function store(){
         request() -> validate([
             'title' => 'required',
-            'content' => 'required',
+            'description' => 'required',
         ]);
         return Post::create([
             'uid' => request('uid'),

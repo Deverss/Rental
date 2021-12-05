@@ -3,10 +3,10 @@ import { useHistory } from 'react-router';
 import { doUserLogin } from '../../Service/AuthService';
 import { setToken, setUser, getUser } from '../../Api/Common';
 import SigninImage from '../../images/SigninImage.jpg'
-import {
-    Outer,
-    OuterInner,
-    Login,
+import logo from '../../images/LogoText.png'
+import {Outer,
+    OuterInner, 
+    Login, 
     LoginImg,
     LoginCol1,
     LoginCol2,
@@ -32,6 +32,8 @@ import {
     FieldInputEmail,
     FieldInputPassword,
     EntryWrap,
+    LoginLogo,
+    LoginBack,
     ErrorMessage
 } from './SignInElements'
 
@@ -56,36 +58,39 @@ const SignIn = () => {
             setMessage('Wrong username or password!');
         }
     }
-    return (<>
-        <Outer>
-            <OuterInner>
-                <Login>
-                    <LoginCol1>
-                        <LoginImg src={SigninImage} />
-                    </LoginCol1>
-                    <LoginCol2>
-                        <LoginHead to="/signup">
-                            Sign up for free
-                        </LoginHead>
-                        <LoginWrap>
-                            <Entry>
-                                <EntryTop>
-                                    <EntryTitleH3>Sign in</EntryTitleH3>
-                                    <EntryInfoP>Please ensure you are visiting the correct url.</EntryInfoP>
-                                    <EntryCorrect>
-                                        <IconLock />
-                                        <EntryUrl>https://accounts.rental.com/signin</EntryUrl>
-                                    </EntryCorrect>
-                                </EntryTop>
-                                <EntryForm>
-                                    <EntryTab>
-                                        <EntryContainer>
-                                            <EntryItem>
-                                                <Field onSubmit={handleFormSubmit}>
-                                                    <FieldLabel htmlFor='for'>Email</FieldLabel>
-                                                    <FieldWrap>
-                                                        <FieldInputEmail type='email' onChange={(event) => { setUsername(event.target.value) }} required />
-                                                    </FieldWrap>
+    return(<>
+    <Outer>
+        <OuterInner>
+            <Login>
+                <LoginCol1>
+                    <LoginImg src={SigninImage} />
+                    <LoginBack to="/">
+                        <LoginLogo src={logo}/>
+                    </LoginBack>
+                </LoginCol1>
+                <LoginCol2>
+                    <LoginHead to="/signup">
+                        Sign up for free
+                    </LoginHead>
+                    <LoginWrap>
+                        <Entry>
+                            <EntryTop>
+                                <EntryTitleH3>Sign in</EntryTitleH3>
+                                <EntryInfoP>Please ensure you are visiting the correct url.</EntryInfoP>
+                                <EntryCorrect>
+                                    <IconLock />
+                                    <EntryUrl>https://accounts.rental.com/signin</EntryUrl>
+                                </EntryCorrect>
+                            </EntryTop>
+                            <EntryForm>
+                                <EntryTab>
+                                    <EntryContainer>
+                                        <EntryItem>
+                                            <Field onSubmit={handleFormSubmit}>
+                                                <FieldLabel htmlFor='for'>Email</FieldLabel>
+                                                <FieldWrap>
+                                                    <FieldInputEmail type='email' required onChange={(event) => { setUsername(event.target.value) }}/>
+                                                </FieldWrap>
                                                     <FieldLabel htmlFor='for'>Password</FieldLabel>
                                                     <FieldWrap>
                                                         <FieldInputPassword type='password' onChange={(event) => { setPassword(event.target.value) }} required />

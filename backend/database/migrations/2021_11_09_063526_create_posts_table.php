@@ -19,6 +19,12 @@ class CreatePostsTable extends Migration
             $table->text('type');
             $table->text('title');
             $table->mediumText('description');
+            $table->string('address');
+            $table->integer('price');
+            $table->integer('electricPrice');
+            $table->integer('waterPrice');
+            $table->integer('internetPrice');
+            $table->integer('vehiclePrice');
             $table->integer('people');
             $table->integer('area');
             $table->integer('views');

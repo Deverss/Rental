@@ -1,6 +1,23 @@
 import axios from "axios";
 import { BASE_URL } from "./Common"; {/* need user token */ }
 
+export const setBlog = async (form,setMessage) =>{
+    var data = new FormData();
+    data.append('userID','1');
+    data.append('title',form.title);
+    data.append('description',form.description);
+    data.append('content',form.content);
+    data.append('Image',form.Image);
+    data.append('views','1');
+    await axios.post(`${BASE_URL}blogs`,data,{'Content-Type': 'multipart/form-data'})
+        .then(response =>{
+            setMessage('success')
+        })
+        .catch(err =>{
+            setMessage('error')
+        })
+}
+
 export const getBlogById = (id, setRentItem) => {
     axios({
         method: 'get',
