@@ -13,6 +13,7 @@ import PropertyDetail from './pages/propertydetail'
 import AdvancedSearch from './pages/advancedsearch'
 import Profile from './pages/profile' 
 import Contact from './pages/contact'
+import Category from './pages/category'
 
 import Test from './Test';
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/advancedsearch" component={AdvancedSearch} exact />
         <Route path="/profile" component={Profile} exact />
         <Route path="/contact" component={Contact} exact />
+        <Route path="/category" component={Category} exact />
         <Route path="/test" component={Test}/>
     
       </Switch>
