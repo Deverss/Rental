@@ -28,7 +28,8 @@ import {Outer,
     FieldInputEmail,
     FieldInputPassword,
     EntryWrap,
-    LoginLogo
+    LoginLogo,
+    LoginBack
 } from './SignUpElements'
 
 const SignIn = () => 
@@ -38,7 +39,9 @@ const SignIn = () =>
             <Login>
                 <LoginCol1>
                     <LoginImg src={LoginImage} />
-                    <LoginLogo src={logo} to="/"/>
+                    <LoginBack to="/">
+                    <LoginLogo src={logo}/>
+                    </LoginBack>
                 </LoginCol1>
                 <LoginCol2>
                     <LoginHead to="/signin">
