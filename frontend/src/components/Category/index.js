@@ -13,10 +13,17 @@ import {
     PanelBackground,
     PanelBody,
     PanelRow,
+    // Location
     Location,
     LocationHead,
     LocationIcon,
     LocationIconLogo,
+    LocationInput,
+    // CheckIn
+    CheckIn,
+    CheckInHead,
+    CheckInIcon,
+    CalendarLogo,
 } from './CategoryElements'
 
 const Category = () => {
@@ -38,9 +45,17 @@ const Category = () => {
                                     <LocationHead>                                        
                                             <LocationIcon>
                                                 <LocationIconLogo />
-                                            </LocationIcon>    
+                                            </LocationIcon> 
+                                            <LocationInput type='text' placeholder='Location'/>   
                                     </LocationHead>
                                 </Location>
+                                <CheckIn>
+                                    <CheckInHead>
+                                        <CheckInIcon>
+                                            <CalendarLogo />
+                                        </CheckInIcon>
+                                    </CheckInHead>
+                                </CheckIn>                      
                             </PanelRow>
                         </PanelBody>
                     </CategoryPanel>

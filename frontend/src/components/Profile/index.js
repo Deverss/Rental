@@ -1,6 +1,6 @@
 import React from 'react';
 import Bgr1 from '../../images/Background-1.jpg';
-import AvaPrf from '../../images/ProfileAva.jpg';
+import AvaPrf from '../../images/Ava.jpg';
 import ReviewAva1 from '../../images/ReviewAva_1.jpg'
 import ReviewAva2 from '../../images/ReviewAva_2.jpg';
 import {
@@ -104,7 +104,7 @@ const ProfileInfo = () => {
                                     <ProfileUpdateIcon />
                                     Update avatar
                                 </ProfileUpdate>
-                                <ProfileName>Tom</ProfileName>
+                                <ProfileName>Stitch</ProfileName>
                             </ProfileMain>
                             <ProfileBody>
                                 <ProfileParameters>
@@ -143,7 +143,7 @@ const ProfileInfo = () => {
                         <UserWrapper>
                             <UserDetail>
                                 <UserHead>
-                                    <UserTitle>Hi, I'm Tom</UserTitle>
+                                    <UserTitle>Hi, I'm Stitch</UserTitle>
                                 </UserHead>
                                 <UserContent>House for rent with beautiful furniture, fully equipped facilities, reasonable prices</UserContent>
                                 <UserOptions>

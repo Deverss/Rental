@@ -12,11 +12,12 @@ export const ContactContainer = styled.div`
     padding: 162px 100px 60px;
     display: block;
     background-color: #fff;
+    z-index: 1;
 `
 
 export const ContactWrap = styled.div`
     position: relative;
-    z-index: 3;
+    z-index: 1;
     margin-bottom: 85px;
     display: inline-block;
     box-sizing: inherit;
