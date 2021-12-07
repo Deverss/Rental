@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import { getLimitPosts } from '../../Api/Post';
 import {Link} from 'react-router-dom'
 import { getPosts } from '../../Api/Post';
 import Img0 from '../../images/Room-0.jpg';
@@ -36,7 +37,7 @@ import {
 
 export const FeatureCard = (item) => (
     <FeaturesCard>
-        <FeaturesImage src={item.imageAddress} />
+        <FeaturesImage src={item.Image1} />
         <FeaturesDetailCard>
             <FeaturesDetail>
                 <Link to={`property/${item.id}`}><HomeName>{item.title}</HomeName></Link>
@@ -61,7 +62,7 @@ const FeaturesSection = () => {
     const [posts,setPosts] = useState(null);
     
     useEffect(() => {
-        getPosts(setPosts)
+        getLimitPosts(6,setPosts);
         
     }, [])
     return (

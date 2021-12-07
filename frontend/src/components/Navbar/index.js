@@ -46,7 +46,7 @@ const Dropdown = ({user}) =>{
            <DropdownSection>
                 <Wrapperul>
                     <UserMenuUser>
-                        <UserMenuAvatar src={Ava1} />
+                        <UserMenuAvatar src={(user.image)?user.image:Ava1} />
                         <UserMenuInfo>
                             <UserMenuName>{user.name}</UserMenuName>
                             <UserMenuUserName>{user.email}</UserMenuUserName>
@@ -54,7 +54,7 @@ const Dropdown = ({user}) =>{
                     </UserMenuUser>
                     <UserMenuList>
                         <UserMenuli>
-                        <Link to='/'>Message</Link>
+                        <Link to='/profile'>Profile</Link>
                         </UserMenuli>
                         <UserMenuli>
                         <Link to='/'>Deposite</Link>
@@ -94,7 +94,7 @@ const Navbar = ({ toggle }) => {
                             <NavLinks to="/blog">Blogs</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="advancedsearch">Catalog</NavLinks>
+                            <NavLinks to="/advancedsearch">Catalog</NavLinks>
                         </NavItem>
                         <NavItem>
                             <NavLinks to="/features">Features</NavLinks>
@@ -104,7 +104,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        {(!getUser())?<NavBtnLink to="/signin">Sign In</NavBtnLink>:<AvaProfile  src={Ava1} onClick={() => setMenu(!menu)} />}
+                        {(!getUser())?<NavBtnLink to="/signin">Sign In</NavBtnLink>:<AvaProfile  src={(getUser().image)?getUser().image:Ava1} onClick={() => setMenu(!menu)} />}
                         {(menu)?<Dropdown user={getUser()}/>:<></>}
                     </NavBtn>
                 </NavbarContainer>

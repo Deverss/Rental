@@ -328,7 +328,7 @@ export const TwitterIcon = styled(TiSocialTwitter)`
     height: 25px;
 `
 
-export const FacebookLink = styled(Link)`
+export const FacebookLink = styled.a`
     margin-right: 24px;
     color: #777E90;
     transition: fill .2s;

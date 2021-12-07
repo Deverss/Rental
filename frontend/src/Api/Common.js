@@ -1,4 +1,6 @@
 import Cookies from "js-cookie"
+import axios from "axios";
+
 export const BASE_URL = "http://localhost:8000/api/"
 export const setUser = (user) =>{
     localStorage.setItem('user',JSON.stringify(user))
@@ -19,4 +21,12 @@ export const getToken = () =>{
 }
 export const removeToken = () =>{
     Cookies.remove('token');
+}
+export const signUp = async(data) => {
+    try {
+        return await axios.post(`${BASE_URL}register`,data);
+    } catch (error) {
+        return error;
+    }
+    
 }

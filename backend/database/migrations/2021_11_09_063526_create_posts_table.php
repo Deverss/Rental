@@ -29,12 +29,15 @@ class CreatePostsTable extends Migration
             $table->integer('area');
             $table->integer('views');
             $table->integer('remain');
-            $table->string('imageAddress');
+            $table->string('Image1');
+            $table->string('Image2');
+            $table->string('Image3');
+            $table->string('Image4');
             $table->tinyInteger('bed');
             $table->tinyInteger('airC');
             $table->tinyInteger('tv');
             $table->tinyInteger('fridg');
-            $table->string('vr');
+            $table->string('vr')->nullable();
             $table->timestamps();
         });
     }

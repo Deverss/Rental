@@ -67,6 +67,7 @@ const PropertyDetail = () => {
     const [rentItem, setRentItem] = useState(null)
     useEffect(() => {
         getPostById(param.id, setRentItem)
+        console.log(rentItem)
     }, [])
     return (
         <>
@@ -146,7 +147,7 @@ const PropertyDetail = () => {
 
                         <DescriptionWrapper>
                             <DescriptionTextH4>
-                                Private room in house
+                                Description
                             </DescriptionTextH4>
                             <DescriptionParameters>
                                 <DescriptionParametersPart>

@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
+import { getUser } from '../../Api/Common';
 import Bgr1 from '../../images/Background-1.jpg';
 import AvaPrf from '../../images/ProfileAva.jpg';
 import ReviewAva1 from '../../images/ReviewAva_1.jpg'
@@ -76,6 +77,7 @@ import {
 } from './ProfileElements'
 
 const ProfileInfo = () => {
+    const [user,setUser] = useState(getUser());
     return (
         <OuterInner to="profile">
             <User>
@@ -98,13 +100,13 @@ const ProfileInfo = () => {
                         <Profile>
                             <ProfileMain>
                                 <ProfileAvatar>
-                                    <AvatarImg src={AvaPrf}/>
+                                    <AvatarImg src={user.image}/>
                                 </ProfileAvatar>
                                 <ProfileUpdate>
                                     <ProfileUpdateIcon />
                                     Update avatar
                                 </ProfileUpdate>
-                                <ProfileName>Tom</ProfileName>
+                                <ProfileName>{user.name}</ProfileName>
                             </ProfileMain>
                             <ProfileBody>
                                 <ProfileParameters>
@@ -123,10 +125,10 @@ const ProfileInfo = () => {
                                     <TwitterLink>
                                         <TwitterIcon />
                                     </TwitterLink>
-                                    <FacebookLink>
+                                    <FacebookLink href={user.facebook} target="_blank">
                                         <FacebookIcon />   
                                     </FacebookLink>
-                                    <InstagramLink>     
+                                    <InstagramLink >     
                                         <InstagramIcon />
                                     </InstagramLink>      
                                 </ProfileSocial>
@@ -143,7 +145,7 @@ const ProfileInfo = () => {
                         <UserWrapper>
                             <UserDetail>
                                 <UserHead>
-                                    <UserTitle>Hi, I'm Tom</UserTitle>
+                                    <UserTitle>Hi, I'm {user.name}</UserTitle>
                                 </UserHead>
                                 <UserContent>House for rent with beautiful furniture, fully equipped facilities, reasonable prices</UserContent>
                                 <UserOptions>
@@ -187,7 +189,7 @@ const ProfileInfo = () => {
                                             <IconPhone />
                                             Phone
                                         </UserCategory>
-                                        <UserText>0912.788.xxx</UserText>
+                                        <UserText>{(user.phone)?user.phone:'none'}</UserText>
                                     </UserOption>
                                 </UserOptions>
                             </UserDetail>

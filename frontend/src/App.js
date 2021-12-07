@@ -14,6 +14,8 @@ import AdvancedSearch from './pages/advancedsearch'
 import Profile from './pages/profile' 
 import Contact from './pages/contact'
 import PublicRoute from './components/PublicRoute';
+import Category from './pages/category'
+
 import Test from './Test';
 import AddPost from './components/AddPost';
 import AddBlog from './components/AddBlog';
@@ -35,6 +37,7 @@ function App() {
         <Route path="/advancedsearch" component={AdvancedSearch} exact />
         <Route path="/profile" component={Profile} exact />
         <Route path="/contact" component={Contact} exact />
+        <Route path="/category" component={Category} exact />
         <Route path="/test" component={Test}/>
         <Route path="/property/:id" component={PropertyDetail} exact /> {/* test api */}
         <Route path='/addblog' component={AddBlog}/>

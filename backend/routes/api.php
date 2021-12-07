@@ -14,6 +14,15 @@ use Laravel\Passport\Http\Controllers\AccessTokenController;
 Route::middleware('auth:sanctum')->group(function(){
     Route::get('user',[AuthController::class,'user']);
     Route::post('logout',[AuthController::class,'logout']);
+
+    Route::put('/posts/{post}',[PostApiController::class,'update']);
+    Route::delete('/posts/{post}',[PostApiController::class,'delete']);
+
+    
+    Route::get('/users/{user}',[UserApiController::class,'getUserById']);
+    Route::post('/users',[UserApiController::class,'store']);
+    Route::put('/users/{user}',[UserApiController::class,'update']);
+    Route::delete('/users/{user}',[UserApiController::class,'delete']);
 });
 
 Route::post('register',[AuthController::class,'register']);
@@ -21,13 +30,12 @@ Route::post('login',[AuthController::class,'login']);
 // post api
 Route::get('/posts',[PostApiController::class,'getPost']);
 
-Route::get('/posts/{post}',[PostApiController::class,'getPostById']);
+Route::get('/posts/{id}',[PostApiController::class,'getPostById']);
 
 Route::post('/posts',[PostApiController::class,'store']);
 
-Route::put('/posts/{post}',[PostApiController::class,'update']);
-
-Route::delete('/posts/{post}',[PostApiController::class,'delete']);
+Route::get('/posts/limit/{limit}',[PostApiController::class,'getLimitPost']);
+// Route::get('/posts',[PostApiController::class,'search']);
 
 // blog api 
 Route::get('/blogs',[BlogApiController::class,'getBlog']);
@@ -42,11 +50,3 @@ Route::delete('/blogs/{blog}',[BlogApiController::class,'delete']);
 
 // user api
 Route::get('/users',[UserApiController::class,'getUser']);
-
-Route::get('/users/{user}',[UserApiController::class,'getUserById']);
-
-Route::post('/users',[UserApiController::class,'store']);
-
-Route::put('/users/{user}',[UserApiController::class,'update']);
-
-Route::delete('/users/{user}',[UserApiController::class,'delete']);

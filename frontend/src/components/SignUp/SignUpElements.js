@@ -187,7 +187,7 @@ export const EntryLink = styled(Link)`
     }
 `
 
-export const EntryButton = styled(Link)`
+export const EntryButton = styled.div`
     width: 100%;
     margin-top: 32px;
     display: inline-flex;
@@ -208,6 +208,7 @@ export const EntryButton = styled(Link)`
 
     &:hover {
         background: #0444ec;
+        cursor : pointer;
     }
 `
 

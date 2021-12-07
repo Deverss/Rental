@@ -50,9 +50,10 @@ const SignIn = () => {
         }
         const response = await doUserLogin(postData);
         if (response.status == 200 ) {
-            setToken(response.token);
-            setUser(response.user);
-            // history.push('/');
+            console.log(response);
+            setToken(response.data.token);
+            setUser(response.data.user);
+            history.push('/');
         }
         if(response.status == 401){
             setMessage('Wrong username or password!');

@@ -174,7 +174,7 @@ export const EntryFoot = styled.div`
 
 `
 
-export const EntryLink = styled(Link)`
+export const EntryLink = styled.div`
     color: #3772FF;
     transition: color .2s;
     text-decoration: none;
