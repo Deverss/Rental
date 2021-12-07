@@ -211,22 +211,23 @@ export const Card = styled.div`
     padding: 12px;
     box-shadow: 0px 32px 32px rgb(31 47 70 / 12%);
     border-radius: 20px;
+    
     @media only screen and (max-width: 1279px){
         flex: 0 0 calc(50% - 32px);
         max-width: calc(50% - 32px);
     }
 `
 export const CardPreview = styled.div`
-position: relative;
-border-radius: 16px;
-overflow: hidden;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
 `
 export const CardImg = styled.img`
-vertical-align: middle;
-border-radius: 16px;
-object-fit: cover;
-max-height: 300px;
-width: 100%;
+    vertical-align: middle;
+    border-radius: 16px;
+    object-fit: cover;
+    max-height: 300px;
+    width: 100%;
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
