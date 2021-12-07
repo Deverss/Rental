@@ -84,9 +84,9 @@ const ProfileInfo = () => {
                         <BackgroundHead>
                             <BackgroundImg src={Bgr1} />
                             <BackgroundBtn>
-                                <ButtonStroke>
+                                <ButtonStroke href="/accountsetting">
                                 <EditIcon />
-                                    Edit cover
+                                    Edit profile
                                 </ButtonStroke>
                             </BackgroundBtn>                
                         </BackgroundHead>

@@ -379,6 +379,4 @@ export const CardH2 = styled.h2`
 
 `
 
-
-export const LocationIconLogo = styled.div``
 export const PriceH3 = styled.h3``

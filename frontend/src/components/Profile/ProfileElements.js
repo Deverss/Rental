@@ -91,7 +91,7 @@ export const BackgroundBtn = styled(Link)`
     text-decoration: none;
 `
 
-export const ButtonStroke = styled.div`
+export const ButtonStroke = styled.a`
     background: #fcfcfd;
     color: #000;
     height: 40px;
@@ -106,7 +106,7 @@ export const ButtonStroke = styled.div`
     border: 0px;
     justify-content: center;
     display: inline-flex;
-
+    text-decoration: none;
     &:hover {
         color: #fff;
         background: #506fea;
