@@ -89,7 +89,7 @@ export const LocationIcon = styled.div`
 
 `
 
-export const LocationIconLogo = styled()`
+export const LocationIconLogo = styled.div`
 
 `
 

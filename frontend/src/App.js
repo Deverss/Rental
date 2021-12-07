@@ -14,7 +14,7 @@ import AdvancedSearch from './pages/advancedsearch'
 import Profile from './pages/profile' 
 import Contact from './pages/contact'
 import Category from './pages/category'
-
+import AccountSetting from './pages/accountsetting'
 import Test from './Test';
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <Route path="/contact" component={Contact} exact />
         <Route path="/category" component={Category} exact />
         <Route path="/test" component={Test}/>
-    
+        <Route path="/accountsetting" component={AccountSetting}/>
       </Switch>
     </Router>
   );

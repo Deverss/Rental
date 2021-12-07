@@ -239,7 +239,16 @@ export const CardLink = styled.a`
     color: #23262F;
     cursor: pointer;
 `
-export const CardH2 = styled.div``
+export const CardH2 = styled.div`
+    font-size: 22px;
+    font-weight: bold;
+`
 export const CardCatalog = styled.div``
-export const PriceH3 = styled.div``
+export const PriceH3 = styled.h4`
+color: #0A944A;
+margin-top: 5px;
+font-size: 28px;
+font-weight: bold;
+margin-left: auto;
+`
 
