@@ -64,22 +64,20 @@ class UserApiController extends Controller
     }
 
     public function update(User $user){
-        request() -> validate([
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required',
-            'image' => 'required',
-        ]);
-    
+        // dd(request('name'));
         $user->update([
             'name' => request('name'),
             'email' => request('email'),
-            'password' => request('password'),
-            'image' => $this->getImageUrl(request('Image')),
+            // 'password' => request('password'),
+            
+            'address' => request('address'),
+            'bio' => request('bio'),
             'zalo' => request('zalo'),
             'phone' => request('phone'),
             'facebook' => request('facebook'),
         ]);
+        error_log(request('image'));
+        if(request('image')){$user->update(['image' => $this->getImageUrl(request('Image')),]);}
     }
 
     public function delete(User $user){

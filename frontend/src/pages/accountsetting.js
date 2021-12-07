@@ -1,24 +1,22 @@
 import React, {useState} from 'react';
-import Category from '../components/Category';
+import AccountSetting from '../components/AccountSetting';
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
-
 import Footer from '../components/Footer';
-const Categories = () => {
+const Setting = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
         setIsOpen(!isOpen);
     };
-
     return (
         <>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Navbar toggle={toggle} />
-        <Category />    
-        <Footer />  
+        <Sidebar isOpen={isOpen} toggle={toggle}/>
+        <Navbar toggle={toggle} />  
+        <AccountSetting />   
+        <Footer />
         </>
     )
 }
 
-export default Categories
+export default Setting;

@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import { getUser } from '../../Api/Common';
 import Bgr1 from '../../images/Background-1.jpg';
-import AvaPrf from '../../images/ProfileAva.jpg';
+import Ava1 from '../../images/Ava.jpg';
+import AvaPrf from '../../images/Ava.jpg';
 import ReviewAva1 from '../../images/ReviewAva_1.jpg'
 import ReviewAva2 from '../../images/ReviewAva_2.jpg';
 import {
@@ -100,11 +101,11 @@ const ProfileInfo = () => {
                         <Profile>
                             <ProfileMain>
                                 <ProfileAvatar>
-                                    <AvatarImg src={user.image}/>
+                                    <AvatarImg src={(user.image)?user.image:Ava1}/>
                                 </ProfileAvatar>
-                                <ProfileUpdate>
+                                <ProfileUpdate to ='/accountsetting'>
                                     <ProfileUpdateIcon />
-                                    Update avatar
+                                    Edit Profile
                                 </ProfileUpdate>
                                 <ProfileName>{user.name}</ProfileName>
                             </ProfileMain>
@@ -147,14 +148,14 @@ const ProfileInfo = () => {
                                 <UserHead>
                                     <UserTitle>Hi, I'm {user.name}</UserTitle>
                                 </UserHead>
-                                <UserContent>House for rent with beautiful furniture, fully equipped facilities, reasonable prices</UserContent>
+                                <UserContent>{user.bio}</UserContent>
                                 <UserOptions>
                                     <UserOption>
                                         <UserCategory>
                                             <IconHome />
                                             Live in
                                         </UserCategory>
-                                        <UserText>Da Nang, Viet Nam</UserText>
+                                        <UserText>{user.address}</UserText>
                                     </UserOption>
                                     <UserOption>
                                         <UserCategory>

@@ -23,3 +23,12 @@ export const getPosts = (setPosts) =>{
         })
         .catch(err => {console.error(err)})
 }
+
+export const filter = async(type) =>{
+    try {
+        return await axios.get(`${BASE_URL}posts/filter`)
+    } catch (error) {
+        console.log(error);
+    }
+    
+}

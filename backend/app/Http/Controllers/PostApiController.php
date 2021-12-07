@@ -35,7 +35,16 @@ class PostApiController extends Controller
             error_log($e->getMessage());
         }
     }
+    public function filter(){
+        $type = Request('type');
+        error_log($type);
+        $result = DB::table('posts')
+                    ->whereRaw('type like "%'.$type.'%"')
+                    ->get();
+        error_log($type);
+        return $result;
 
+    }
     public function getPost(){
         return Post::all();
     }

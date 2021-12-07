@@ -35,7 +35,8 @@ Route::get('/posts/{id}',[PostApiController::class,'getPostById']);
 Route::post('/posts',[PostApiController::class,'store']);
 
 Route::get('/posts/limit/{limit}',[PostApiController::class,'getLimitPost']);
-// Route::get('/posts',[PostApiController::class,'search']);
+
+Route::get('/posts/filter',[PostApiController::class,'filter']);
 
 // blog api 
 Route::get('/blogs',[BlogApiController::class,'getBlog']);

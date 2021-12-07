@@ -103,7 +103,7 @@ const PropertyDetail = () => {
                                 {/* Image big Preview */}
                                 <DetailGalleryMain>
                                     <GalleryMainPreviewImg>
-                                        <GalleryMainImg src={rentItem.imageAddress} />
+                                        <GalleryMainImg src={rentItem.Image1} />
                                     </GalleryMainPreviewImg>
                                     <GalleryMainPreviewButton>
                                         <ButtonLink>
@@ -113,7 +113,7 @@ const PropertyDetail = () => {
                                 </DetailGalleryMain>
                                 {/* Image small Preview */}
                                 <DetailGallerySmall>
-                                    <GallerySmallImg src={Image2} />
+                                    <GallerySmallImg src={rentItem.Image2} />
                                     <GallerySmallLink>
 
                                     </GallerySmallLink>
@@ -121,7 +121,7 @@ const PropertyDetail = () => {
                                 </DetailGallerySmall>
 
                                 <DetailGallerySmall>
-                                    <GallerySmallImg src={Image3} />
+                                    <GallerySmallImg src={rentItem.Image3} />
                                     <GallerySmallLink>
 
                                     </GallerySmallLink>
@@ -129,7 +129,7 @@ const PropertyDetail = () => {
                                 </DetailGallerySmall>
 
                                 <DetailGallerySmall>
-                                    <GallerySmallImg src={Image4} />
+                                    <GallerySmallImg src={rentItem.Image4} />
                                     <GallerySmallLink>
 
                                     </GallerySmallLink>
@@ -220,7 +220,7 @@ const PropertyDetail = () => {
                                     </ReceiptLine>
                                     <ReceiptLine>
                                         <ReceiptCell>Vehicle pricing</ReceiptCell>
-                                        <ReceiptCellRight>$10</ReceiptCellRight>
+                                        <ReceiptCellRight>${rentItem.vehiclePrice}</ReceiptCellRight>
                                     </ReceiptLine>
                                     <ReceiptBtn>
                                         <BtnStroke>
@@ -237,7 +237,7 @@ const PropertyDetail = () => {
 
                     </DescriptionCenter>
                 </DescriptionSection>
-            </PropertyOuter> : <h1>deo co j o day het</h1>}
+            </PropertyOuter> : <></>}
         </>
     )
 }

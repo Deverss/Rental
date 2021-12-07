@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import SliderFilter from './SliderFilter';
 import Image1 from '../../images/PropertyImage1(1).jpg'
 import {
@@ -34,7 +34,13 @@ import {
     CardCatalog,
     PriceH3
 } from './AdvancedSearchElements'
+
 const AdvancedSearch = () => {
+    const [type,setType] = useState(null);
+    const handleClick = (event) => {
+        setType(event.target.name);
+    }
+    console.log(type);
     return (
         <OuterInner>
             <CatalogSection>
@@ -56,9 +62,8 @@ const AdvancedSearch = () => {
                         </Select>
                         <CatalogNav>
                             <CatalogLinkActive>All</CatalogLinkActive>
-                            <CatalogLink to="#">House</CatalogLink>
-                            <CatalogLink to="#">Studio apartment</CatalogLink>
-                            <CatalogLink to="#">Boarding house</CatalogLink>
+                            <CatalogLink name='nhà trọ' onClick={handleClick}>Motel</CatalogLink>
+                            <CatalogLink name='căn hộ' onClick={handleClick}>Apartment</CatalogLink>
                         </CatalogNav>
                     </CatalogSorting>
                     <CatalogRow>

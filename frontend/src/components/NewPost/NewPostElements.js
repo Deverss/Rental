@@ -147,7 +147,9 @@ width: 100%;
     color: #23262F;
     transition: border-color .2s;
     height: 48px;
-    padding: 0 14px;
+    padding: 10px 14px;
+    margin-bottom : 10px;
+    
 `
 export const UploadRow = styled.div`
 display: flex;

@@ -14,11 +14,13 @@ import AdvancedSearch from './pages/advancedsearch'
 import Profile from './pages/profile' 
 import Contact from './pages/contact'
 import PublicRoute from './components/PublicRoute';
+import PrivateRoute from './components/PrivateRoute'
 import Category from './pages/category'
-
+import AccountSetting from './pages/accountsetting'
 import Test from './Test';
 import AddPost from './components/AddPost';
 import AddBlog from './components/AddBlog';
+import NewPost from './pages/newpost'
 
 function App() {
   return(
@@ -42,6 +44,8 @@ function App() {
         <Route path="/property/:id" component={PropertyDetail} exact /> {/* test api */}
         <Route path='/addblog' component={AddBlog}/>
         <Route path='/addpost' component={AddPost}/>
+        <Route path="/accountsetting" component={AccountSetting}/>
+        <Route path="/newpost" component={NewPost}/>
       </Switch>
     </Router>
   );
