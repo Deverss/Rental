@@ -52,6 +52,8 @@ import {
     CardLink,    
     CardH2,
     PriceH3,
+    BrowseCard, ImgPreview, BrowseSubtittle,
+    BrowseContent, IconHome, Number,BrowsePreview
 } from './CategoryElements'
 
 const Category = () => {
@@ -114,34 +116,17 @@ const Category = () => {
                                 <BrowseSlider>
                                     <SlickList>
                                         <SlickTrack>
-                                            <CardPreview>
-                                                <CardImg src={Image1} />
-                                                <CardLink to="#">
-                                                    <CardH2>Studio Apartment</CardH2>
-                                                    <PriceH3>150$</PriceH3>
-                                                </CardLink>
-                                            </CardPreview>
-                                            <CardPreview>
-                                                <CardImg src={Image1} />
-                                                <CardLink to="#">
-                                                    <CardH2>Studio Apartment</CardH2>
-                                                    <PriceH3>150$</PriceH3>
-                                                </CardLink>
-                                            </CardPreview>
-                                            <CardPreview>
-                                                <CardImg src={Image1} />
-                                                <CardLink to="#">
-                                                    <CardH2>Studio Apartment</CardH2>
-                                                    <PriceH3>150$</PriceH3>
-                                                </CardLink>
-                                            </CardPreview>
-                                            <CardPreview>
-                                                <CardImg src={Image1} />
-                                                <CardLink to="#">
-                                                    <CardH2>Studio Apartment</CardH2>
-                                                    <PriceH3>150$</PriceH3>
-                                                </CardLink>
-                                            </CardPreview>
+                                            <BrowseCard>
+                                                <BrowsePreview>
+                                                    <ImgPreview src={Image1} />
+
+                                                </BrowsePreview>
+                                                <BrowseSubtittle>Board House</BrowseSubtittle>
+                                                <BrowseContent>
+                                                    <IconHome />
+                                                    <Number>3000</Number>
+                                                </BrowseContent>
+                                            </BrowseCard>
                                         </SlickTrack>
                                     </SlickList>     
                                 </BrowseSlider>

@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import SliderFilter from './SliderFilter';
 import Image1 from '../../images/PropertyImage1(1).jpg'
+import { filter } from '../../Api/Post';
 import {
     OuterInner,
     CatalogSection,
@@ -38,9 +39,11 @@ import {
 const AdvancedSearch = () => {
     const [type,setType] = useState(null);
     const handleClick = (event) => {
-        setType(event.target.name);
+        // setType(event.target.name);
+        // const response =  filter(event.target.name);
+        // console.log(response)
     }
-    console.log(type);
+    
     return (
         <OuterInner>
             <CatalogSection>

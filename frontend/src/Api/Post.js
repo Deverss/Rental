@@ -66,3 +66,13 @@ export const getPosts = (setPosts) => {
         .then(response => setPosts(response.data))
         .catch(err => { console.error(err) })
 }
+
+export const filter = async(type) =>{
+    try {
+         await axios.get(`${BASE_URL}posts/filter/?type=`+type)
+            .then((response)=> response.data)
+    } catch (error) {
+        console.log(error);
+    }
+    
+}

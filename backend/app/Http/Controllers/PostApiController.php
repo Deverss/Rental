@@ -11,61 +11,69 @@ use phpDocumentor\Reflection\Types\Integer;
 
 class PostApiController extends Controller
 {
-    public function getImageUrl($file){
-        try{
+    public function getImageUrl($file)
+    {
+        try {
             $path = "";
             // if($request->hasFile('img')){
-                // $file = $request->file('img');
-                $filename = $file->getClientOriginalName();
-                $finalName = date('His').$filename;
-                error_log($filename);
-                $googleDriveStorage = Storage::disk('google');
-                
-                $googleDriveStorage->put($finalName,file_get_contents($file->getRealPath()));
-                $fileInfo = collect($googleDriveStorage->listContents('/',false))
-                ->where('type','file')
-                ->where('name',$finalName)
+            // $file = $request->file('img');
+            $filename = $file->getClientOriginalName();
+            $finalName = date('His') . $filename;
+            error_log($filename);
+            $googleDriveStorage = Storage::disk('google');
+
+            $googleDriveStorage->put($finalName, file_get_contents($file->getRealPath()));
+            $fileInfo = collect($googleDriveStorage->listContents('/', false))
+                ->where('type', 'file')
+                ->where('name', $finalName)
                 ->first();
-                $contents = $fileInfo['path'];
-                error_log($contents);
-                $path = "https://drive.google.com/uc?export=view&id=".$contents;
-                
-                return $path;
-        } catch(Exception $e){
+            $contents = $fileInfo['path'];
+            error_log($contents);
+            $path = "https://drive.google.com/uc?export=view&id=" . $contents;
+
+            return $path;
+        } catch (Exception $e) {
             error_log($e->getMessage());
         }
     }
-    public function filter(){
-        $type = Request('type');
-        error_log($type);
-        $result = DB::table('posts')
-                    ->whereRaw('type like "%'.$type.'%"')
-                    ->get();
-        error_log($type);
-        return $result;
 
+    public function filter(Request $request)
+    {
+        $type = $request->input('type');
+        error_log($type);
+
+        $result = DB::table('posts')
+            ->whereRaw('type like "%' . $type . '%"')
+            ->get();
+        return $result;
     }
-    public function getPost(){
+
+
+    public function getPost()
+    {
         return Post::all();
     }
 
-    public function getPostById($id){
+    public function getPostById($id)
+    {
         $info = DB::table('posts')
-                ->join('users','users.id','=','posts.uid')
-                ->select('posts.*', 'users.name')
-                ->where('posts.id','=',$id)
-                ->get();
+            ->join('users', 'users.id', '=', 'posts.uid')
+            ->select('posts.*', 'users.name')
+            ->where('posts.id', '=', $id)
+            ->get();
         return $info;
     }
 
-    public function getLimitPost($limit){
+    public function getLimitPost($limit)
+    {
         return DB::table('posts')
-                ->limit($limit)
-                ->get();
+            ->limit($limit)
+            ->get();
     }
 
-    public function store(){
-        request() -> validate([
+    public function store()
+    {
+        request()->validate([
             'title' => 'required',
             'description' => 'required',
         ]);
@@ -117,12 +125,13 @@ class PostApiController extends Controller
         error_log("dcmm");
     }
 
-    public function update(Post $post){
-        request() -> validate([
+    public function update(Post $post)
+    {
+        request()->validate([
             'title' => 'required',
             'content' => 'required',
         ]);
-    
+
         $post->update([
             'uid' => request('uid'),
             'type' => request('type'),
@@ -141,9 +150,10 @@ class PostApiController extends Controller
         ]);
     }
 
-    public function delete(Post $post){
+    public function delete(Post $post)
+    {
         $success = $post->delete();
-    
+
         return ['success' => $success];
     }
 }

@@ -50,15 +50,15 @@ export const CategoryWrap = styled.div`
     height: 100%;
 `
 
-export const CategoryTitle = styled.h1`
+export const CategoryTitle = styled.h2`
     font-size: 76px;
     line-height: 1;
     letter-spacing: -.02em;
     font-weight: 600;
-    margin-bottom: 240px;
-    color: #ffffff;
-    margin-top: 20px;
-    font-color: #000;
+    
+    color: #fff;
+    margin-top: 50px;
+    
 
 `
 
@@ -362,17 +362,13 @@ export const CardPreview = styled.div`
     position: relative;
     border-radius: 16px;
     overflow: hidden;
+    content: "";
+    display: block;
+    padding-bottom: 100%;
 `
  
 export const CardImg = styled.img`
-    vertical-align: middle;
-    border-radius: 16px;
-    object-fit: cover;
-    max-height: 250px;
-    max-width: 250px;
-    transition: -webkit-transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
+
 `
 
 export const CardLink = styled.div`
@@ -383,3 +379,33 @@ export const CardH2 = styled.h2`
 `
 
 export const PriceH3 = styled.h3``
+export const BrowseCard = styled.a`
+display: block;
+border-radius: 24px;
+color: #23262F;
+transition: color .2s;
+float: left;
+height: 100%;
+min-height: 1px;
+text-decoration: none;
+`
+export const ImgPreview = styled.img`
+position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+`
+export const BrowseSubtittle = styled.div``
+export const BrowseContent = styled.div``
+export const BrowsePreview = styled.div`
+position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 24px;
+`
+export const IconHome = styled.div``
+export const Number = styled.div``
