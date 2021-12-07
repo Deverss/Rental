@@ -45,7 +45,6 @@ import {
     BrowseTitle,
     BrowseWrapper,
     BrowseSlider,
-     
     SlickList,
     SlickTrack,
     CardPreview,
