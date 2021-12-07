@@ -194,6 +194,7 @@ text-transform: uppercase;
 export const CatalogWrapper = styled.div`
 flex-grow: 1;
 padding-left: 32px;
+
 `
 
 
