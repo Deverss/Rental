@@ -52,7 +52,7 @@ import {
     CardLink,    
     CardH2,
     PriceH3,
-    BrowseCard, ImgPreview, BrowseSubtittle,
+    BrowseCard, ImgPreview, BrowseSubtitle,
     BrowseContent, IconHome, Number,BrowsePreview
 } from './CategoryElements'
 
@@ -121,7 +121,7 @@ const Category = () => {
                                                     <ImgPreview src={Image1} />
 
                                                 </BrowsePreview>
-                                                <BrowseSubtittle>Board House</BrowseSubtittle>
+                                                <BrowseSubtitle>Board House</BrowseSubtitle>
                                                 <BrowseContent>
                                                     <IconHome />
                                                     <Number>3000</Number>

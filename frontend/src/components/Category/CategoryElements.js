@@ -399,10 +399,10 @@ position: absolute;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s;
 `
-export const BrowseSubtittle = styled.div``
+export const BrowseSubtitle = styled.div``
 export const BrowseContent = styled.div``
 export const BrowsePreview = styled.div`
-position: relative;
+    position: relative;
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 24px;
