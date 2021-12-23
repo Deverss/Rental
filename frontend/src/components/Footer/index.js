@@ -50,12 +50,25 @@ const Footer = () => {
                         </FooterLinkItems>
                         {/* 1 */}
                         <FooterLinkItems>
+                            <FooterLinkTitle>Popular Areas</FooterLinkTitle>
+                                <FooterLink to="/signin"About>Hai Chau</FooterLink>
+                                <FooterLink to="/signin"About>Thanh Khe</FooterLink>
+                                <FooterLink to="/signin"About>Ngu Hanh Son</FooterLink>
+                        </FooterLinkItems>
+                        {/* 1 */}
+                        <FooterLinkItems>
+                            <FooterLinkTitle>Searches</FooterLinkTitle>
+                                <FooterLink to="/signin"About>Properties News</FooterLink>
+                                <FooterLink to="/signin"About>Home ideas</FooterLink>
+                                <FooterLink to="/signin"About>Outdoor Furniture</FooterLink>
+                        </FooterLinkItems>
+                        {/* 1 */}
+                        <FooterLinkItems>
                             <FooterLinkTitle>Support</FooterLinkTitle>
                                 <FooterLink to="/signin"About>FAQs</FooterLink>
                                 <FooterLink to="/signin"About>Support Center</FooterLink>
                                 <FooterLink to="/signin"About>Contact us</FooterLink>
                         </FooterLinkItems>
-                        
                         {/* End */}
                     </FooterLinksWrapper>
                     
@@ -64,7 +77,6 @@ const Footer = () => {
             </FooterWrap>
             <DivideFooter>
                 <Copyright>Copyright © 2021. All rights reserved</Copyright>
-                <TermText>Terms & Agreements</TermText>
             </DivideFooter>
         </FooterContainer>
     )
